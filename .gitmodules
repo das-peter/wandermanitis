@@ -1,0 +1,255 @@
+[submodule "modules/views"]
+	path = modules/views
+	url = git+ssh://git@git.cando-image.com/drupal/modules/views.git
+[submodule "modules/token"]
+	path = modules/token
+	url = git://drupalcode.org/project/token.git
+[submodule "modules/features"]
+	path = modules/features
+	url = git+ssh://git@git.cando-image.com/drupal/modules/features.git
+[submodule "modules/media"]
+	path = modules/media
+	url = git+ssh://git@git.cando-image.com/drupal/modules/media.git
+[submodule "modules/date"]
+	path = modules/date
+	url = http://git.drupal.org/project/date.git
+[submodule "modules/entity_translation"]
+	path = modules/entity_translation
+	url = git+ssh://git@git.cando-image.com/drupal/modules/entity_translation.git
+[submodule "modules/email"]
+	path = modules/email
+	url = git://drupalcode.org/project/email.git
+[submodule "modules/link"]
+	path = modules/link
+	url = git://drupalcode.org/project/link.git
+[submodule "modules/ctools"]
+	path = modules/ctools
+	url = git+ssh://git@git.cando-image.com/drupal/modules/ctools.git
+[submodule "modules/geofield"]
+	path = modules/geofield
+	url = git://drupalcode.org/project/geofield.git
+[submodule "libraries/geoPHP"]
+	path = libraries/geoPHP
+	url = https://github.com/phayes/geoPHP.git
+[submodule "modules/libraries"]
+	path = modules/libraries
+	url = git://drupalcode.org/project/libraries.git
+[submodule "modules/references"]
+	path = modules/references
+	url = git+ssh://git@git.cando-image.com/drupal/modules/references.git
+[submodule "drupal"]
+	path = drupal
+	url = git+ssh://git@git.cando-image.com/drupal/drupal.git
+[submodule "modules/admin_menu"]
+	path = modules/admin_menu
+	url = http://git.drupal.org/project/admin_menu.git
+[submodule "modules/search_api"]
+	path = modules/search_api
+	url = git+ssh://git@git.cando-image.com/drupal/modules/search_api.git
+[submodule "modules/strongarm"]
+	path = modules/strongarm
+	url = http://git.drupal.org/project/strongarm.git
+[submodule "modules/search_api_solr"]
+	path = modules/search_api_solr
+	url = git+ssh://git@git.cando-image.com/drupal/modules/search_api_solr.git
+[submodule "modules/memcache"]
+	path = modules/memcache
+	url = http://git.drupal.org/project/memcache.git
+[submodule "modules/entity"]
+	path = modules/entity
+	url = git+ssh://git@git.cando-image.com/drupal/modules/entity.git
+[submodule "modules/devel"]
+	path = modules/devel
+	url = http://git.drupal.org/project/devel.git
+[submodule "modules/facetapi"]
+	path = modules/facetapi
+	url = git://drupalcode.org/project/facetapi.git
+[submodule "modules/panels"]
+	path = modules/panels
+	url = git+ssh://git@git.cando-image.com/drupal/modules/panels.git
+[submodule "modules/advanced_help"]
+	path = modules/advanced_help
+	url = http://git.drupal.org/project/advanced_help.git
+[submodule "libraries/ckeditor"]
+	path = libraries/ckeditor
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/ckeditor.git
+[submodule "modules/wysiwyg"]
+	path = modules/wysiwyg
+	url = http://git.drupal.org/project/wysiwyg.git
+[submodule "modules/cando"]
+	path = modules/cando
+	url = git+ssh://git@git.cando-image.com/drupal/modules/cando.git
+[submodule "modules/title"]
+	path = modules/title
+	url = git+ssh://git@git.cando-image.com/drupal/modules/title.git
+[submodule "libraries/SolrPhpClient"]
+	path = libraries/SolrPhpClient
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/SolrPhpClient.git
+[submodule "modules/admin_language"]
+	path = modules/admin_language
+	url = http://git.drupal.org/project/admin_language.git
+[submodule "modules/i18n"]
+	path = modules/i18n
+	url = git+ssh://git@git.cando-image.com/drupal/modules/i18n.git
+[submodule "modules/metatags_quick"]
+	path = modules/metatags_quick
+	url = http://git.drupal.org/project/metatags_quick.git
+[submodule "modules/variable"]
+	path = modules/variable
+	url = http://git.drupal.org/project/variable.git
+[submodule "modules/views_bulk_operations"]
+	path = modules/views_bulk_operations
+	url = http://git.drupal.org/project/views_bulk_operations.git
+[submodule "modules/pathauto"]
+	path = modules/pathauto
+	url = http://git.drupal.org/project/pathauto.git
+[submodule "modules/redirect"]
+	path = modules/redirect
+	url = http://git.drupal.org/project/redirect.git
+[submodule "themes/omega"]
+	path = themes/omega
+	url = http://git.drupal.org/project/omega.git
+[submodule "modules/omega_tools"]
+	path = modules/omega_tools
+	url = http://git.drupal.org/project/omega_tools.git
+[submodule "modules/media_browser_plus"]
+	path = modules/media_browser_plus
+	url = git+ssh://git@git.cando-image.com/drupal/modules/media_browser_plus.git
+[submodule "modules/multiform"]
+	path = modules/multiform
+	url = http://git.drupal.org/project/multiform.git
+[submodule "modules/search_api_page"]
+	path = modules/search_api_page
+	url = http://git.drupal.org/project/search_api_page.git
+[submodule "modules/menu_attributes"]
+	path = modules/menu_attributes
+	url = http://git.drupal.org/project/menu_attributes.git
+[submodule "modules/entityreference_view_widget"]
+	path = modules/entityreference_view_widget
+	url = http://git.drupal.org/project/entityreference_view_widget.git
+[submodule "modules/entityreference"]
+	path = modules/entityreference
+	url = http://git.drupal.org/project/entityreference.git
+[submodule "modules/field_group"]
+	path = modules/field_group
+	url = http://git.drupal.org/project/field_group.git
+[submodule "modules/entitycache"]
+	path = modules/entitycache
+	url = git+ssh://git@git.cando-image.com/drupal/modules/entitycache.git
+[submodule "modules/search_api_db"]
+	path = modules/search_api_db
+	url = http://git.drupal.org/project/search_api_db.git
+[submodule "modules/special_menu_items"]
+	path = modules/special_menu_items
+	url = http://git.drupal.org/project/special_menu_items.git
+[submodule "libraries/colorbox"]
+	path = libraries/colorbox
+	url = git://github.com/jackmoore/colorbox.git
+[submodule "modules/openlayers"]
+	path = modules/openlayers
+	url = git+ssh://git@git.cando-image.com/drupal/modules/openlayers.git
+[submodule "libraries/jquery.jcarousel"]
+	path = libraries/jquery.jcarousel
+	url = https://github.com/jsor/jcarousel.git
+[submodule "libraries/qtip"]
+	path = libraries/qtip
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/qtip.git
+[submodule "libraries/nivo-slider"]
+	path = libraries/nivo-slider
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/nivo_slider.git
+[submodule "libraries/jquery-timer"]
+	path = libraries/jquery-timer
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/jquery_timer.git
+[submodule "modules/colorbox"]
+	path = modules/colorbox
+	url = git+ssh://git@git.cando-image.com/drupal/modules/colorbox.git
+[submodule "modules/file_entity"]
+	path = modules/file_entity
+	url = git+ssh://git@git.cando-image.com/drupal/modules/file_entity.git
+[submodule "modules/diff"]
+	path = modules/diff
+	url = http://git.drupal.org/project/diff.git
+[submodule "modules/plupload"]
+	path = modules/plupload
+	url = http://git.drupal.org/project/plupload.git
+[submodule "libraries/plupload"]
+	path = libraries/plupload
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/plupload.git
+[submodule "modules/cache_actions"]
+	path = modules/cache_actions
+	url = git+ssh://git@git.cando-image.com/drupal/modules/cache_actions.git
+[submodule "modules/rules"]
+	path = modules/rules
+	url = git+ssh://git@git.cando-image.com/drupal/modules/rules.git
+[submodule "libraries/OpenLayers"]
+	path = libraries/OpenLayers
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/OpenLayers.git
+[submodule "modules/search_api_location"]
+	path = modules/search_api_location
+	url = http://git.drupal.org/project/search_api_location.git
+[submodule "modules/search_api_spatial"]
+	path = modules/search_api_spatial
+	url = git+ssh://git@git.cando-image.com/drupal/modules/search_api_spatial.git
+[submodule "modules/admin_views"]
+	path = modules/admin_views
+	url = http://git.drupal.org/project/admin_views.git
+[submodule "modules/varnish"]
+	path = modules/varnish
+	url = http://git.drupal.org/project/varnish.git
+[submodule "modules/currency"]
+	path = modules/currency
+	url = http://git.drupal.org/project/currency.git
+[submodule "modules/geoip"]
+	path = modules/geoip
+	url = git+ssh://git@git.cando-image.com/drupal/modules/geoip.git
+[submodule "libraries/geoip"]
+	path = libraries/geoip
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/geoip.git
+[submodule "modules/i18n_panels"]
+	path = modules/i18n_panels
+	url = http://git.drupal.org/sandbox/daspeter/1444130.git
+[submodule "modules/field_slideshow"]
+	path = modules/field_slideshow
+	url = http://git.drupal.org/project/field_slideshow.git
+[submodule "libraries/jquery.cycle"]
+	path = libraries/jquery.cycle
+	url = https://github.com/malsup/cycle
+[submodule "modules/mailsystem"]
+	path = modules/mailsystem
+	url = http://git.drupal.org/project/mailsystem.git
+[submodule "modules/mimemail"]
+	path = modules/mimemail
+	url = http://git.drupal.org/project/mimemail.git
+[submodule "modules/facetapi_taxonomy_sort"]
+	path = modules/facetapi_taxonomy_sort
+	url = http://git.drupal.org/project/facetapi_taxonomy_sort.git
+[submodule "modules/facetapi_i18n"]
+	path = modules/facetapi_i18n
+	url = http://git.drupal.org/project/facetapi_i18n.git
+[submodule "modules/google_analytics"]
+	path = modules/google_analytics
+	url = http://git.drupal.org/project/google_analytics.git
+[submodule "modules/fb_social"]
+	path = modules/fb_social
+	url = http://git.drupal.org/project/fb_social.git
+[submodule "libraries/jquery-orbit"]
+	path = libraries/jquery-orbit
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/jquery-orbit.git
+[submodule "libraries/jquery-animate-enhanced"]
+	path = libraries/jquery-animate-enhanced
+	url = https://github.com/benbarnett/jQuery-Animate-Enhanced.git
+[submodule "libraries/chosenjs"]
+	path = libraries/chosenjs
+	url = https://github.com/harvesthq/chosen.git
+[submodule "modules/search_api_et"]
+	path = modules/search_api_et
+	url = http://git.drupal.org/project/search_api_et.git
+[submodule "libraries/qtip2"]
+	path = libraries/qtip2
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/qtip2.git
+[submodule "libraries/jquery-ui-touch"]
+	path = libraries/jquery-ui-touch
+	url = git+ssh://git@git.cando-image.com/drupal/libraries/jquery-ui-touch.git
+[submodule "modules/xmlsitemap"]
+	path = modules/xmlsitemap
+	url = http://git.drupal.org/project/xmlsitemap.git
