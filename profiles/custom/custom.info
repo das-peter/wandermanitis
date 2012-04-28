@@ -1,0 +1,89 @@
+name = Custom
+description = Wandermanitis installation profile
+package = Drupal Wandermanitis
+core = 7.x
+files[] = custom.profile
+
+; Core
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+;dependencies[] = search ;Disabled in favor if search api
+dependencies[] = shortcut
+dependencies[] = toolbar
+;dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+;dependencies[] = contact
+
+; Contrib
+dependencies[] = admin_language
+dependencies[] = admin_menu
+dependencies[] = advanced_help
+dependencies[] = date
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entitycache
+dependencies[] = entity_translation
+dependencies[] = title
+dependencies[] = features
+dependencies[] = geofield
+dependencies[] = i18n_field
+dependencies[] = i18n_menu
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = media
+dependencies[] = multiform
+dependencies[] = memcache
+dependencies[] = metatags_quick
+dependencies[] = pathauto
+dependencies[] = redirect
+dependencies[] = references
+dependencies[] = search_api
+dependencies[] = search_api_page
+dependencies[] = search_api_views
+dependencies[] = search_api_solr
+dependencies[] = search_api_et
+dependencies[] = facetapi
+dependencies[] = facetapi_taxonomy_sort
+dependencies[] = special_menu_items
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = features
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+dependencies[] = plupload
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_i18n
+dependencies[] = xmlsitemap_node
+dependencies[] = xmlsitemap_menu
+
+
+dependencies[] = panels
+;dependencies[] = panels_mini
+dependencies[] = page_manager
+dependencies[] = views_content
+;dependencies[] = stylizer
+;dependencies[] = ctools_custom_content
+;dependencies[] = bulk_export
+;dependencies[] = panels_node
+
+dependencies[] = fb_social
+
+dependencies[] = wandermanitis

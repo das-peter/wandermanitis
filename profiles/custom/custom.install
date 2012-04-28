@@ -1,0 +1,167 @@
+<?php
+
+// Include standard installation script
+require DRUPAL_ROOT . '/profiles/standard/standard.install';
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ */
+function custom_install() {
+
+  standard_install();
+
+  // Enable and set default theme
+//  theme_enable(array('basel_theme'));
+//  variable_set('theme_default', 'basel_theme');
+
+  // Delete page node_type created by standard install
+//  node_type_delete('page');
+//  node_type_delete('article');
+
+  // Set memcache settings into settings file.
+  settings_file_setup();
+
+  custom_locale_setup();
+
+  // Enable media_browser_plus here - otherwise it collides with the standard
+  // installation.
+  module_enable(array('media_browser_plus'));
+
+  // Disable some blocks
+  db_update('block')
+    ->fields(array('status' => 0))
+    ->condition('delta', 'powered-by')
+    ->condition('module', 'system')
+    ->execute();
+}
+/**
+ * Insert settings into settings.php
+ *
+ * Memcache
+ * Session handling
+ */
+function settings_file_setup() {
+
+  $settings_file = DRUPAL_ROOT . '/' . conf_path() . '/settings.php';
+  $settings = file_get_contents($settings_file);
+
+  // Key is the value checked for before writting it.
+  $add_settings = array(
+    "conf['cache_default_class']" => "\$conf['cache_default_class'] = 'MemCacheDrupal';\n",
+    "conf['cache_backends'][]" => "\$conf['cache_backends'][] = 'sites/all/modules/memcache/memcache.inc';\n",
+    "conf['memcache_key_prefix']" => $memcache_prefix = "\$conf['memcache_key_prefix'] = '" . preg_replace('/[^a-z0-9_]/i', '_', variable_get('site_name', NULL) . '_' . rand(1, 100)) . "';\n",
+    "conf['memcache_stampede_protection']" => "\$conf['memcache_stampede_protection'] = TRUE;\n",
+    "conf['lock_inc']" => "\$conf['lock_inc'] = 'sites/all/modules/memcache/memcache-lock.inc';\n",
+    //"session_set_cookie_params" => "session_set_cookie_params(0, '/', '.' . \$_SERVER['HTTP_HOST'], FALSE, TRUE);\n",
+    "conf['https']" => "\$conf['https'] = TRUE;\n",
+  );
+
+  if (is_writable($settings_file)) {
+    $fh = @fopen($settings_file, 'a');
+    foreach ($add_settings as $add_setting_check => $add_setting) {
+      if(!strpos($settings, $add_setting_check)) {
+        fwrite($fh, $add_setting);
+      }
+    }
+    fclose($fh);
+  }
+  else {
+    drupal_set_message("Could not append additional config to settings.php", 'warning');
+  }
+}
+
+function custom_locale_setup() {
+  module_invoke('locale', 'init');
+
+  // Languages
+  $languages = array('en', 'en-gb', 'de', 'fr', 'it', 'es');
+  $installedLanguages = language_list();
+  foreach ($languages as $weight => $langcode) {
+    $prefix = $langcode;
+    $default = FALSE;
+    $name = NULL;
+    $enabled = TRUE;
+    if ($langcode == 'en') {
+      $prefix = 'en-adm';
+      $name = 'System English';
+      $enabled = FALSE;
+    }
+    if ($langcode == 'en-gb') {
+      $prefix = 'en';
+      $name = 'English';
+      $default = TRUE;
+    }
+
+    if (!isset($installedLanguages[$langcode])) {
+      locale_add_language($langcode, $name, $name, LANGUAGE_LTR, '', $prefix, $enabled, $default);
+      continue;
+    }
+    $fields = array(
+      'weight' => $weight,
+      'prefix' => $prefix,
+    );
+    if ($name) {
+      $fields['name'] = $name;
+      $fields['native'] = $name;
+      $installedLanguages[$langcode]->name = $name;
+      $installedLanguages[$langcode]->native = $name;
+    }
+    db_update('languages')
+      ->fields($fields)
+      ->condition('language', $langcode)
+      ->execute();
+    $installedLanguages[$langcode]->prefix = $prefix;
+  }
+
+  custom_import_translations();
+}
+
+/**
+* Installs all po files located in the profile.
+* @link http://localize.drupal.org/
+*/
+function custom_import_translations() {
+  global $user;
+  // Interface Translation import.
+  // Can be done manually here: admin/config/regional/translate/import
+  $dirItr = new DirectoryIterator(dirname(__FILE__) . '/translations');
+  foreach ($dirItr as $item){
+    $source_file = $item->getPathname();
+    $matches = array();
+    if ($item->isDir() || $item->isDot() || !preg_match('/\.(\w{2})\.po$/', $source_file, $matches)){
+      continue;
+    }
+    $langcode = $matches[1];
+
+    // Create necessary file object
+    $file = new stdClass();
+    $file->uid      = $user->uid;
+    $file->status   = 0;
+    $file->filename = trim(basename($source_file), '.');
+    $file->uri      = $source_file;
+    $file->filemime = file_get_mimetype($file->filename);
+    $file->filesize = filesize($source_file);
+
+    // Now import strings into the language
+    if ($return = _locale_import_po($file, $langcode, LOCALE_IMPORT_OVERWRITE, 'default') == FALSE) {
+      $variables = array('%filename' => $file->filename);
+      drupal_set_message(t('The translation import of %filename failed.', $variables), 'error');
+      watchdog('locale', 'The translation import of %filename failed.', $variables, WATCHDOG_ERROR);
+    }
+  }
+  return TRUE;
+}
+
+/**
+ * Create basic menu structure.
+ */
+function custom_menu_setup() {
+}
+
+/**
+ * Overwrite default theme setup
+ */
+function custom_theme_setup() {
+}

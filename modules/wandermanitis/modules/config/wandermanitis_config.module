@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Wandermanitis Config feature.
+ */
+
+include_once 'wandermanitis_config.features.inc';
