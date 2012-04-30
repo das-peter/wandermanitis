@@ -52,7 +52,7 @@ function wandermanitis_panels_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'threecol_25_50_25_stacked';
+  $display->layout = 'omega_16_threecol_5_6_5_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -147,7 +147,7 @@ function wandermanitis_panels_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'threecol_25_50_25_stacked';
+  $display->layout = 'omega_16_threecol_5_6_5_stacked';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
