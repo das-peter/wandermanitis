@@ -81,13 +81,14 @@ dependencies[] = xmlsitemap_menu
 
 
 dependencies[] = panels
-;dependencies[] = panels_mini
+dependencies[] = panels_mini
 dependencies[] = page_manager
 dependencies[] = views_content
 ;dependencies[] = stylizer
-;dependencies[] = ctools_custom_content
+dependencies[] = ctools_custom_content
 ;dependencies[] = bulk_export
 ;dependencies[] = panels_node
+dependencies[] = diff
 
 dependencies[] = fb_social
 
