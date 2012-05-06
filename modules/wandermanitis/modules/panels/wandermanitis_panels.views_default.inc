@@ -232,7 +232,7 @@ function wandermanitis_panels_views_default_views() {
   $handler->display->display_options['fields']['title']['hide_empty'] = 0;
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Sort criterion: Inhalt: Dates (field_hike_dates) */
+  /* Sort criterion: Content: Dates (field_hike_dates) */
   $handler->display->display_options['sorts']['field_hike_dates_value']['id'] = 'field_hike_dates_value';
   $handler->display->display_options['sorts']['field_hike_dates_value']['table'] = 'field_data_field_hike_dates';
   $handler->display->display_options['sorts']['field_hike_dates_value']['field'] = 'field_hike_dates_value';
@@ -289,6 +289,7 @@ function wandermanitis_panels_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'jcarousel';
   $handler->display->display_options['style_options']['wrap'] = 'circular';
+  $handler->display->display_options['style_options']['skin'] = 'wantermanitis_frontpage';
   $handler->display->display_options['style_options']['visible'] = '1';
   $handler->display->display_options['style_options']['scroll'] = '1';
   $handler->display->display_options['style_options']['auto'] = '5';
@@ -321,7 +322,7 @@ function wandermanitis_panels_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Inhalt: Media */
+  /* Field: Content: Media */
   $handler->display->display_options['fields']['field_media']['id'] = 'field_media';
   $handler->display->display_options['fields']['field_media']['table'] = 'field_data_field_media';
   $handler->display->display_options['fields']['field_media']['field'] = 'field_media';

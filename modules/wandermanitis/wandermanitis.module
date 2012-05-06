@@ -12,3 +12,17 @@ function wandermanitis_init() {
     }
   }
 }
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function wandermanitis_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['wantermanitis_frontpage'] = array(
+    'title' => t('Wandermanitis: Frontpage'),
+    'file' => 'theme/jcarousel_frontpage/jcarousel-frontpage.css',
+  );
+
+  return $skins;
+}
