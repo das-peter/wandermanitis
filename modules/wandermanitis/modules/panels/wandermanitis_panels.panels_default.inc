@@ -146,6 +146,32 @@ function wandermanitis_panels_default_panels_mini() {
     $display->content['new-d6cc153d-45dd-6f84-5d8e-f02c5edddbda'] = $pane;
     $display->panels['middle'][1] = 'new-d6cc153d-45dd-6f84-5d8e-f02c5edddbda';
     $pane = new stdClass();
+    $pane->pid = 'new-8b9b6068-aae3-28f4-fd59-3969025423b8';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'teaser-panel_teasers_home';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'front',
+          'settings' => NULL,
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->uuid = '8b9b6068-aae3-28f4-fd59-3969025423b8';
+    $display->content['new-8b9b6068-aae3-28f4-fd59-3969025423b8'] = $pane;
+    $display->panels['middle'][2] = 'new-8b9b6068-aae3-28f4-fd59-3969025423b8';
+    $pane = new stdClass();
     $pane->pid = 'new-a529b620-da05-5cd4-31bd-ef9ff1917ea7';
     $pane->panel = 'right';
     $pane->type = 'block';
