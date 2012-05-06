@@ -253,3 +253,6 @@
 [submodule "modules/xmlsitemap"]
 	path = modules/xmlsitemap
 	url = http://git.drupal.org/project/xmlsitemap.git
+[submodule "modules/jcarousel"]
+	path = modules/jcarousel
+	url = http://git.drupal.org/project/jcarousel.git
