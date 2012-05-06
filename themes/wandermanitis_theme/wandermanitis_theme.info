@@ -82,3 +82,6 @@ settings[alpha_region_content_suffix] = ''
 settings[alpha_region_content_weight] = '2'
 settings[alpha_region_content_css] = ''
 version = '1.x'
+
+; PLUGINS
+plugins[panels][layouts] = panels/layouts

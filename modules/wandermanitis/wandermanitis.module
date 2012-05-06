@@ -26,3 +26,11 @@ function wandermanitis_jcarousel_skin_info() {
 
   return $skins;
 }
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function wandermanitis_field_formatter_info_alter(&$info) {
+  $info['colorbox']['field types'][] = 'file';
+  $info['slideshow']['field types'][] = 'file';
+}

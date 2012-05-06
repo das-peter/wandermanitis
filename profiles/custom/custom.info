@@ -91,5 +91,8 @@ dependencies[] = ctools_custom_content
 dependencies[] = diff
 
 dependencies[] = fb_social
+dependencies[] = colorbox
+dependencies[] = jcarousel
+dependencies[] = field_slideshow
 
 dependencies[] = wandermanitis
