@@ -105,7 +105,8 @@ function wandermanitis_config_user_default_permissions() {
   $permissions['access media backend'] = array(
     'name' => 'access media backend',
     'roles' => array(
-      0 => 'moderator',
+      0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'media_browser_plus',
   );
@@ -231,24 +232,6 @@ function wandermanitis_config_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: administer file folders
-  $permissions['administer file folders'] = array(
-    'name' => 'administer file folders',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
-  // Exported permission: administer file types
-  $permissions['administer file types'] = array(
-    'name' => 'administer file types',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: administer files
@@ -488,15 +471,6 @@ function wandermanitis_config_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: bypass file access
-  $permissions['bypass file access'] = array(
-    'name' => 'bypass file access',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'file_entity',
-  );
-
   // Exported permission: bypass node access
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
@@ -533,16 +507,6 @@ function wandermanitis_config_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: create files
-  $permissions['create files'] = array(
-    'name' => 'create files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: create hike content
@@ -591,16 +555,6 @@ function wandermanitis_config_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete any files
-  $permissions['delete any files'] = array(
-    'name' => 'delete any files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
-  );
-
   // Exported permission: delete any hike content
   $permissions['delete any hike content'] = array(
     'name' => 'delete any hike content',
@@ -626,16 +580,6 @@ function wandermanitis_config_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: delete own files
-  $permissions['delete own files'] = array(
-    'name' => 'delete own files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: delete own hike content
@@ -739,15 +683,6 @@ function wandermanitis_config_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: download files
-  $permissions['download files'] = array(
-    'name' => 'download files',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
   // Exported permission: edit any article content
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -755,16 +690,6 @@ function wandermanitis_config_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: edit any files
-  $permissions['edit any files'] = array(
-    'name' => 'edit any files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: edit any hike content
@@ -812,16 +737,6 @@ function wandermanitis_config_user_default_permissions() {
       1 => 'moderator',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: edit own files
-  $permissions['edit own files'] = array(
-    'name' => 'edit own files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: edit own hike content
@@ -906,33 +821,6 @@ function wandermanitis_config_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: file grid view
-  $permissions['file grid view'] = array(
-    'name' => 'file grid view',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
-  // Exported permission: file list view
-  $permissions['file list view'] = array(
-    'name' => 'file list view',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
-  // Exported permission: filter files
-  $permissions['filter files'] = array(
-    'name' => 'filter files',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
   // Exported permission: flush caches
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -978,15 +866,6 @@ function wandermanitis_config_user_default_permissions() {
       2 => 'moderator',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: preview files
-  $permissions['preview files'] = array(
-    'name' => 'preview files',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
   );
 
   // Exported permission: revert revisions
@@ -1122,15 +1001,6 @@ function wandermanitis_config_user_default_permissions() {
     'module' => 'entity_translation',
   );
 
-  // Exported permission: upload files
-  $permissions['upload files'] = array(
-    'name' => 'upload files',
-    'roles' => array(
-      0 => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
   // Exported permission: use all enabled languages
   $permissions['use all enabled languages'] = array(
     'name' => 'use all enabled languages',
@@ -1244,28 +1114,6 @@ function wandermanitis_config_user_default_permissions() {
       1 => 'moderator',
     ),
     'module' => 'date_repeat_field',
-  );
-
-  // Exported permission: view files
-  $permissions['view files'] = array(
-    'name' => 'view files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'anonymous user',
-      2 => 'authenticated user',
-      3 => 'moderator',
-    ),
-    'module' => 'file_entity',
-  );
-
-  // Exported permission: view own private files
-  $permissions['view own private files'] = array(
-    'name' => 'view own private files',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'file_entity',
   );
 
   // Exported permission: view own unpublished content
