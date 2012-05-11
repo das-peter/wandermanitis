@@ -9,6 +9,10 @@
  */
 function wanderitis_config_ctools_plugin_api() {
   list($module, $api) = func_get_args();
+  if ($module == "file_entity" && $api == "file_default_displays") {
+    return array("version" => "1");
+  }
+  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -34,8 +38,8 @@ function wanderitis_config_image_default_styles() {
         'module' => 'cando',
         'name' => 'image_smart_scale_and_crop',
         'data' => array(
-          'width' => '600',
-          'height' => '300',
+          'width' => '800',
+          'height' => '400',
           'upscale' => 0,
           'anchor' => 'center-center',
         ),

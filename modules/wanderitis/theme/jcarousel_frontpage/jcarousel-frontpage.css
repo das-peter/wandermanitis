@@ -10,29 +10,30 @@
 
 .jcarousel-skin-wantermanitis_frontpage {
   text-align: center;
+  width: 800px;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-container-horizontal {
-  width: 440px;
+  width: 800px;
   height: 400px;
-  padding: 20px 40px;
-  margin: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-container-vertical {
-  width: 102px;
+  width: 800px;
   height: 440px;
   padding: 40px 20px;
   margin: auto;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-clip-horizontal {
-  width: 440px;
+  width: 800px;
   overflow: hidden;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-clip-vertical {
-  height: 440px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -41,13 +42,13 @@
   width: 100px;
   height: 400px;
   overflow: hidden;
-  border: 1px solid #CCC;
+  /*border: 1px solid #CCC;*/
   list-style: none;
-  background: #fff none;
+  /*background: #fff none;*/
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-item-horizontal {
-  margin: 0 4px;
+  margin: 0px;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-item-vertical {
@@ -64,7 +65,7 @@
  */
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-next,
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-prev {
-  display: block;
+  display: none;
   width: 32px;
   height: 32px;
   background-image: url(arrows.png);
@@ -140,13 +141,21 @@
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-navigation li {
   display: inline;
-  margin: 0 2px 0 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   background: none;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-navigation li.active a {
   font-weight: bold;
   text-decoration: none;
+}
+
+.views-field-title {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  margin-left: 5px;
+  text-align: left;
 }
 

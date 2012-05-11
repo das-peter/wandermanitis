@@ -34,3 +34,12 @@ function wanderitis_field_formatter_info_alter(&$info) {
   $info['colorbox']['field types'][] = 'file';
   $info['slideshow']['field types'][] = 'file';
 }
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * Add view modes to the file entity type, appropriate for displaying media.
+ */
+function wanderitis_entity_info_alter(&$entity_info) {
+  $entity_info['file']['view modes']['wanderitis_header'] = array('label' => t('Wanderitis: Header'), 'custom settings' => TRUE);
+}

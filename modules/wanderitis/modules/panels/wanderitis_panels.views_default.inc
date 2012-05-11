@@ -253,6 +253,16 @@ function wanderitis_panels_views_default_views() {
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['next_hikes'] = array(
     t('Master'),
     t('more'),
@@ -348,7 +358,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['field_media']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_media']['type'] = 'file_rendered';
   $handler->display->display_options['fields']['field_media']['settings'] = array(
-    'file_view_mode' => 'media_large',
+    'file_view_mode' => 'wanderitis_header',
   );
   $handler->display->display_options['fields']['field_media']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_media']['delta_limit'] = '1';
