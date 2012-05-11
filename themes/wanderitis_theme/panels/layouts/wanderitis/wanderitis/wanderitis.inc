@@ -11,7 +11,8 @@ function wanderitis_theme_wanderitis_panels_layouts() {
     'theme' => 'wanderitis',
     'admin css' => '../omega_panels_admin_16.css',
     'regions' => array(
-      'top' => t('Top'),
+      'top_left' => t('Top left'),
+      'top' => t('Top middle'),
       'left' => t('Left side'),
       'middle' => t('Middle column'),
       'right' => t('Right side'),

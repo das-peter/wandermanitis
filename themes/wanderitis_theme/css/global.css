@@ -1,26 +1,78 @@
 /* This file will hold the main styles for your website. */
 
 div.container-16 {
-    margin-left: 1%;
-    margin-right: 1%;
-    width: 98%;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 98%;
 }
 
-
-#page {
-    background-color: #A29583;
-    color: #FFFFFF;
-    font-family: Verdana, sans-serif;
+html, #page {
+  background-color: #A29583;
+  color: #FFFFFF;
+  font-family: Verdana, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
 }
 
 h2 {
-    font-size: 18px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
 }
 
 a, a:active, a:link, a:hover, a:visited {
-    color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+div.header {
+  padding-bottom: 5px;
+}
+
+div.header .top {
+  text-align: left;
+}
+
+
+ul.facetapi-facetapi-checkbox-links li {
+  list-style: none;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.facetapi-facetapi-checkbox-links li a,
+ul.facetapi-facetapi-checkbox-links li a:visited,
+ul.facetapi-facetapi-checkbox-links li a:link,
+ul.facetapi-facetapi-checkbox-links li a:active {
+  text-decoration: none;
+}
+
+.hike-search-result {
+  padding-bottom: 10px;
+}
+
+.hike-search-result .field-slideshow-wrapper {
+  float: left;
+  margin-right: 10px;
+  height: 100px;
+}
+
+#hike .pane-node-body {
+  padding-top: 10px;
+}
+
+#hike .pane-node-field-media .field-item {
+  float: left;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+#hike .pane-node-field-media .field-item:after {
+  clear: both;
 }
