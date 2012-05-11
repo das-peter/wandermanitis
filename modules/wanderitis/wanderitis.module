@@ -1,0 +1,36 @@
+<?php
+
+  /**
+   * Implements hook_init().
+   */
+function wanderitis_init() {
+  if (drupal_is_front_page() && !drupal_is_cli()) {
+    // Redirect to path with language prefix if necessary.
+    if (!(url('<front>') == '/' . request_path())) {
+      drupal_add_http_header('Cache-Control', 'no-cache, must-revalidate, post-check=0, pre-check=0');
+      drupal_goto('<front>', array(), 301);
+    }
+  }
+}
+
+/**
+ * Implements hook_jcarousel_skin_info().
+ */
+function wanderitis_jcarousel_skin_info() {
+  $skins = array();
+
+  $skins['wantermanitis_frontpage'] = array(
+    'title' => t('wanderitis: Frontpage'),
+    'file' => 'theme/jcarousel_frontpage/jcarousel-frontpage.css',
+  );
+
+  return $skins;
+}
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function wanderitis_field_formatter_info_alter(&$info) {
+  $info['colorbox']['field types'][] = 'file';
+  $info['slideshow']['field types'][] = 'file';
+}

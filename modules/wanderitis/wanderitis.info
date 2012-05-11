@@ -1,0 +1,9 @@
+name = wanderitis
+description = Base Module for wanderitis.
+core = 7.x
+files[] = wanderitis.module
+files[] = wanderitis.install
+
+
+dependencies[] = wanderitis_config
+dependencies[] = wanderitis_structure

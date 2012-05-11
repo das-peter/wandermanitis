@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the wanderitis Panels feature.
+ */
+
+include_once 'wanderitis_panels.features.inc';
