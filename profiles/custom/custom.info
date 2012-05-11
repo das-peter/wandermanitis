@@ -1,6 +1,6 @@
 name = Custom
-description = Wandermanitis installation profile
-package = Drupal Wandermanitis
+description = Wanderitis installation profile
+package = Drupal Wanderitis
 core = 7.x
 files[] = custom.profile
 
@@ -95,4 +95,6 @@ dependencies[] = colorbox
 dependencies[] = jcarousel
 dependencies[] = field_slideshow
 
-dependencies[] = wandermanitis
+dependencies[] = cando
+
+dependencies[] = wanderitis

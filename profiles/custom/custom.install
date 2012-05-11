@@ -13,8 +13,8 @@ function custom_install() {
   standard_install();
 
   // Enable and set default theme
-  theme_enable(array('wandermanitis_theme'));
-  variable_set('theme_default', 'wandermanitis_theme');
+  theme_enable(array('wanderitis_theme'));
+  variable_set('theme_default', 'wanderitis_theme');
 
   // Delete page node_type created by standard install
 //  node_type_delete('page');

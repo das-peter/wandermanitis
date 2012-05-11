@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Wandermanitis Structure feature.
- */
-
-include_once 'wandermanitis_structure.features.inc';

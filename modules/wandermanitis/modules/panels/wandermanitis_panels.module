@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Wandermanitis Panels feature.
- */
-
-include_once 'wandermanitis_panels.features.inc';
