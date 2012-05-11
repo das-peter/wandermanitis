@@ -429,7 +429,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
+      'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
@@ -457,7 +457,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
+      'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
@@ -485,7 +485,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
+      'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
@@ -575,7 +575,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'title',
-      'formatter' => 'taxonomy_term_reference_link',
+      'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
