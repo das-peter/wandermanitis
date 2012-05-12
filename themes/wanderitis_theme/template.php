@@ -10,3 +10,9 @@
  * for your subtheme grows. Please read the README.txt in the /preprocess and /process subfolders
  * for more information on this topic.
  */
+
+function wanderitis_theme_links__locale_block ($vars) {
+  // Remove entry for system english.
+  unset($vars['links']['en']);
+  return '<span class="language-switcher-title">' . t('Languages') . ':</span> ' . theme('links', $vars);
+}

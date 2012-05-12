@@ -26,7 +26,7 @@ dependencies[] = toolbar
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
-;dependencies[] = contact
+dependencies[] = contact
 
 ; Contrib
 dependencies[] = admin_language
@@ -96,5 +96,6 @@ dependencies[] = jcarousel
 dependencies[] = field_slideshow
 
 dependencies[] = cando
+dependencies[] = cando_ctools
 
 dependencies[] = wanderitis

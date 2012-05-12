@@ -117,3 +117,15 @@ ul.facetapi-facetapi-checkbox-links li a:active {
 .language-switcher-locale-url {
   font-size: 9px;
 }
+
+
+/* Language Dropdown */
+ul.language-switcher-locale-url li {
+  display: none;
+}
+ul.language-switcher-locale-url li.active {
+  display: block;
+}
+ul.language-switcher-locale-url:hover li {
+  display: block;
+}
