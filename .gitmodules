@@ -256,3 +256,6 @@
 [submodule "modules/jcarousel"]
 	path = modules/jcarousel
 	url = http://git.drupal.org/project/jcarousel.git
+[submodule "modules/geophp"]
+	path = modules/geophp
+	url = http://git.drupal.org/project/geophp.git
