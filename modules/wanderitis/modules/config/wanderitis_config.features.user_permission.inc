@@ -276,6 +276,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'menu',
   );
@@ -303,6 +304,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -505,6 +507,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'create article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -523,6 +526,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'create page content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -551,6 +555,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'delete any article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -569,6 +574,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'delete any page content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -578,6 +584,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -596,6 +603,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'delete own page content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -679,6 +687,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'display drupal links',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'admin_menu',
   );
@@ -688,6 +697,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -706,6 +716,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'edit any page content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -725,6 +736,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'edit own article content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -753,6 +765,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'edit own page content',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'node',
   );
@@ -940,6 +953,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate comment entities',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -949,6 +963,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate file entities',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -968,6 +983,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate metatags_path_based entities',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -997,6 +1013,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate user entities',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
