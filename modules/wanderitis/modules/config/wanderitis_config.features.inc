@@ -42,7 +42,7 @@ function wanderitis_config_image_default_styles() {
         'module' => 'cando',
         'name' => 'image_smart_scale_and_crop',
         'data' => array(
-          'width' => '800',
+          'width' => '1200',
           'height' => '400',
           'upscale' => 0,
           'anchor' => 'center-center',
