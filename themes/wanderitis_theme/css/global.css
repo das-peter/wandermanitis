@@ -1,9 +1,17 @@
 /* This file will hold the main styles for your website. */
 
 div.container-16 {
-  margin-left: 1%;
-  margin-right: 1%;
-  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1224px;
+}
+
+div.container-16 .grid-16.top {
+  margin: 0px;
+}
+
+div.container-16 .grid4 {
+  margin: 0px;
 }
 
 html, #page {
@@ -210,4 +218,17 @@ div.header-float {
 .pane-system-main-menu ul.menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
 }
 .pane-system-main-menu ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+}
+
+.panel-panel.middle {
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.panel-panel.middle .inside {
+  padding: 5px;
+}
+
+.panel-panel.middle * {
+  color: rgba(0, 0, 0, 0.76);
 }
