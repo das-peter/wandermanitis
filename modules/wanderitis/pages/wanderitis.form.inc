@@ -61,13 +61,40 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
     '#title' => t('Number of adults'),
     '#options' => $number_options,
     '#required' => TRUE,
+    '#ajax' => array(
+      'callback' => 'wanderitis_hike_subscription_form_ajax',
+      'wrapper' => 'price-field',
+      'method' => 'replace',
+    ),
   );
   $form['numbers']['children'] = array(
     '#type' => 'select',
     '#title' => t('Number of children'),
     '#options' => array(0 => '- ' . t('None') . ' -') + $number_options,
+    '#ajax' => array(
+      'callback' => 'wanderitis_hike_subscription_form_ajax',
+      'wrapper' => 'price-field',
+      'method' => 'replace',
+    ),
   );
 
+  $price_markup = NULL;
+  if (!empty($node) && (isset($form_state['values']['adults']) || isset($form_state['values']['children']))) {
+    $adults = (int) $form_state['values']['adults'];
+    $children = (int) $form_state['values']['children'];
+    $price_adult = field_view_field('node', $node, 'field_price_adult', array('type' => 'number_unformatted'));
+    $price_adult = drupal_render_children($price_adult);
+    $price_children = field_view_field('node', $node, 'field_price_child', array('type' => 'number_unformatted'));
+    $price_children = drupal_render_children($price_children);
+    $price_markup = ($price_adult * $adults) + ($price_children * $children) . ' CHF';
+  }
+  $form['numbers']['price'] = array(
+    '#type' => 'item',
+    '#title' => ($price_markup) ? t('Price') : NULL,
+    '#markup' => $price_markup,
+    '#prefix' => '<div class="price-field" id="price-field">',
+    '#suffix' => '</div>',
+  );
   $form['actions']['send'] = array(
     '#type' => 'submit',
     '#value' => t('Send'),
@@ -109,4 +136,8 @@ function wanderitis_hike_subscription_form_validate($form, &$form_state) {
 function wanderitis_hike_subscription_form_submit($form, &$form_state) {
   // Redirect to the confirmation page.
   $form_state['redirect'] = 'hike-subscribe/' . $form_state['values']['node']->nid . '/submitted';
+}
+
+function wanderitis_hike_subscription_form_ajax($form, $form_state) {
+  return $form['numbers']['price'];
 }
