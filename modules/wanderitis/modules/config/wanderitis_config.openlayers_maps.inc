@@ -29,7 +29,7 @@ function wanderitis_config_openlayers_maps() {
         'zoom' => '12',
       ),
       'restrict' => array(
-        'restrictextent' => 1,
+        'restrictextent' => 0,
         'restrictedExtent' => '',
       ),
     ),
@@ -43,6 +43,11 @@ function wanderitis_config_openlayers_maps() {
         'allow_edit' => 1,
       ),
       'openlayers_behavior_keyboarddefaults' => array(),
+      'openlayers_behavior_layerswitcher' => array(
+        'ascending' => 1,
+        'roundedCorner' => 1,
+        'roundedCornerColor' => '#222222',
+      ),
       'openlayers_behavior_navigation' => array(
         'zoomWheelEnabled' => 0,
         'zoomBoxEnabled' => 1,
