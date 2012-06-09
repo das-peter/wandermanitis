@@ -1004,7 +1004,7 @@ function wanderitis_structure_field_default_fields() {
         'module' => 'geofield',
         'settings' => array(
           'data_storage' => 'collection',
-          'openlayers_map' => 'geofield_widget_map',
+          'openlayers_map' => 'wanderitis_geofield_widget_map',
         ),
         'type' => 'geofield_openlayers',
         'weight' => '47',
@@ -1270,7 +1270,10 @@ function wanderitis_structure_field_default_fields() {
       'widget' => array(
         'active' => 1,
         'module' => 'geofield',
-        'settings' => array(),
+        'settings' => array(
+          'data_storage' => 'collection',
+          'openlayers_map' => 'wanderitis_geofield_widget_map',
+        ),
         'type' => 'geofield_openlayers',
         'weight' => '45',
       ),
