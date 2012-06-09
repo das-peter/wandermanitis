@@ -9,11 +9,13 @@
 ?>
 
 <div class="panel-display omega-grid omega-16-threecol-2-10-4" <?php if (!empty($css_id)) { print "id=\"$css_id\""; } ?>>
-  <div class="panel-panel grid-16 header">
-    <div class="panel-panel grid-2 top-left">
+  <div class="panel-panel grid-16 header-float">
+    <div class="panel-panel grid-16 top-left">
       <div class="inside"><?php print $content['top_left']; ?></div>
     </div>
-    <div class="panel-panel grid-14 top">
+  </div>
+  <div class="panel-panel grid-16 header">
+    <div class="panel-panel grid-16 top">
       <div class="inside"><?php print $content['top']; ?></div>
     </div>
   </div>

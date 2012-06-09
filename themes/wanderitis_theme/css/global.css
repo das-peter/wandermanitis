@@ -114,12 +114,22 @@ ul.facetapi-facetapi-checkbox-links li a:active {
 }
 
 
+/* Logo */
+.pane-page-logo {
+  float: right;
+}
+
+/* Language Dropdown */
+.pane-locale-language {
+  float: left;
+  background-color: #A29583;
+  height: 32px;
+}
+
 .language-switcher-locale-url {
   font-size: 9px;
 }
 
-
-/* Language Dropdown */
 ul.language-switcher-locale-url li {
   display: none;
 }
@@ -128,4 +138,76 @@ ul.language-switcher-locale-url li.active {
 }
 ul.language-switcher-locale-url:hover li {
   display: block;
+}
+
+
+div.header-float {
+  position: relative;
+  top: 25px;
+  left: 0px;
+  z-index: 90;
+  height: 0px;
+}
+
+ /* Menu */
+.pane-menu {
+  float: left;
+  text-transform: uppercase;
+  height: 30px;
+}
+
+.pane-system-main-menu ul.menu,
+.pane-system-main-menu ul.menu li {
+  list-style: none;
+  list-style-image: none;
+  font-weight: bold;
+  background-color: #A29583;
+}
+
+.pane-system-main-menu ul.menu li.expanded {
+  list-style: circle;
+  list-style-image: url("../../../../../misc/menu-expanded.png");
+}
+
+.pane-system-main-menu ul.menu{
+  margin-bottom:10px;
+  /* Clear floats */
+  float:left;
+  width:100%;
+}
+
+.pane-system-main-menu ul.menu li{
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+.pane-system-main-menu ul.menu a{
+  display:block;
+  padding:5px;
+  color:#fff;
+}
+.pane-system-main-menu ul.menu a:hover{
+}
+
+/*--- DROPDOWN ---*/
+.pane-system-main-menu ul.menu ul{
+  list-style:none;
+  position:absolute;
+  left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.pane-system-main-menu ul.menu ul li{
+  padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  float:none;
+}
+.pane-system-main-menu ul.menu ul a{
+  white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+.pane-system-main-menu ul.menu li:hover ul{ /* Display the dropdown on hover */
+  left:0; /* Bring back on-screen when needed */
+}
+.pane-system-main-menu ul.menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+}
+.pane-system-main-menu ul.menu li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+}
+.pane-system-main-menu ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
 }
