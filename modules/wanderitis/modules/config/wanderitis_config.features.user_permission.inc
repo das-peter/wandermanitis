@@ -141,6 +141,16 @@ function wanderitis_config_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: access site-wide contact form
+  $permissions['access site-wide contact form'] = array(
+    'name' => 'access site-wide contact form',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+    ),
+    'module' => 'contact',
+  );
+
   // Exported permission: access toolbar
   $permissions['access toolbar'] = array(
     'name' => 'access toolbar',
