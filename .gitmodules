@@ -259,3 +259,6 @@
 [submodule "modules/geophp"]
 	path = modules/geophp
 	url = http://git.drupal.org/project/geophp.git
+[submodule "modules/ds"]
+	path = modules/ds
+	url = http://git.drupal.org/project/ds.git
