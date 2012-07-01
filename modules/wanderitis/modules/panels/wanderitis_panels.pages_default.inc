@@ -1487,13 +1487,17 @@ function wanderitis_panels_default_page_manager_pages() {
     $display->content['new-6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d'] = $pane;
     $display->panels['right'][0] = 'new-6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d';
     $pane = new stdClass();
-    $pane->pid = 'new-288bd8fd-7354-c2b4-8150-55c62fac33c0';
+    $pane->pid = 'new-091ea748-1dd5-ce94-e96d-de32df69bee4';
     $pane->panel = 'top';
     $pane->type = 'views_panes';
-    $pane->subtype = 'teaser-panel_teasers_home';
+    $pane->subtype = 'teaser-panel_teasers_by_display_region';
     $pane->shown = TRUE;
     $pane->access = array();
-    $pane->configuration = array();
+    $pane->configuration = array(
+      'exposed' => array(
+        'name' => 'Blog-List',
+      ),
+    );
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
@@ -1501,9 +1505,9 @@ function wanderitis_panels_default_page_manager_pages() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $pane->uuid = '288bd8fd-7354-c2b4-8150-55c62fac33c0';
-    $display->content['new-288bd8fd-7354-c2b4-8150-55c62fac33c0'] = $pane;
-    $display->panels['top'][0] = 'new-288bd8fd-7354-c2b4-8150-55c62fac33c0';
+    $pane->uuid = '091ea748-1dd5-ce94-e96d-de32df69bee4';
+    $display->content['new-091ea748-1dd5-ce94-e96d-de32df69bee4'] = $pane;
+    $display->panels['top'][0] = 'new-091ea748-1dd5-ce94-e96d-de32df69bee4';
     $pane = new stdClass();
     $pane->pid = 'new-e0dd787d-5b17-dbf4-411e-eb341a2de061';
     $pane->panel = 'top_left';
