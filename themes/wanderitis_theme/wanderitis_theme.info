@@ -13,6 +13,10 @@ css[global.css][name] = 'Your custom global styles'
 css[global.css][description] = 'This file holds all the globally active custom CSS of your theme.'
 css[global.css][options][weight] = '100'
 
+css[ds.css][name] = 'The Display Suite CSS'
+css[ds.css][description] = 'The Display Suite CSS'
+css[ds.css][options][weight] = '100'
+
 settings[alpha_grid] = 'alpha_fluid'
 settings[alpha_primary_alpha_default] = 'normal'
 settings[alpha_responsive] = '1'
@@ -50,6 +54,7 @@ settings[alpha_css][omega-menu.css] = 'omega-menu.css'
 settings[alpha_css][omega-forms.css] = 'omega-forms.css'
 settings[alpha_css][omega-visuals.css] = 'omega-visuals.css'
 settings[alpha_css][global.css] = 'global.css'
+settings[alpha_css][ds.css] = 'ds.css'
 
 settings[alpha_debug_block_toggle] = '0'
 settings[alpha_debug_block_active] = '0'

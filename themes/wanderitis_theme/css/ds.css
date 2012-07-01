@@ -1,0 +1,29 @@
+.node-article.view-mode-teaser .group-left {
+  width: 30%;
+}
+
+.node-article.view-mode-teaser .group-right {
+  width: 70%;
+}
+
+
+.node-hike.view-mode-hike_search_result .group-left {
+  min-width: 190px;
+  width: 190px;
+}
+
+.node-hike.view-mode-hike_search_result .group-right {
+  width: auto;
+  float: left;
+  max-width: 680px;
+}
+
+
+.field-name-wanderitis-read-more-button,
+.field-name-wanderitis-read-more-button div {
+  display: inline;
+}
+.field-name-wanderitis-hike-subscription-button,
+.field-name-wanderitis-hike-subscription-button div {
+  display: inline;
+}

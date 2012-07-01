@@ -42,6 +42,10 @@ div.container-16 .grid-16.top {
   margin: 0px;
 }
 
+div.container-16 .grid-16.header {
+  min-height: 220px;
+}
+
 div.container-16 .grid4 {
   margin: 0px;
 }
@@ -94,6 +98,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, sans-serif;
 }
 
+h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
 h2 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -108,25 +117,31 @@ a, a:active, a:link, a:hover, a:visited {
   color: #FFFFFF;
 }
 
-
 a.button {
-  background: #fff url(../images/buttons.png) 0 0 repeat-x;
-  border: 1px solid #e4e4e4;
-  border-bottom: 1px solid #b4b4b4;
-  border-left-color: #d2d2d2;
-  border-right-color: #d2d2d2;
-  color: #3a3a3a;
+  -webkit-appearance: none;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  border-radius: 11px;
+  background: #ddd url(../images/button.png) repeat-x;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
+  background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
   cursor: pointer;
-  font-size: 0.929em;
-  font-weight: normal;
-  text-align: center;
-  margin-bottom: 1em;
-  margin-right: 0.6em; /* LTR */
-  padding: 4px 17px;
-  -khtml-border-radius: 15px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  color: #333;
+  font: bold 12px/1.2 Arial, sans-serif;
+  line-height: 12px;
+  outline: 0;
+  overflow: visible;
+  padding: 2px 10px 3px;
+  text-shadow: #fff 0 1px 1px;
+  width: auto;
+  *padding-top: 2px; /* IE7 */
+  *padding-bottom: 0px; /* IE7 */
+  vertical-align: middle;
 }
 a.button:link,
 a.button:visited,
@@ -134,7 +149,7 @@ a.button:hover,
 a.button:focus,
 a.button:active {
   text-decoration: none;
-  color: #5a5a5a;
+  color: #333;
 }
 
 ul.facetapi-facetapi-checkbox-links li {
@@ -151,22 +166,9 @@ ul.facetapi-facetapi-checkbox-links li a:active {
   text-decoration: none;
 }
 
-.hike-search-result {
-  margin-bottom: 10px;
-  clear: both;
+input.form-text {
+  max-width: 350px;
 }
-.hike-search-result .field-slideshow-wrapper {
-  float: left;
-  margin-right: 10px;
-  height: 100px;
-}
-.hike-search-result .views-field-field-mail {
-  float: right;
-}
-.hike-search-result .views-field-view-node {
-  float: right;
-}
-
 
 #hike .pane-node-body {
   padding-top: 10px;
@@ -265,9 +267,13 @@ div.header-float {
   color:#fff;
   vertical-align: middle;
   line-height: 100%;
+  text-decoration: none;
 }
-.pane-system-main-menu ul.menu a:hover{
+.pane-system-main-menu ul.menu a:hover,
+.pane-system-main-menu ul.menu a.active{
+  text-decoration: underline;
 }
+
 
 /*--- DROPDOWN ---*/
 .pane-system-main-menu ul.menu ul{
@@ -292,10 +298,66 @@ div.header-float {
 .pane-system-main-menu ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
 }
 
-.views-exposed-form .views-exposed-widget {
+ /** HOME **/
+.page-home .pane-front-page-content-panel-pane-1 {
+  border-bottom: 1px solid #A29583;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.page-home div.item-list li {
+  margin: 0 0 1.5em 0;
+}
+
+/** HIKE SEARCH **/
+.page-hikes .views-exposed-form .views-exposed-widget {
   padding-top: 0px;
 }
 
 .page-hikes .left div.item-list {
   padding-left: 10px;
+}
+
+.page-hikes .field-name-field-media {
+  height: 190px;
+}
+
+.page-hikes .field-name-wanderitis-hike-subscription-button {
+  padding-left: 10px;
+}
+
+.hike-search-result {
+  padding-bottom: 15px;
+  padding-top: 10px;
+  border-bottom: 1px solid #A29583;
+  clear: both;
+}
+
+/** HIKE DETAILS **/
+.page-node.node-type-hike .panel-panel.right .button-subscribe-next-hike {
+ text-align: center;
+ padding: 10px;
+}
+
+/** HIKE SUBSCRIPTION **/
+.page-hike-subscribe .hike-subscription-equipment-reminder {
+  border-bottom: 1px solid #A29583;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.page-hike-subscribe .pane-hike-subscription-form .panel-col-top{
+  display: none;
+}
+.page-hike-subscribe .pane-hike-subscription-form .inside{
+  padding: 0;
+  margin: 0;
+}
+
+.page-hike-subscribe .pane-hike-subscription-form .pane-generic-form-field-actions {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.page-hike-subscribe .pane-hike-subscription-form .pane-generic-form-field-actions a {
+  margin-left: 10px;
 }
