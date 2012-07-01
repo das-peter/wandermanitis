@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the wanderitis DS feature.
+ */
+
+include_once 'wanderitis_ds.features.inc';
