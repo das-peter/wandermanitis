@@ -625,7 +625,10 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'button-subscribe-next-hike',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->uuid = '15f9dd0c-fb42-2874-29b2-908ebd458528';
@@ -639,7 +642,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
@@ -667,7 +670,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
@@ -675,7 +678,7 @@ function wanderitis_panels_default_page_manager_handlers() {
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
       'override_title' => 0,
-      'override_title_text' => '',
+      'override_title_text' => 'TEST',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -695,7 +698,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -723,7 +726,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_integer',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -754,7 +757,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_integer',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -785,7 +788,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
@@ -813,7 +816,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -846,7 +849,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -1052,6 +1055,7 @@ function wanderitis_panels_default_page_manager_pages() {
       'middle' => NULL,
       'right' => NULL,
       'bottom' => NULL,
+      'top_left' => NULL,
     ),
   );
   $display->cache = array();
@@ -1060,13 +1064,16 @@ function wanderitis_panels_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-4674d30e-49c6-b694-0160-891591f83b21';
-    $pane->panel = 'left';
-    $pane->type = 'panels_mini';
-    $pane->subtype = 'menu';
+    $pane->pid = 'new-f315fb90-9052-1874-a109-4fb9fc356cfa';
+    $pane->panel = 'middle';
+    $pane->type = 'page_title';
+    $pane->subtype = 'page_title';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
+      'markup' => 'h1',
+      'class' => '',
+      'id' => '',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -1077,9 +1084,9 @@ function wanderitis_panels_default_page_manager_pages() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $pane->uuid = '4674d30e-49c6-b694-0160-891591f83b21';
-    $display->content['new-4674d30e-49c6-b694-0160-891591f83b21'] = $pane;
-    $display->panels['left'][0] = 'new-4674d30e-49c6-b694-0160-891591f83b21';
+    $pane->uuid = 'f315fb90-9052-1874-a109-4fb9fc356cfa';
+    $display->content['new-f315fb90-9052-1874-a109-4fb9fc356cfa'] = $pane;
+    $display->panels['middle'][0] = 'new-f315fb90-9052-1874-a109-4fb9fc356cfa';
     $pane = new stdClass();
     $pane->pid = 'new-388e9be3-92cb-4274-89d6-87ebfdc7032f';
     $pane->panel = 'middle';
@@ -1094,15 +1101,54 @@ function wanderitis_panels_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->uuid = '388e9be3-92cb-4274-89d6-87ebfdc7032f';
     $display->content['new-388e9be3-92cb-4274-89d6-87ebfdc7032f'] = $pane;
-    $display->panels['middle'][0] = 'new-388e9be3-92cb-4274-89d6-87ebfdc7032f';
+    $display->panels['middle'][1] = 'new-388e9be3-92cb-4274-89d6-87ebfdc7032f';
     $pane = new stdClass();
-    $pane->pid = 'new-7ceb8a65-a6f2-f074-c1bc-b7fb6c05cbe4';
+    $pane->pid = 'new-6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d';
+    $pane->panel = 'right';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'next_hikes-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->uuid = '6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d';
+    $display->content['new-6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d'] = $pane;
+    $display->panels['right'][0] = 'new-6fe35fb7-7cd5-bf14-e18d-3bb3881ddd1d';
+    $pane = new stdClass();
+    $pane->pid = 'new-288bd8fd-7354-c2b4-8150-55c62fac33c0';
     $pane->panel = 'top';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'teaser-panel_teasers_home';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->uuid = '288bd8fd-7354-c2b4-8150-55c62fac33c0';
+    $display->content['new-288bd8fd-7354-c2b4-8150-55c62fac33c0'] = $pane;
+    $display->panels['top'][0] = 'new-288bd8fd-7354-c2b4-8150-55c62fac33c0';
+    $pane = new stdClass();
+    $pane->pid = 'new-e0dd787d-5b17-dbf4-411e-eb341a2de061';
+    $pane->panel = 'top_left';
     $pane->type = 'panels_mini';
-    $pane->subtype = 'wanderitis_default_header';
+    $pane->subtype = 'menu';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -1116,9 +1162,27 @@ function wanderitis_panels_default_page_manager_pages() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $pane->uuid = '7ceb8a65-a6f2-f074-c1bc-b7fb6c05cbe4';
-    $display->content['new-7ceb8a65-a6f2-f074-c1bc-b7fb6c05cbe4'] = $pane;
-    $display->panels['top'][0] = 'new-7ceb8a65-a6f2-f074-c1bc-b7fb6c05cbe4';
+    $pane->uuid = 'e0dd787d-5b17-dbf4-411e-eb341a2de061';
+    $display->content['new-e0dd787d-5b17-dbf4-411e-eb341a2de061'] = $pane;
+    $display->panels['top_left'][0] = 'new-e0dd787d-5b17-dbf4-411e-eb341a2de061';
+    $pane = new stdClass();
+    $pane->pid = 'new-24779482-115d-9b64-15bd-54961e357bdc';
+    $pane->panel = 'top_left';
+    $pane->type = 'page_logo';
+    $pane->subtype = 'page_logo';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array();
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->uuid = '24779482-115d-9b64-15bd-54961e357bdc';
+    $display->content['new-24779482-115d-9b64-15bd-54961e357bdc'] = $pane;
+    $display->panels['top_left'][1] = 'new-24779482-115d-9b64-15bd-54961e357bdc';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-388e9be3-92cb-4274-89d6-87ebfdc7032f';
   $handler->conf['display'] = $display;
@@ -1354,27 +1418,7 @@ function wanderitis_panels_default_page_manager_pages() {
     'css_id' => 'hike-subscription-form',
     'css' => '',
     'contexts' => array(),
-    'relationships' => array(
-      0 => array(
-        'file' => array(
-          'type' => 'inc',
-          'module' => 'wanderitis',
-          'name' => 'pages/wanderitis.form',
-        ),
-        'form_id' => 'wanderitis_hike_subscription_form',
-        'arguments' => array(
-          'node' => '%node',
-        ),
-        'substitute' => 1,
-        'identifier' => 'Hike Subscription Form',
-        'keyword' => 'hike_subscription_form',
-        'name' => 'generic_form',
-        'context' => array(
-          0 => 'argument_entity_id:node_1',
-        ),
-        'id' => 1,
-      ),
-    ),
+    'relationships' => array(),
     'access' => array(
       'plugins' => array(
         0 => array(
@@ -1453,15 +1497,17 @@ function wanderitis_panels_default_page_manager_pages() {
     $display->content['new-deaa45ca-e92c-0df4-39ae-0cc421cae3e6'] = $pane;
     $display->panels['middle'][1] = 'new-deaa45ca-e92c-0df4-39ae-0cc421cae3e6';
     $pane = new stdClass();
-    $pane->pid = 'new-b71bdcea-f299-3264-b985-f8a8c4eb4e8a';
+    $pane->pid = 'new-bf1d2d93-3e52-4d04-5135-d5c0e80eac31';
     $pane->panel = 'middle';
-    $pane->type = 'form';
-    $pane->subtype = 'form';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'hike_subscription_form';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'context' => 'relationship_generic_form_1',
-      'override_title' => 1,
+      'context' => array(
+        0 => 'argument_entity_id:node_1',
+      ),
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -1471,9 +1517,9 @@ function wanderitis_panels_default_page_manager_pages() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
-    $pane->uuid = 'b71bdcea-f299-3264-b985-f8a8c4eb4e8a';
-    $display->content['new-b71bdcea-f299-3264-b985-f8a8c4eb4e8a'] = $pane;
-    $display->panels['middle'][2] = 'new-b71bdcea-f299-3264-b985-f8a8c4eb4e8a';
+    $pane->uuid = 'bf1d2d93-3e52-4d04-5135-d5c0e80eac31';
+    $display->content['new-bf1d2d93-3e52-4d04-5135-d5c0e80eac31'] = $pane;
+    $display->panels['middle'][2] = 'new-bf1d2d93-3e52-4d04-5135-d5c0e80eac31';
     $pane = new stdClass();
     $pane->pid = 'new-657e812d-5531-08c4-2dd7-ff100fa39c0f';
     $pane->panel = 'right';
@@ -1494,7 +1540,10 @@ Thank you for your understanding.',
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'hike-subscription-equipment-reminder',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->uuid = '657e812d-5531-08c4-2dd7-ff100fa39c0f';
@@ -1508,14 +1557,14 @@ Thank you for your understanding.',
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => '0',
       'delta_offset' => '0',
       'delta_reversed' => 0,
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => 'Mandatory Equipment',
     );
     $pane->cache = array();
@@ -1536,14 +1585,14 @@ Thank you for your understanding.',
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'hidden',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_plain',
       'delta_limit' => 0,
       'delta_offset' => '0',
       'delta_reversed' => FALSE,
       'formatter_settings' => array(),
       'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => 'Mandatory Shoe Type',
     );
     $pane->cache = array();
@@ -1564,7 +1613,7 @@ Thank you for your understanding.',
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -1597,7 +1646,7 @@ Thank you for your understanding.',
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'title',
+      'label' => 'above',
       'formatter' => 'number_decimal',
       'delta_limit' => 0,
       'delta_offset' => '0',
@@ -1663,7 +1712,7 @@ Thank you for your understanding.',
     $pane->panel = 'top_left';
     $pane->type = 'block';
     $pane->subtype = 'locale-language';
-    $pane->shown = TRUE;
+    $pane->shown = FALSE;
     $pane->access = array();
     $pane->configuration = array(
       'override_title' => 1,
