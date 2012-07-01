@@ -42,6 +42,36 @@ function wanderitis_ds_ds_field_settings_info() {
 
   $ds_fieldsetting = new stdClass();
   $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|hike|hike_search_result';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'hike';
+  $ds_fieldsetting->view_mode = 'hike_search_result';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '1',
+        'wrapper' => 'h2',
+        'class' => '',
+      ),
+    ),
+    'wanderitis_hike_subscription_button' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+    'wanderitis_read_more_button' => array(
+      'weight' => '4',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
+  );
+  $export['node|hike|hike_search_result'] = $ds_fieldsetting;
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
   $ds_fieldsetting->id = 'node|hike|next_hike';
   $ds_fieldsetting->entity_type = 'node';
   $ds_fieldsetting->bundle = 'hike';
@@ -117,6 +147,51 @@ function wanderitis_ds_ds_layout_settings_info() {
 
   $ds_layout = new stdClass();
   $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|hike|hike_search_result';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'hike';
+  $ds_layout->view_mode = 'hike_search_result';
+  $ds_layout->layout = 'ds_2col_stacked_fluid';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'header' => array(
+        0 => 'title',
+      ),
+      'left' => array(
+        1 => 'field_media',
+      ),
+      'right' => array(
+        2 => 'body',
+        3 => 'field_hike_dates',
+      ),
+      'footer' => array(
+        4 => 'wanderitis_read_more_button',
+        5 => 'wanderitis_hike_subscription_button',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'header',
+      'field_media' => 'left',
+      'body' => 'right',
+      'field_hike_dates' => 'right',
+      'wanderitis_read_more_button' => 'footer',
+      'wanderitis_hike_subscription_button' => 'footer',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'header' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'footer' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+  );
+  $export['node|hike|hike_search_result'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
   $ds_layout->id = 'node|hike|next_hike';
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'hike';
@@ -155,6 +230,15 @@ function wanderitis_ds_ds_layout_settings_info() {
  */
 function wanderitis_ds_ds_view_modes_info() {
   $export = array();
+
+  $ds_view_mode = new stdClass();
+  $ds_view_mode->api_version = 1;
+  $ds_view_mode->view_mode = 'hike_search_result';
+  $ds_view_mode->label = 'Hike Search Result';
+  $ds_view_mode->entities = array(
+    'node' => 'node',
+  );
+  $export['hike_search_result'] = $ds_view_mode;
 
   $ds_view_mode = new stdClass();
   $ds_view_mode->api_version = 1;

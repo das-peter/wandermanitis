@@ -5,3 +5,74 @@
  */
 
 include_once 'wanderitis_ds.features.inc';
+
+/**
+ * Implements hook__ds_fields_info().
+ *
+ * @param $entity_type
+ *   The name of the entity which we are requesting fields for, e.g. 'node'.
+ *
+ * @return $fields
+ *   A collection of fields which keys are the entity type name and values
+ *   a collection fields.
+ *
+ * @see ds_get_fields()
+ */
+function wanderitis_ds_ds_fields_info($entity_type) {
+  $fields = array();
+
+  $fields['wanderitis_hike_subscription_button'] = array(
+    'title' => t('Button: Subscribe for hike'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'ui_limit' => array('hike|*'),
+    'function' => '_wanderitis_ds_ds_fields_subscribe_hike',
+    'file' => __FILE__
+  );
+
+  $fields['wanderitis_read_more_button'] = array(
+    'title' => t('Button: Read more'),
+    'field_type' => DS_FIELD_TYPE_FUNCTION,
+    'function' => '_wanderitis_ds_ds_fields_read_more',
+    'file' => __FILE__
+  );
+
+  return array('node' => $fields);
+
+}
+
+/**
+ * Returns the button link to subscribe for the next hike.
+ *
+ * @param $field
+ * @return string
+ */
+function _wanderitis_ds_ds_fields_subscribe_hike($field) {
+  $entity_id = entity_id($field['entity_type'], $field['entity']);
+  return l(
+    t('Subscribe for next hike'),
+    'hike-subscribe/' . $entity_id,
+    array(
+      'attributes' => array(
+        'class' => array('button'),
+      ),
+    )
+  );
+}
+
+/**
+ * Returns a read more link for an entity themed as button.
+ * @param $field
+ * @return string
+ */
+function _wanderitis_ds_ds_fields_read_more($field) {
+  $entity_uri = entity_uri($field['entity_type'], $field['entity']);
+  return l(
+    t('Read more'),
+    $entity_uri['path'],
+    array(
+      'attributes' => array(
+        'class' => array('button'),
+      ),
+    )
+  );
+}
