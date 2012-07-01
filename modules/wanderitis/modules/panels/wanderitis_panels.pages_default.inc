@@ -353,37 +353,6 @@ function wanderitis_panels_default_page_manager_handlers() {
     $display->content['new-7b22b8bc-ab18-c0b4-a9ee-3a465c16d641'] = $pane;
     $display->panels['right'][0] = 'new-7b22b8bc-ab18-c0b4-a9ee-3a465c16d641';
     $pane = new stdClass();
-    $pane->pid = 'new-4bef771c-98bd-58c4-61de-30faa14d7ac4';
-    $pane->panel = 'top';
-    $pane->type = 'entity_field';
-    $pane->subtype = 'node:field_image';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'label' => 'hidden',
-      'formatter' => 'image',
-      'delta_limit' => 0,
-      'delta_offset' => '0',
-      'delta_reversed' => FALSE,
-      'formatter_settings' => array(
-        'image_style' => 'header',
-        'image_link' => '',
-      ),
-      'context' => 'argument_entity_id:node_1',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->uuid = '4bef771c-98bd-58c4-61de-30faa14d7ac4';
-    $display->content['new-4bef771c-98bd-58c4-61de-30faa14d7ac4'] = $pane;
-    $display->panels['top'][0] = 'new-4bef771c-98bd-58c4-61de-30faa14d7ac4';
-    $pane = new stdClass();
     $pane->pid = 'new-85d3a790-daf6-e2c4-89d2-e9e687d3b8f5';
     $pane->panel = 'top';
     $pane->type = 'views_panes';
@@ -406,10 +375,10 @@ function wanderitis_panels_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->uuid = '85d3a790-daf6-e2c4-89d2-e9e687d3b8f5';
     $display->content['new-85d3a790-daf6-e2c4-89d2-e9e687d3b8f5'] = $pane;
-    $display->panels['top'][1] = 'new-85d3a790-daf6-e2c4-89d2-e9e687d3b8f5';
+    $display->panels['top'][0] = 'new-85d3a790-daf6-e2c4-89d2-e9e687d3b8f5';
     $pane = new stdClass();
     $pane->pid = 'new-2c19896c-0833-a534-5dfc-4328c4469d12';
     $pane->panel = 'top_left';
