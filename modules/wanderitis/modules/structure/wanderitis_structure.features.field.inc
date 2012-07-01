@@ -295,7 +295,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -364,13 +364,9 @@ function wanderitis_structure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'image',
-          'settings' => array(
-            'image_link' => '',
-            'image_style' => 'large',
-          ),
-          'type' => 'image',
-          'weight' => -1,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -464,7 +460,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'file',
           'settings' => array(),
           'type' => 'file_default',
-          'weight' => 11,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -550,10 +546,9 @@ function wanderitis_structure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'taxonomy',
           'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 10,
+          'type' => 'hidden',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -2319,6 +2314,76 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-teaser-field_teaser_display_region'
+  $fields['node-teaser-field_teaser_display_region'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_teaser_display_region',
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'teaser_display_region',
+            'parent' => '0',
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'teaser',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Limit on which page types this teaser is allowed to show up. No selection means no limitation.',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_teaser_display_region',
+      'label' => 'Display Region',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'options',
+        'settings' => array(),
+        'type' => 'options_buttons',
+        'weight' => '33',
+      ),
+    ),
+  );
+
   // Exported field: 'node-teaser-title_field'
   $fields['node-teaser-title_field'] = array(
     'field_config' => array(
@@ -3007,10 +3072,12 @@ function wanderitis_structure_field_default_fields() {
   t('Comment');
   t('Dates');
   t('Description');
+  t('Display Region');
   t('Draw the hike route.');
   t('Enter a comma-separated list of words to describe your content.');
   t('Hike Route');
   t('Image');
+  t('Limit on which page types this teaser is allowed to show up. No selection means no limitation.');
   t('Mandatory Equipment');
   t('Mandatory Shoe Type');
   t('Max Participants');

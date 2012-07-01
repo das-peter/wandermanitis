@@ -101,7 +101,7 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
   );
   $form['actions']['reset'] = array(
     '#type' => 'link',
-    '#title' => t('Reset'),
+    '#title' => t('Back to the hike'),
     '#href' => 'node/' . (($node) ? $node->nid : NULL),
     '#attributes' => array(
       'class' => array('button'),

@@ -1,1 +1,33 @@
 <?php
+
+/**
+ * Ensure the necessary teaser taxonomy terms are available.
+ */
+function wanderitis_update_7001() {
+  $terms = array(
+    'article',
+    'page',
+    'Hike-Search',
+    'Blog-List',
+    'Contact-Form',
+  );
+  $node_type_names = node_type_get_names();
+  $node_types = array_keys($node_type_names);
+  $terms += $node_types;
+
+  // Fetch necessary vocabulary.
+  if (!($vocabulary = taxonomy_vocabulary_machine_name_load('teaser_display_region'))) {
+    return FALSE;
+  }
+  // Check which terms need to be created.
+  foreach ($terms as $term_name) {
+    $term_objects = taxonomy_term_load_multiple(array(), array('name' => trim($term_name), 'vid' => $vocabulary->vid));
+    if (empty($term_objects)) {
+      $new_term = (object) array(
+        'vid' => $vocabulary->vid,
+        'name' => $term_name,
+      );
+      taxonomy_term_save($new_term);
+    }
+  }
+}

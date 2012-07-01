@@ -124,6 +124,29 @@ function wanderitis_structure_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'teaser_display_region' => array(
+      'name' => 'Teaser Display Region',
+      'machine_name' => 'teaser_display_region',
+      'description' => 'Teaser Display Region',
+      'hierarchy' => '1',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'weather_condition' => array(
       'name' => 'Weather Condition',
       'machine_name' => 'weather_condition',

@@ -1,7 +1,7 @@
 name = "wanderitis Config"
 description = "Configuration Options"
 core = "7.x"
-package = "Features"
+package = "Wanderitis"
 php = "5.2.4"
 version = "7.x-1.0-beta1"
 project = "wanderitis_config"

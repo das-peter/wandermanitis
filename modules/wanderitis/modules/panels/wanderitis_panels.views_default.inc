@@ -366,10 +366,10 @@ function wanderitis_panels_views_default_views() {
 
   $view = new view;
   $view->name = 'teaser';
-  $view->description = 'Home Teaser';
+  $view->description = 'Teasers';
   $view->tag = 'Teaser';
   $view->base_table = 'node';
-  $view->human_name = 'Teaser Home';
+  $view->human_name = 'Teasers';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
@@ -396,6 +396,11 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['style_options']['easing'] = 'linear';
   $handler->display->display_options['style_options']['vertical'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Relationship: Inhalt: Display Region (field_teaser_display_region) */
+  $handler->display->display_options['relationships']['field_teaser_display_region_tid']['id'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['relationships']['field_teaser_display_region_tid']['table'] = 'field_data_field_teaser_display_region';
+  $handler->display->display_options['relationships']['field_teaser_display_region_tid']['field'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['relationships']['field_teaser_display_region_tid']['required'] = 0;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -471,8 +476,8 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['filters']['status_extra']['table'] = 'node';
   $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_teasers_home');
+  /* Display: Teasers on frontpage */
+  $handler = $view->new_display('panel_pane', 'Teasers on frontpage', 'panel_teasers_home');
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
@@ -490,6 +495,81 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['filters']['promote']['table'] = 'node';
   $handler->display->display_options['filters']['promote']['field'] = 'promote';
   $handler->display->display_options['filters']['promote']['value'] = '1';
+
+  /* Display: Teasery by display region */
+  $handler = $view->new_display('panel_pane', 'Teasery by display region', 'panel_teasers_by_display_region');
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Inhalt: Display Region (field_teaser_display_region) */
+  $handler->display->display_options['sorts']['field_teaser_display_region_tid']['id'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['sorts']['field_teaser_display_region_tid']['table'] = 'field_data_field_teaser_display_region';
+  $handler->display->display_options['sorts']['field_teaser_display_region_tid']['field'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['sorts']['field_teaser_display_region_tid']['order'] = 'DESC';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['filter_groups']['groups'] = array(
+    1 => 'AND',
+    2 => 'OR',
+  );
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'teaser' => 'teaser',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Published or admin */
+  $handler->display->display_options['filters']['status_extra']['id'] = 'status_extra';
+  $handler->display->display_options['filters']['status_extra']['table'] = 'node';
+  $handler->display->display_options['filters']['status_extra']['field'] = 'status_extra';
+  $handler->display->display_options['filters']['status_extra']['group'] = 1;
+  /* Filter criterion: Taxonomy term: Name */
+  $handler->display->display_options['filters']['name']['id'] = 'name';
+  $handler->display->display_options['filters']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['name']['field'] = 'name';
+  $handler->display->display_options['filters']['name']['relationship'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['filters']['name']['group'] = 2;
+  $handler->display->display_options['filters']['name']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['name']['expose']['operator_id'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['label'] = 'Display Region Name';
+  $handler->display->display_options['filters']['name']['expose']['operator'] = 'name_op';
+  $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['name']['expose']['required'] = 0;
+  $handler->display->display_options['filters']['name']['expose']['multiple'] = FALSE;
+  /* Filter criterion: Inhalt: Display Region (field_teaser_display_region) */
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['id'] = 'field_teaser_display_region_tid_1';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['table'] = 'field_data_field_teaser_display_region';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['field'] = 'field_teaser_display_region_tid';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['operator'] = 'empty';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['group'] = 2;
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['reduce_duplicates'] = 0;
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['type'] = 'select';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['vocabulary'] = 'teaser_display_region';
+  $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['hierarchy'] = 1;
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 0;
+  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
+  $handler->display->display_options['allow']['fields_override'] = 0;
+  $handler->display->display_options['argument_input'] = array(
+    'field_teaser_display_region_tid' => array(
+      'type' => 'user',
+      'context' => 'entity:file.extension',
+      'context_optional' => 0,
+      'panel' => '0',
+      'fixed' => '',
+      'label' => 'Teaser: Display Region',
+    ),
+  );
   $translatables['teaser'] = array(
     t('Master'),
     t('more'),
@@ -498,8 +578,11 @@ function wanderitis_panels_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Content pane'),
+    t('term from field_teaser_display_region'),
+    t('Teasers on frontpage'),
     t('View panes'),
+    t('Teasery by display region'),
+    t('Display Region Name'),
   );
   $export['teaser'] = $view;
 
