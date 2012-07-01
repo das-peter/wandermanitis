@@ -9,31 +9,30 @@
  */
 
 .jcarousel-skin-wantermanitis_frontpage {
-  text-align: center;
-  width: 800px;
+  width: 1200px;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-container-horizontal {
-  width: 800px;
+  width: 1200px;
   height: 400px;
   padding: 0px;
   margin: 0px;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-container-vertical {
-  width: 800px;
+  width: 1200px;
   height: 440px;
   padding: 40px 20px;
   margin: auto;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-clip-horizontal {
-  width: 800px;
+  width: 1200px;
   overflow: hidden;
 }
 
 .jcarousel-skin-wantermanitis_frontpage .jcarousel-clip-vertical {
-  height: 800px;
+  height: 1200px;
   overflow: hidden;
 }
 

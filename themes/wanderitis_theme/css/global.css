@@ -1,9 +1,41 @@
 /* This file will hold the main styles for your website. */
 
-div.container-16 {
+div.container-16  {
   margin-left: auto;
   margin-right: auto;
-  width: 1224px;
+  max-width: 1224px;
+  width: 100%;
+  /*width: 1224px;*/
+}
+.container-16 .block .omega-grid {
+  margin: 0px;
+}
+
+div.container-16 .grid-2 {
+  width: 11.5%;
+}
+div.container-16 .grid-4 {
+  width: 25%;
+}
+div.container-16 .grid-10 {
+  width: 61.5%;
+}
+div.container-16 .grid-12 {
+  width: 74%;
+}
+
+div.container-16 .panel-region.grid-16 {
+  width: 100%;
+  margin: 0px;
+}
+
+div.header {
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+div.header .top {
+  text-align: left;
 }
 
 div.container-16 .grid-16.top {
@@ -12,6 +44,44 @@ div.container-16 .grid-16.top {
 
 div.container-16 .grid4 {
   margin: 0px;
+}
+
+.panel-panel.left,
+.panel-panel.middle,
+.panel-panel.right
+{
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.panel-panel.left *,
+.panel-panel.middle *,
+.panel-panel.right * {
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.panel-panel.left .inside,
+.panel-panel.middle .inside,
+.panel-panel.right .inside {
+  padding: 5px;
+}
+
+.panel-panel.left,
+.panel-panel.middle,
+.panel-panel.right
+{
+  margin: 0px;
+}
+
+.panel-panel.left,
+.omega-16-twocol-12-4 .panel-panel.middle,
+.omega-16-threecol-2-12-2 .panel-panel.middle
+{
+  margin-right: 1%;
+}
+
+body {
+  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
 }
 
 html, #page {
@@ -67,15 +137,6 @@ a.button:active {
   color: #5a5a5a;
 }
 
-div.header {
-  padding-bottom: 5px;
-}
-
-div.header .top {
-  text-align: left;
-}
-
-
 ul.facetapi-facetapi-checkbox-links li {
   list-style: none;
   list-style-type: none;
@@ -126,6 +187,12 @@ ul.facetapi-facetapi-checkbox-links li a:active {
 .pane-page-logo {
   float: right;
 }
+.pane-page-logo .pane-content {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #A29583;
+  padding: 8px;
+}
 
 /* Language Dropdown */
 .pane-locale-language {
@@ -162,6 +229,9 @@ div.header-float {
   float: left;
   text-transform: uppercase;
   height: 30px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #A29583;
 }
 
 .pane-system-main-menu ul.menu,
@@ -169,7 +239,6 @@ div.header-float {
   list-style: none;
   list-style-image: none;
   font-weight: bold;
-  background-color: #A29583;
 }
 
 .pane-system-main-menu ul.menu li.expanded {
@@ -178,7 +247,6 @@ div.header-float {
 }
 
 .pane-system-main-menu ul.menu{
-  margin-bottom:10px;
   /* Clear floats */
   float:left;
   width:100%;
@@ -188,11 +256,15 @@ div.header-float {
   float: left;
   margin-right: 10px;
   position: relative;
+  vertical-align: middle;
+  line-height: 100%;
 }
 .pane-system-main-menu ul.menu a{
-  display:block;
-  padding:5px;
+  display: block;
+  padding: 5px;
   color:#fff;
+  vertical-align: middle;
+  line-height: 100%;
 }
 .pane-system-main-menu ul.menu a:hover{
 }
@@ -220,15 +292,10 @@ div.header-float {
 .pane-system-main-menu ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
 }
 
-.panel-panel.middle {
-  background-color: #FFFFFF;
-  color: rgba(0, 0, 0, 0.76);
+.views-exposed-form .views-exposed-widget {
+  padding-top: 0px;
 }
 
-.panel-panel.middle .inside {
-  padding: 5px;
-}
-
-.panel-panel.middle * {
-  color: rgba(0, 0, 0, 0.76);
+.page-hikes .left div.item-list {
+  padding-left: 10px;
 }
