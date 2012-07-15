@@ -265,3 +265,6 @@
 [submodule "modules/mollom"]
 	path = modules/mollom
 	url = http://git.drupal.org/project/mollom.git
+[submodule "modules/l10n_update"]
+	path = modules/l10n_update
+	url = http://git.drupal.org/project/l10n_update.git
