@@ -55,6 +55,29 @@ function wanderitis_structure_taxonomy_default_vocabularies() {
         ),
       ),
     ),
+    'level_of_difficulty' => array(
+      'name' => 'Level of difficulty',
+      'machine_name' => 'level_of_difficulty',
+      'description' => '',
+      'hierarchy' => '0',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
     'media_folders' => array(
       'name' => 'Media Folders',
       'machine_name' => 'media_folders',
@@ -129,6 +152,29 @@ function wanderitis_structure_taxonomy_default_vocabularies() {
       'machine_name' => 'teaser_display_region',
       'description' => 'Teaser Display Region',
       'hierarchy' => '1',
+      'module' => 'taxonomy',
+      'weight' => '0',
+      'rdf_mapping' => array(
+        'rdftype' => array(
+          0 => 'skos:ConceptScheme',
+        ),
+        'name' => array(
+          'predicates' => array(
+            0 => 'dc:title',
+          ),
+        ),
+        'description' => array(
+          'predicates' => array(
+            0 => 'rdfs:comment',
+          ),
+        ),
+      ),
+    ),
+    'time_of_day' => array(
+      'name' => 'Time of day',
+      'machine_name' => 'time_of_day',
+      'description' => '',
+      'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
       'rdf_mapping' => array(
