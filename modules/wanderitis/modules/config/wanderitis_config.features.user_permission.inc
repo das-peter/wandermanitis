@@ -858,6 +858,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'import media',
     'roles' => array(
       0 => 'administrator',
+      1 => 'moderator',
     ),
     'module' => 'media',
   );
