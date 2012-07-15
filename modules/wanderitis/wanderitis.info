@@ -9,3 +9,7 @@ files[] = wanderitis.install
 dependencies[] = wanderitis_config
 dependencies[] = wanderitis_ds
 dependencies[] = wanderitis_structure
+
+dependencies[] = plupload
+dependencies[] = mollom
+dependencies[] = l10n_update
