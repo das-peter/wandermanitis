@@ -262,3 +262,6 @@
 [submodule "modules/ds"]
 	path = modules/ds
 	url = http://git.drupal.org/project/ds.git
+[submodule "modules/mollom"]
+	path = modules/mollom
+	url = http://git.drupal.org/project/mollom.git
