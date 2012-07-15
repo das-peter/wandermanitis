@@ -503,6 +503,51 @@ node/*/edit';
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_fallback';
+  $strongarm->value = '1';
+  $export['mollom_fallback'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_moderation_redirect';
+  $strongarm->value = 0;
+  $export['mollom_moderation_redirect'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_privacy_link';
+  $strongarm->value = 1;
+  $export['mollom_privacy_link'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_private_key';
+  $strongarm->value = '428f86e3e2767c21dd5aafa8dcf63034';
+  $export['mollom_private_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_public_key';
+  $strongarm->value = 'c4c08adf8d92e7dae249f6d1c51d58d5';
+  $export['mollom_public_key'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mollom_status';
+  $strongarm->value = array(
+    'keys' => TRUE,
+    'keys valid' => TRUE,
+  );
+  $export['mollom_status'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
   $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
