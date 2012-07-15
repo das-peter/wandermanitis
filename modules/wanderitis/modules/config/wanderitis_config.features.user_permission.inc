@@ -885,8 +885,9 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'post comments',
     'roles' => array(
       0 => 'administrator',
-      1 => 'authenticated user',
-      2 => 'moderator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+      3 => 'moderator',
     ),
     'module' => 'comment',
   );
