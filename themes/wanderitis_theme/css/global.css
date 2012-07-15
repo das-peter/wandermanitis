@@ -85,16 +85,17 @@ div.container-16 .grid4 {
 }
 
 body {
-  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
+
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
 }
 
-html, #page {
+html,
+body {
+  height: 100%;
+  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
   background-color: #A29583;
   color: #FFFFFF;
-  font-family: Verdana, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, sans-serif;
 }
 
