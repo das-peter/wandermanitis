@@ -1,6 +1,36 @@
 <?php
 
 /**
+ * Helper function to build necessary taxonomy terms
+ *
+ * @param string $vocabulary_machine_name
+ *   Machine name of the taxonomy vocabulary
+ * @param array $terms
+ *   Array with the terms to insert into the vocabulary.
+ *
+ * @return boolean
+ *   Returns FALSE if the vocabulary couldn't be found.
+ */
+function _wanderitis_build_taxonomy($vocabulary_machine_name, array $terms) {
+  // Fetch necessary vocabulary.
+  if (!($vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_machine_name))) {
+    return FALSE;
+  }
+  // Check which terms need to be created.
+  foreach ($terms as $term_name) {
+    $term_objects = taxonomy_term_load_multiple(array(), array('name' => trim($term_name), 'vid' => $vocabulary->vid));
+    if (empty($term_objects)) {
+      $new_term = (object) array(
+        'vid' => $vocabulary->vid,
+        'name' => $term_name,
+      );
+      taxonomy_term_save($new_term);
+    }
+  }
+  return TRUE;
+}
+
+/**
  * Ensure the necessary teaser taxonomy terms are available.
  */
 function wanderitis_update_7001() {
@@ -15,19 +45,30 @@ function wanderitis_update_7001() {
   $node_types = array_keys($node_type_names);
   $terms += $node_types;
 
-  // Fetch necessary vocabulary.
-  if (!($vocabulary = taxonomy_vocabulary_machine_name_load('teaser_display_region'))) {
-    return FALSE;
-  }
-  // Check which terms need to be created.
-  foreach ($terms as $term_name) {
-    $term_objects = taxonomy_term_load_multiple(array(), array('name' => trim($term_name), 'vid' => $vocabulary->vid));
-    if (empty($term_objects)) {
-      $new_term = (object) array(
-        'vid' => $vocabulary->vid,
-        'name' => $term_name,
-      );
-      taxonomy_term_save($new_term);
-    }
+  return _wanderitis_build_taxonomy('teaser_display_region', $terms);
+}
+
+
+/**
+ * Ensure the necessary taxonomy terms are available.
+ */
+function wanderitis_update_7002() {
+  $taxonomies = array(
+    'time_of_day' => array(
+      'Morning',
+      'Noon',
+      'Afternoon',
+      'Evening',
+      'Night',
+    ),
+    'level_of_difficulty' => array(
+      'low',
+      'intermediate',
+      'hard',
+    ),
+  );
+  foreach ($taxonomies as $vocabulary_name => $terms) {
+    return _wanderitis_build_taxonomy($vocabulary_name, $terms);
   }
 }
+
