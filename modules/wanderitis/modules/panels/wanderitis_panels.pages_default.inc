@@ -652,7 +652,10 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'clearfix',
+    );
     $pane->extras = array();
     $pane->position = 4;
     $pane->uuid = 'f70ef1ee-ed13-f9b4-01cc-675e8745d536';
