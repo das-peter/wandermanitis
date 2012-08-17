@@ -61,7 +61,7 @@ function wanderitis_config_filter_default_formats() {
         'weight' => '-49',
         'status' => '1',
         'settings' => array(
-          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <br>',
+          'allowed_html' => '<a> <em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <br> <p>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 0,
         ),

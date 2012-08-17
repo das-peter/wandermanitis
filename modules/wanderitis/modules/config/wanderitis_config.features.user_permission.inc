@@ -106,7 +106,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'access media backend',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'media_browser_plus',
   );
@@ -858,7 +859,6 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'import media',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
     ),
     'module' => 'media',
   );
@@ -955,7 +955,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate any entity',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -975,7 +976,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate file entities',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -985,7 +987,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate interface',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'locale',
   );
@@ -1005,7 +1008,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate node entities',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
@@ -1015,7 +1019,8 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'translate taxonomy_term entities',
     'roles' => array(
       0 => 'administrator',
-      1 => 'moderator',
+      1 => 'authenticated user',
+      2 => 'moderator',
     ),
     'module' => 'entity_translation',
   );
