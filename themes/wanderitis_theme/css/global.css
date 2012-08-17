@@ -55,13 +55,13 @@ div.container-16 .grid4 {
 .panel-panel.right
 {
   background-color: #FFFFFF;
-  color: rgba(0, 0, 0, 0.76);
+  color: #2D292D;
 }
 
 .panel-panel.left *,
 .panel-panel.middle *,
-.panel-panel.right * {
-  color: rgba(0, 0, 0, 0.76);
+.panel-panel.right *{
+  color: #2D292D;
 }
 
 .panel-panel.left .inside,
@@ -115,7 +115,7 @@ h3 {
 }
 
 a, a:active, a:link, a:hover, a:visited {
-  color: #FFFFFF;
+  color: #2D292D;
 }
 
 a.button {
