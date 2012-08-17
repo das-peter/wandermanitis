@@ -229,7 +229,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = '%node:title';
   $display->uuid = '00750f0a-299e-dd14-4d6f-10f0ed3279da';
   $display->content = array();
   $display->panels = array();
@@ -269,7 +269,7 @@ function wanderitis_panels_default_page_manager_handlers() {
       'override_title' => 0,
       'override_title_text' => '',
       'identifier' => '',
-      'link' => 1,
+      'link' => 0,
       'leave_node_title' => 0,
       'build_mode' => 'full',
       'context' => 'argument_entity_id:node_1',
