@@ -307,3 +307,9 @@
 [submodule "themes/ember"]
 	path = themes/ember
 	url = http://git.drupal.org/project/ember.git
+[submodule "modules/redis"]
+	path = modules/redis
+	url = http://git.drupal.org/project/redis.git
+[submodule "modules/fape"]
+	path = modules/fape
+	url = http://git.drupal.org/project/fape.git
