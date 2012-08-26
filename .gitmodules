@@ -300,4 +300,10 @@
 	url = http://git.drupal.org/project/every_field.git
 [submodule "modules/admin"]
 	path = modules/admin
-	url = http://git.drupal.org/project/admin.git
+	url = git+ssh://git@git.cando-image.com/drupal/modules/admin.git
+[submodule "modules/resp_img"]
+	path = modules/resp_img
+	url = http://git.drupal.org/project/resp_img.git
+[submodule "themes/ember"]
+	path = themes/ember
+	url = http://git.drupal.org/project/ember.git
