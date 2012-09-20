@@ -313,3 +313,15 @@
 [submodule "modules/fape"]
 	path = modules/fape
 	url = http://git.drupal.org/project/fape.git
+[submodule "libraries/json2"]
+	path = libraries/json2
+	url = https://github.com/douglascrockford/JSON-js.git
+[submodule "modules/l10n_client"]
+	path = modules/l10n_client
+	url = http://git.drupal.org/project/l10n_client.git
+[submodule "themes/responsive_bartik"]
+	path = themes/responsive_bartik
+	url = http://git.drupal.org/project/responsive_bartik.git
+[submodule "modules/aloha"]
+	path = modules/aloha
+	url = http://git.drupal.org/project/aloha.git
