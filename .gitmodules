@@ -282,10 +282,10 @@
 	url = http://git.drupal.org/project/iconfonts.git
 [submodule "modules/navbar"]
 	path = modules/navbar
-	url = http://git.drupal.org/project/navbar.git
+	url = git+ssh://git@git.cando-image.com/drupal/modules/navbar.git
 [submodule "modules/edit"]
 	path = modules/edit
-	url = http://git.drupal.org/project/edit.git
+	url = git+ssh://git@git.cando-image.com/drupal/modules/edit.git
 [submodule "modules/gridbuilder"]
 	path = modules/gridbuilder
 	url = http://git.drupal.org/project/gridbuilder.git
