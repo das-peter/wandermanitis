@@ -27,15 +27,15 @@ function wanderitis_ds_ds_field_settings_info() {
         'class' => '',
       ),
     ),
-    'node_link' => array(
-      'weight' => '4',
-      'label' => 'hidden',
-      'format' => 'default',
-    ),
     'post_date' => array(
       'weight' => '1',
       'label' => 'hidden',
       'format' => 'ds_post_date_medium',
+    ),
+    'wanderitis_read_more_button' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'default',
     ),
   );
   $export['node|article|teaser'] = $ds_fieldsetting;
@@ -87,7 +87,7 @@ function wanderitis_ds_ds_field_settings_info() {
         'class' => '',
       ),
     ),
-    'node_link' => array(
+    'wanderitis_read_more_button' => array(
       'weight' => '4',
       'label' => 'hidden',
       'format' => 'default',
@@ -122,7 +122,7 @@ function wanderitis_ds_ds_layout_settings_info() {
       ),
       'right' => array(
         3 => 'body',
-        4 => 'node_link',
+        4 => 'wanderitis_read_more_button',
       ),
     ),
     'fields' => array(
@@ -130,7 +130,7 @@ function wanderitis_ds_ds_layout_settings_info() {
       'post_date' => 'header',
       'field_image' => 'left',
       'body' => 'right',
-      'node_link' => 'right',
+      'wanderitis_read_more_button' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
@@ -203,14 +203,14 @@ function wanderitis_ds_ds_layout_settings_info() {
         0 => 'title',
         1 => 'field_hike_dates',
         2 => 'body',
-        3 => 'node_link',
+        3 => 'wanderitis_read_more_button',
       ),
     ),
     'fields' => array(
       'title' => 'ds_content',
       'field_hike_dates' => 'ds_content',
       'body' => 'ds_content',
-      'node_link' => 'ds_content',
+      'wanderitis_read_more_button' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
