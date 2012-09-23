@@ -1,102 +1,59 @@
 /* This file will hold the main styles for your website. */
 
-div.container-16  {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1224px;
+html,
+body {
+  height: 100%;
   width: 100%;
-  /*width: 1224px;*/
-}
-.container-16 .block .omega-grid {
-  margin: 0px;
-}
-
-div.container-16 .grid-2 {
-  width: 11.5%;
-}
-div.container-16 .grid-4 {
-  width: 25%;
-}
-div.container-16 .grid-10 {
-  width: 61.5%;
-}
-div.container-16 .grid-12 {
-  width: 74%;
-}
-
-div.container-16 .panel-region.grid-16 {
-  width: 100%;
-  margin: 0px;
-}
-
-div.header {
-  padding-bottom: 10px;
-  margin: 0px;
-}
-
-div.header .top {
-  text-align: left;
-}
-
-div.container-16 .grid-16.top {
-  margin: 0px;
-}
-
-div.container-16 .grid-16.header {
-  min-height: 220px;
-}
-
-div.container-16 .grid4 {
-  margin: 0px;
-}
-
-.panel-panel.left,
-.panel-panel.middle,
-.panel-panel.right
-{
-  background-color: #FFFFFF;
-  color: #2D292D;
-}
-
-.panel-panel.left *,
-.panel-panel.middle *,
-.panel-panel.right *{
-  color: #2D292D;
-}
-
-.panel-panel.left .inside,
-.panel-panel.middle .inside,
-.panel-panel.right .inside {
-  padding: 5px;
-}
-
-.panel-panel.left,
-.panel-panel.middle,
-.panel-panel.right
-{
-  margin: 0px;
-}
-
-.panel-panel.left,
-.omega-16-twocol-12-4 .panel-panel.middle,
-.omega-16-threecol-2-12-2 .panel-panel.middle
-{
-  margin-right: 1%;
+  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
+  color: #FFFFFF;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
 body {
-
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
 }
 
-html,
-body {
-  height: 100%;
-  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
-  background-color: #A29583;
-  color: #FFFFFF;
-  font-family: Verdana, sans-serif;
+body * {
+  font-family: Verdana, Helvetica, Arial, sans-serif !important;
+}
+
+body,
+.content,
+#main,
+#content .section,
+.sidebar .section{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/*Responsive Stuff*/
+#page-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel-responsive .rld-col {
+  padding: 5px;
+}
+
+.panel-responsive .layout-responsive-region-header_a.rld-col {
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  padding: 0px;
+}
+
+.panel-responsive .layout-responsive-region-header_b.rld-col {
+  margin-bottom: 15px;
+  padding: 0px;
+}
+
+img {
+  max-width: none;
 }
 
 h1 {
@@ -104,18 +61,17 @@ h1 {
   margin-bottom: 10px;
 }
 
-h2 {
+h2,
+#content h2 a:link{
   font-size: 18px;
   margin-bottom: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 h3 {
   font-size: 15px;
   margin-bottom: 5px;
-}
-
-a, a:active, a:link, a:hover, a:visited {
-  color: #2D292D;
 }
 
 a.button {
@@ -126,13 +82,10 @@ a.button {
   -webkit-background-clip: padding;
   background-clip: padding-box;
   border-radius: 11px;
-  background: #ddd url(../images/button.png) repeat-x;
+  background: #ddd url('../images/button.png') repeat-x;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(1, #ddd));
   background: -moz-linear-gradient(top center, #fff 0%, #ddd 100%);
-  border: 1px solid;
-  border-color: #ddd #bbb #999;
   cursor: pointer;
-  color: #333;
   font: bold 12px/1.2 Arial, sans-serif;
   line-height: 12px;
   outline: 0;
@@ -144,13 +97,9 @@ a.button {
   *padding-bottom: 0px; /* IE7 */
   vertical-align: middle;
 }
-a.button:link,
-a.button:visited,
-a.button:hover,
-a.button:focus,
-a.button:active {
-  text-decoration: none;
-  color: #333;
+
+input.form-submit, a.button {
+  margin-bottom: 0px;
 }
 
 ul.facetapi-facetapi-checkbox-links li {
@@ -171,6 +120,14 @@ input.form-text {
   max-width: 350px;
 }
 
+.field-type-taxonomy-term-reference .field-label {
+  font-weight: bold; /* Same as for .field .field-label*/
+}
+.field-type-taxonomy-term-reference .field-label,
+.field-type-taxonomy-term-reference ul.links {
+  font-size: inherit;
+}
+
 #hike .pane-node-body {
   padding-top: 10px;
 }
@@ -186,21 +143,9 @@ input.form-text {
 }
 
 
-/* Logo */
-.pane-page-logo {
-  float: right;
-}
-.pane-page-logo .pane-content {
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #A29583;
-  padding: 8px;
-}
-
 /* Language Dropdown */
 .pane-locale-language {
   float: left;
-  background-color: #A29583;
   height: 32px;
 }
 
@@ -227,22 +172,53 @@ div.header-float {
   height: 0px;
 }
 
+/* Logo */
+.pane-page-logo {
+  float: right;
+  margin-right: 15px;
+}
+#logo  {
+  padding: 0px;
+}
+.pane-page-logo .pane-content {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  height: 93px;
+}
+
  /* Menu */
 .pane-menu {
   float: left;
+  margin-left: 15px;
   text-transform: uppercase;
   height: 30px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: #A29583;
 }
 
 .pane-system-main-menu ul.menu,
 .pane-system-main-menu ul.menu li {
+  padding: 0px;
+  margin: 0px;
+
   list-style: none;
   list-style-image: none;
   font-weight: bold;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  vertical-align: middle;
 }
+
+.pane-system-main-menu ul.menu li.first {
+  margin-left: 10px;
+}
+
+.pane-system-main-menu ul.menu li.last {
+  margin-right: 0px;
+}
+
 
 .pane-system-main-menu ul.menu li.expanded {
   list-style: circle;
@@ -251,23 +227,15 @@ div.header-float {
 
 .pane-system-main-menu ul.menu{
   /* Clear floats */
-  float:left;
+  float: left;
   width:100%;
 }
 
-.pane-system-main-menu ul.menu li{
-  float: left;
-  margin-right: 10px;
-  position: relative;
-  vertical-align: middle;
-  line-height: 100%;
-}
 .pane-system-main-menu ul.menu a{
   display: block;
   padding: 5px;
   color:#fff;
   vertical-align: middle;
-  line-height: 100%;
   text-decoration: none;
 }
 .pane-system-main-menu ul.menu a:hover,
@@ -301,7 +269,7 @@ div.header-float {
 
  /** HOME **/
 .page-home .pane-front-page-content-panel-pane-1 {
-  border-bottom: 1px solid #A29583;
+  border-bottom: 1px solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -309,6 +277,26 @@ div.header-float {
 .page-home div.item-list li {
   margin: 0 0 1.5em 0;
 }
+
+/** Latest articles list **/
+.view-latest-articles ul,
+.view-latest-articles li {
+  list-style: none;
+}
+
+.view-latest-articles li {
+  border-bottom: 1px solid #D3D7D9;
+}
+
+.view-latest-articles li.views-row-last {
+  border-bottom: 0px none;
+}
+
+.view-latest-articles li div {
+  border: 0px none;
+  padding-bottom: 5px;
+}
+
 
 /** HIKE SEARCH **/
 .page-hikes .views-exposed-form .views-exposed-widget {
@@ -330,19 +318,26 @@ div.header-float {
 .hike-search-result {
   padding-bottom: 15px;
   padding-top: 10px;
-  border-bottom: 1px solid #A29583;
   clear: both;
 }
 
+.hike-search-result.views-row-first {
+  padding-top: 0px;
+}
+
+.hike-search-result.views-row-last {
+  border: 0px none;
+}
+
 /** HIKE DETAILS **/
-.page-node.node-type-hike .panel-panel.right .button-subscribe-next-hike {
+.page-node.node-type-hike .button-subscribe-next-hike {
  text-align: center;
  padding: 10px;
 }
 
 /** HIKE SUBSCRIPTION **/
 .page-hike-subscribe .hike-subscription-equipment-reminder {
-  border-bottom: 1px solid #A29583;
+  border-bottom: 1px solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -361,4 +356,10 @@ div.header-float {
 }
 .page-hike-subscribe .pane-hike-subscription-form .pane-generic-form-field-actions a {
   margin-left: 10px;
+}
+
+/** Next hike list **/
+.view-next-hikes ul,
+.view-next-hikes li {
+  list-style: none;
 }

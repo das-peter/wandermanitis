@@ -72,3 +72,89 @@ function wanderitis_update_7002() {
   }
 }
 
+/**
+ * Sparkify the installation.
+ */
+function wanderitis_update_7003() {
+  // Enable sparky modules.
+  module_enable(array(
+    'every_field',
+    'admin',
+    'admin_tools',
+    'entity',
+    'fape',
+    'jquery_update',
+    'json2',
+    'libraries',
+    'page_manager',
+    'panels',
+    'panels_ipe',
+    'iconfonts',
+    'navbar',
+    'edit',
+    'edit_aloha',
+    'aloha',
+    'gridbuilder',
+    'layout',
+    'module_filter',
+    'filter_true_wysiwyg',
+    'cando_sparkify',
+  ));
+
+  // Disable non spark modules.
+  module_disable(array(
+    'wysiwyg',
+  ));
+
+  // Enable the admin theme.
+  db_update('system')
+    ->fields(array('status' => 1))
+    ->condition('type', 'theme')
+    ->condition('name', 'ember')
+    ->execute();
+  variable_set('admin_theme', 'ember');
+  variable_set('node_admin_theme', '1');
+
+  // Set the jQuery version to 1.7.
+  variable_set('jquery_update_compression_type', 'min');
+  variable_set('jquery_update_jquery_cdn', 'none');
+  variable_set('jquery_update_jquery_version', '1.7');
+
+  // Configure text formats for Aloha.
+  // Load Filtered HTML.
+  $filtered_html_format = filter_format_load('filtered_html');
+  $filtered_html_format->filters = filter_list_format('filtered_html');
+
+  // Add tags required by Aloha module.
+  $filtered_html_format->filters['filter_html']->settings['allowed_html'] .= ' <br> <p> <img> <pre>';
+
+  // Turn on image caption support and make it a higher weight.
+  $filtered_html_format->filters['edit_filter_captioned_image']->status = 1;
+  $filtered_html_format->filters['edit_filter_captioned_image']->weight = 11;
+
+  // @todo: Configure Image Resize Filter.
+  // @todo: Configure Token Filter.
+
+  // Cast everything to an array for filter_format_save(). Ugh.
+  foreach ($filtered_html_format->filters as $id => $filter) {
+    $filtered_html_format->filters[$id] = (array) $filter;
+  }
+  filter_format_save($filtered_html_format);
+
+  // Clear zee cache.
+  filter_formats_reset();
+}
+
+/**
+ * Enable wanderitis layout module.
+ */
+function wanderitis_update_7004() {
+  module_enable(array('wanderitis_layout'));
+}
+
+/**
+ * Disabled admin_menu.
+ */
+function wanderitis_update_7005() {
+  module_disable(array('admin_menu'));
+}

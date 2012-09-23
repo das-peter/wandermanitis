@@ -43,3 +43,15 @@ function wanderitis_field_formatter_info_alter(&$info) {
 function wanderitis_entity_info_alter(&$entity_info) {
   $entity_info['file']['view modes']['wanderitis_header'] = array('label' => t('Wanderitis: Header'), 'custom settings' => TRUE);
 }
+
+/**
+ * Implements hook_default_layout_breakpoint_alter().
+ */
+function wanderitis_default_layout_breakpoint_alter(&$breakpoints) {
+  // Disable non wanderitis breakpoints.
+  foreach ($breakpoints as $name => &$breakpoint) {
+    if (stristr($name, 'wanderitis') === FALSE) {
+      $breakpoint->disabled = TRUE;
+    }
+  }
+}

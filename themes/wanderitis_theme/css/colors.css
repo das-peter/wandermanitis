@@ -1,0 +1,87 @@
+
+/* ---------- Color Module Styles ----------- */
+
+body,
+body.overlay
+#page-wrapper,
+#footer-wrapper {
+
+  background-color: #A29583;
+  color: #FFFFFF;
+}
+.comment .comment-arrow {
+  border-color: #ffffff;
+}
+
+.tabs ul.primary li.active a {
+  border-bottom: 1px solid #ffffff;
+}
+
+.layout-responsive-region-navigation,
+.layout-responsive-region-body,
+.layout-responsive-region-sidebar_a
+{
+  background-color: #FFFFFF;
+  color: #2D292D;
+}
+
+.panel-panel.left *,
+.panel-panel.middle *,
+.panel-panel.right *,
+ul.links{
+  color: #2D292D;
+}
+
+a,
+a:active,
+a:link,
+a:hover,
+a:visited {
+  color: #2D292D;
+}
+a.button {
+  color: #333;
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:focus,
+a.button:active {
+  color: #333;
+}
+
+
+.pane-page-logo .pane-content {
+  background-color: #A29583;
+}
+.pane-locale-language {
+  background-color: #A29583;
+}
+
+.pane-menu {
+  background-color: #A29583;
+}
+.page-home .pane-front-page-content-panel-pane-1 {
+  border-bottom-color: #A29583;
+}
+
+.hike-search-result {
+  border-bottom: 1px solid #A29583;
+}
+
+.page-hike-subscribe .hike-subscription-equipment-reminder {
+  border-bottom-color: #A29583;
+}
+
+.region-header,
+.region-header a,
+.region-header li a.active,
+#name-and-slogan,
+#name-and-slogan a,
+#secondary-menu-links li a {
+  color: #fffeff;
+}
+
+
