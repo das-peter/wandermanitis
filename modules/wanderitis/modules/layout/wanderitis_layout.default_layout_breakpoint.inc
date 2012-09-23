@@ -25,7 +25,7 @@ function wanderitis_layout_default_layout_breakpoint() {
   $layout_breakpoint->name = 'wanderitis_standard';
   $layout_breakpoint->admin_title = 'wanderitis Standard';
   $layout_breakpoint->width = '760px';
-  $layout_breakpoint->grid_name = 'wanderitis_ninesixty_16';
+  $layout_breakpoint->grid_name = 'twelve_column_fluid';
   $export['wanderitis_standard'] = $layout_breakpoint;
 
   $layout_breakpoint = new stdClass();
@@ -34,7 +34,7 @@ function wanderitis_layout_default_layout_breakpoint() {
   $layout_breakpoint->name = 'wanderitis_tablet';
   $layout_breakpoint->admin_title = 'wanderitis Tablet';
   $layout_breakpoint->width = '320px';
-  $layout_breakpoint->grid_name = 'wanderitis_ninesixty_16';
+  $layout_breakpoint->grid_name = 'six_column_fluid';
   $export['wanderitis_tablet'] = $layout_breakpoint;
 
   return $export;
