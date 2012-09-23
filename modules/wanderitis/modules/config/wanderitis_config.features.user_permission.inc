@@ -10,15 +10,6 @@
 function wanderitis_config_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: access administration menu
-  $permissions['access administration menu'] = array(
-    'name' => 'access administration menu',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'admin_menu',
-  );
-
   // Exported permission: access administration pages
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
@@ -693,16 +684,6 @@ function wanderitis_config_user_default_permissions() {
     'module' => 'admin_language',
   );
 
-  // Exported permission: display drupal links
-  $permissions['display drupal links'] = array(
-    'name' => 'display drupal links',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'admin_menu',
-  );
-
   // Exported permission: edit any article content
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -843,15 +824,6 @@ function wanderitis_config_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'devel',
-  );
-
-  // Exported permission: flush caches
-  $permissions['flush caches'] = array(
-    'name' => 'flush caches',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'admin_menu',
   );
 
   // Exported permission: import media
