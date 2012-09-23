@@ -291,7 +291,7 @@
 	url = http://git.drupal.org/project/gridbuilder.git
 [submodule "modules/layout"]
 	path = modules/layout
-	url = http://git.drupal.org/project/layout.git
+	url = git+ssh://git@git.cando-image.com/drupal/modules/layout.git
 [submodule "modules/module_filter"]
 	path = modules/module_filter
 	url = http://git.drupal.org/project/module_filter.git
