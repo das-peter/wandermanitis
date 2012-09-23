@@ -158,3 +158,10 @@ function wanderitis_update_7004() {
 function wanderitis_update_7005() {
   module_disable(array('admin_menu'));
 }
+
+/**
+ * Enable rules.
+ */
+function wanderitis_update_7006() {
+  module_enable(array('entity_token', 'rules', 'rules_admin', 'mimemail'));
+}

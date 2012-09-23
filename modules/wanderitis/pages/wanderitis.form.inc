@@ -49,6 +49,11 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
     '#title' => t('Holiday-Location'),
     '#description' => t('The location where we can reach you during your stay in Heidiland.'),
   );
+  $form['remarks'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Remarks / Requests'),
+    '#description' => t('Add here remarks or special requests.'),
+  );
   $number_options = range(1, 9);
   $number_options = array_combine($number_options, $number_options);
   $form['numbers'] = array(
@@ -134,6 +139,21 @@ function wanderitis_hike_subscription_form_validate($form, &$form_state) {
  * @param $form_state
  */
 function wanderitis_hike_subscription_form_submit($form, &$form_state) {
+  rules_invoke_all(
+    'wanderitis_hike_subscription',
+    $form_state['values']['node'],
+    $form_state['values']['lastname'],
+    $form_state['values']['firstname'],
+    $form_state['values']['phone'],
+    $form_state['values']['mail'],
+    $form_state['values']['address']['street'],
+    $form_state['values']['address']['postalcode'],
+    $form_state['values']['address']['city'],
+    $form_state['values']['adults'],
+    $form_state['values']['children'],
+    $form_state['values']['holiday_location'],
+    $form_state['values']['remarks']
+  );
   // Redirect to the confirmation page.
   $form_state['redirect'] = 'hike-subscribe/' . $form_state['values']['node']->nid . '/submitted';
 }
