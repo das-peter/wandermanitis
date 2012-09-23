@@ -114,7 +114,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Indexed Inhalt: Node ID */
+  /* Field: Indexed Content: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_content';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
@@ -141,7 +141,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['nid']['separator'] = '';
   $handler->display->display_options['fields']['nid']['format_plural'] = 0;
   $handler->display->display_options['fields']['nid']['link_to_entity'] = 0;
-  /* Field: Indexed Inhalt: Media */
+  /* Field: Indexed Content: Media */
   $handler->display->display_options['fields']['field_media']['id'] = 'field_media';
   $handler->display->display_options['fields']['field_media']['table'] = 'search_api_index_content';
   $handler->display->display_options['fields']['field_media']['field'] = 'field_media';
@@ -199,7 +199,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['field_media']['delta_first_last'] = 0;
   $handler->display->display_options['fields']['field_media']['separator'] = '';
   $handler->display->display_options['fields']['field_media']['field_api_classes'] = 0;
-  /* Field: Indexed Inhalt: Title */
+  /* Field: Indexed Content: Title */
   $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
   $handler->display->display_options['fields']['title_field']['table'] = 'search_api_index_content';
   $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
@@ -225,7 +225,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['title_field']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title_field']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title_field']['field_api_classes'] = 0;
-  /* Field: Indexed Inhalt: The main body text */
+  /* Field: Indexed Content: The main body text */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'search_api_index_content';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -253,7 +253,7 @@ function wanderitis_panels_views_default_views() {
     'trim_length' => '300',
   );
   $handler->display->display_options['fields']['body']['field_api_classes'] = 0;
-  /* Field: Indexed Inhalt: Subscribe for next Hike */
+  /* Field: Indexed Content: Subscribe for next Hike */
   $handler->display->display_options['fields']['field_mail']['id'] = 'field_mail';
   $handler->display->display_options['fields']['field_mail']['table'] = 'search_api_index_content';
   $handler->display->display_options['fields']['field_mail']['field'] = 'field_mail';
@@ -305,14 +305,14 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['view_node']['hide_empty'] = 0;
   $handler->display->display_options['fields']['view_node']['empty_zero'] = 0;
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = 1;
-  /* Filter criterion: Indexed Inhalt: Content type */
+  /* Filter criterion: Indexed Content: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_content';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'hike' => 'hike',
   );
-  /* Filter criterion: Indexed Inhalt: Status */
+  /* Filter criterion: Indexed Content: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_content';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -534,7 +534,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 1;
-  /* Field: Inhalt: Body */
+  /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
@@ -585,7 +585,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['view_node']['empty_zero'] = 0;
   $handler->display->display_options['fields']['view_node']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['view_node']['text'] = 'Read more';
-  /* Sort criterion: Inhalt: Dates (field_hike_dates) */
+  /* Sort criterion: Content: Dates (field_hike_dates) */
   $handler->display->display_options['sorts']['field_hike_dates_value']['id'] = 'field_hike_dates_value';
   $handler->display->display_options['sorts']['field_hike_dates_value']['table'] = 'field_data_field_hike_dates';
   $handler->display->display_options['sorts']['field_hike_dates_value']['field'] = 'field_hike_dates_value';
@@ -643,6 +643,7 @@ function wanderitis_panels_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
@@ -664,7 +665,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['style_options']['easing'] = 'linear';
   $handler->display->display_options['style_options']['vertical'] = 0;
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Inhalt: Display Region (field_teaser_display_region) */
+  /* Relationship: Content: Display Region (field_teaser_display_region) */
   $handler->display->display_options['relationships']['field_teaser_display_region_tid']['id'] = 'field_teaser_display_region_tid';
   $handler->display->display_options['relationships']['field_teaser_display_region_tid']['table'] = 'field_data_field_teaser_display_region';
   $handler->display->display_options['relationships']['field_teaser_display_region_tid']['field'] = 'field_teaser_display_region_tid';
@@ -717,7 +718,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['title']['empty_zero'] = 0;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['title']['link_to_node'] = 0;
-  /* Field: Inhalt: Media */
+  /* Field: Content: Media */
   $handler->display->display_options['fields']['field_media']['id'] = 'field_media';
   $handler->display->display_options['fields']['field_media']['table'] = 'field_data_field_media';
   $handler->display->display_options['fields']['field_media']['field'] = 'field_media';
@@ -745,6 +746,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['field_media']['settings'] = array(
     'file_view_mode' => 'wanderitis_header',
   );
+  $handler->display->display_options['fields']['field_media']['group_column'] = 'fid';
   $handler->display->display_options['fields']['field_media']['group_rows'] = 1;
   $handler->display->display_options['fields']['field_media']['delta_limit'] = '1';
   $handler->display->display_options['fields']['field_media']['delta_offset'] = '0';
@@ -795,7 +797,7 @@ function wanderitis_panels_views_default_views() {
   /* Display: Teasery by display region */
   $handler = $view->new_display('panel_pane', 'Teasery by display region', 'panel_teasers_by_display_region');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Inhalt: Display Region (field_teaser_display_region) */
+  /* Sort criterion: Content: Display Region (field_teaser_display_region) */
   $handler->display->display_options['sorts']['field_teaser_display_region_tid']['id'] = 'field_teaser_display_region_tid';
   $handler->display->display_options['sorts']['field_teaser_display_region_tid']['table'] = 'field_data_field_teaser_display_region';
   $handler->display->display_options['sorts']['field_teaser_display_region_tid']['field'] = 'field_teaser_display_region_tid';
@@ -833,7 +835,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['filters']['name']['expose']['identifier'] = 'name';
   $handler->display->display_options['filters']['name']['expose']['required'] = 0;
   $handler->display->display_options['filters']['name']['expose']['multiple'] = FALSE;
-  /* Filter criterion: Inhalt: Display Region (field_teaser_display_region) */
+  /* Filter criterion: Content: Display Region (field_teaser_display_region) */
   $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['id'] = 'field_teaser_display_region_tid_1';
   $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['table'] = 'field_data_field_teaser_display_region';
   $handler->display->display_options['filters']['field_teaser_display_region_tid_1']['field'] = 'field_teaser_display_region_tid';
