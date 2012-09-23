@@ -471,6 +471,7 @@ function wanderitis_panels_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Next Hikes';
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -618,6 +619,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['inherit_panels_path'] = '1';
   $translatables['next_hikes'] = array(
     t('Master'),
+    t('Next Hikes'),
     t('more'),
     t('Apply'),
     t('Reset'),
