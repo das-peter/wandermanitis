@@ -49,7 +49,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -114,7 +119,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -179,7 +189,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -243,7 +258,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -307,7 +327,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -315,6 +340,10 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => '400',
           ),
           'type' => 'text_summary_or_trimmed',
@@ -384,12 +413,16 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '3',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'image_link' => 'content',
             'image_style' => 'medium',
           ),
@@ -481,7 +514,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'file_default',
           'weight' => '1',
         ),
@@ -509,13 +547,20 @@ function wanderitis_structure_field_default_fields() {
         'module' => 'media',
         'settings' => array(
           'allowed_schemes' => array(
-            0 => 'public',
-            1 => 'private',
+            'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 'image',
+            'audio' => 0,
+            'default' => 0,
+            'image' => 'image',
+            'video' => 0,
           ),
-          'browser_plugins' => array(),
+          'browser_plugins' => array(
+            'library' => 0,
+            'library_plus' => 0,
+            'media_default--media_browser_1' => 0,
+            'upload' => 0,
+          ),
           'progress_indicator' => 'throbber',
         ),
         'type' => 'media_generic',
@@ -573,7 +618,7 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -585,12 +630,13 @@ function wanderitis_structure_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'field_tags',
       'label' => 'Tags',
-      'required' => FALSE,
+      'required' => 0,
       'settings' => array(
         'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 0,
         'module' => 'taxonomy',
         'settings' => array(
           'autocomplete_path' => 'taxonomy/autocomplete',
@@ -639,10 +685,9 @@ function wanderitis_structure_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 4,
+          'type' => 'hidden',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -654,16 +699,21 @@ function wanderitis_structure_field_default_fields() {
       'entity_type' => 'node',
       'field_name' => 'title_field',
       'label' => 'Title',
-      'required' => TRUE,
+      'required' => 1,
       'settings' => array(
         'entity_translation_sync' => FALSE,
-        'text_processing' => 0,
+        'hide_label' => array(
+          'entity' => 0,
+          'page' => 0,
+        ),
+        'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
+        'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => 60,
+          'size' => '60',
         ),
         'type' => 'text_textfield',
         'weight' => -5,
@@ -710,7 +760,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -718,6 +773,10 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => '300',
           ),
           'type' => 'text_summary_or_trimmed',
@@ -727,6 +786,10 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => '200',
           ),
           'type' => 'text_summary_or_trimmed',
@@ -736,6 +799,10 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -793,6 +860,10 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 0,
             'thousand_separator' => ' ',
@@ -884,7 +955,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '8',
         ),
@@ -1039,7 +1115,12 @@ function wanderitis_structure_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 23,
         ),
@@ -1112,6 +1193,10 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 2,
             'thousand_separator' => ' ',
@@ -1190,6 +1275,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 2,
             'thousand_separator' => ' ',
@@ -1281,7 +1370,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '6',
         ),
@@ -1365,7 +1459,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '5',
         ),
@@ -1443,7 +1542,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 21,
         ),
@@ -1722,7 +1826,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 24,
         ),
@@ -1864,6 +1973,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 0,
             'thousand_separator' => ' ',
@@ -1953,7 +2066,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'file_default',
           'weight' => '2',
         ),
@@ -2158,7 +2276,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '16',
         ),
@@ -2230,6 +2353,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 0,
             'thousand_separator' => ' ',
@@ -2309,6 +2436,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 2,
             'thousand_separator' => ' ',
@@ -2388,6 +2519,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'number',
           'settings' => array(
             'decimal_separator' => '.',
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
             'prefix_suffix' => TRUE,
             'scale' => 2,
             'thousand_separator' => ' ',
@@ -2479,7 +2614,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '7',
         ),
@@ -2568,7 +2708,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '10',
         ),
@@ -2655,7 +2800,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 25,
         ),
@@ -2738,7 +2888,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '9',
         ),
@@ -2817,7 +2972,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '1',
         ),
@@ -2899,14 +3059,24 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
         'full' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => '0',
         ),
@@ -2914,6 +3084,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -2979,9 +3153,8 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
+          'type' => 'hidden',
           'weight' => '1',
         ),
         'full' => array(
@@ -3056,7 +3229,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'hidden',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3064,6 +3242,10 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
+            'edit' => array(
+              'editability' => 'disabled',
+              'wysiwyg' => FALSE,
+            ),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -3133,7 +3315,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'file_default',
           'weight' => 2,
         ),
@@ -3226,7 +3413,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'form',
+              'wysiwyg' => FALSE,
+            ),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 3,
         ),
@@ -3293,7 +3485,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -3361,7 +3558,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -3426,7 +3628,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3488,7 +3695,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -3553,7 +3765,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3679,7 +3896,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3741,7 +3963,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -3806,7 +4033,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3868,7 +4100,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -3933,7 +4170,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -3995,7 +4237,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -4060,7 +4307,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
@@ -4122,7 +4374,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 1,
         ),
@@ -4187,7 +4444,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'edit' => array(
+              'editability' => 'direct',
+              'wysiwyg' => TRUE,
+            ),
+          ),
           'type' => 'text_default',
           'weight' => 0,
         ),
