@@ -511,33 +511,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['nid']['empty_zero'] = 0;
   $handler->display->display_options['fields']['nid']['hide_alter_empty'] = 1;
   $handler->display->display_options['fields']['nid']['link_to_node'] = 0;
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
-  $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
-  $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
-  $handler->display->display_options['fields']['title_field']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['title_field']['alter']['alter_text'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['make_link'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['absolute'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['external'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['replace_spaces'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['trim_whitespace'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['nl2br'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['word_boundary'] = 1;
-  $handler->display->display_options['fields']['title_field']['alter']['ellipsis'] = 1;
-  $handler->display->display_options['fields']['title_field']['alter']['more_link'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['strip_tags'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['trim'] = 0;
-  $handler->display->display_options['fields']['title_field']['alter']['html'] = 0;
-  $handler->display->display_options['fields']['title_field']['element_label_colon'] = 1;
-  $handler->display->display_options['fields']['title_field']['element_default_classes'] = 1;
-  $handler->display->display_options['fields']['title_field']['hide_empty'] = 0;
-  $handler->display->display_options['fields']['title_field']['empty_zero'] = 0;
-  $handler->display->display_options['fields']['title_field']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['title_field']['group_column'] = 'entity_id';
-  $handler->display->display_options['fields']['title_field']['field_api_classes'] = 0;
-  $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
-  /* Field: Content: Rendered Content */
+  /* Field: Content: Rendered Inhalt */
   $handler->display->display_options['fields']['rendered_entity']['id'] = 'rendered_entity';
   $handler->display->display_options['fields']['rendered_entity']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['rendered_entity']['field'] = 'rendered_entity';
@@ -560,9 +534,36 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['fields']['rendered_entity']['hide_empty'] = 0;
   $handler->display->display_options['fields']['rendered_entity']['empty_zero'] = 0;
   $handler->display->display_options['fields']['rendered_entity']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['rendered_entity']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['rendered_entity']['display'] = 'view';
   $handler->display->display_options['fields']['rendered_entity']['view_mode'] = 'next_hike';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
+  $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['label'] = '';
+  $handler->display->display_options['fields']['title_field']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title_field']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['make_link'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['absolute'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['external'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['replace_spaces'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['trim_whitespace'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['nl2br'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['word_boundary'] = 1;
+  $handler->display->display_options['fields']['title_field']['alter']['ellipsis'] = 1;
+  $handler->display->display_options['fields']['title_field']['alter']['more_link'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['strip_tags'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['trim'] = 0;
+  $handler->display->display_options['fields']['title_field']['alter']['html'] = 0;
+  $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_field']['element_default_classes'] = 1;
+  $handler->display->display_options['fields']['title_field']['hide_empty'] = 0;
+  $handler->display->display_options['fields']['title_field']['empty_zero'] = 0;
+  $handler->display->display_options['fields']['title_field']['hide_alter_empty'] = 1;
+  $handler->display->display_options['fields']['title_field']['group_column'] = 'entity_id';
+  $handler->display->display_options['fields']['title_field']['field_api_classes'] = 0;
+  $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
   /* Sort criterion: Content: Dates (field_hike_dates) */
   $handler->display->display_options['sorts']['field_hike_dates_value']['id'] = 'field_hike_dates_value';
   $handler->display->display_options['sorts']['field_hike_dates_value']['table'] = 'field_data_field_hike_dates';
@@ -581,6 +582,14 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'hike' => 'hike',
   );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Dates (field_hike_dates) */
+  $handler->display->display_options['filters']['field_hike_dates_value']['id'] = 'field_hike_dates_value';
+  $handler->display->display_options['filters']['field_hike_dates_value']['table'] = 'field_data_field_hike_dates';
+  $handler->display->display_options['filters']['field_hike_dates_value']['field'] = 'field_hike_dates_value';
+  $handler->display->display_options['filters']['field_hike_dates_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_hike_dates_value']['group'] = 1;
+  $handler->display->display_options['filters']['field_hike_dates_value']['default_date'] = 'today';
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
