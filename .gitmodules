@@ -325,3 +325,6 @@
 [submodule "modules/aloha"]
 	path = modules/aloha
 	url = http://git.drupal.org/project/aloha.git
+[submodule "modules/wysiwyg_fields"]
+	path = modules/wysiwyg_fields
+	url = http://git.drupal.org/project/wysiwyg_fields.git
