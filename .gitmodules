@@ -331,3 +331,6 @@
 [submodule "modules/media_aloha"]
 	path = modules/media_aloha
 	url = daspeter@git.drupal.org:sandbox/jghyde/1770808.git
+[submodule "modules/admin_icons"]
+	path = modules/admin_icons
+	url = http://git.drupal.org/project/admin_icons.git
