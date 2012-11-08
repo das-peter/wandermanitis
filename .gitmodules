@@ -328,3 +328,6 @@
 [submodule "modules/wysiwyg_fields"]
 	path = modules/wysiwyg_fields
 	url = http://git.drupal.org/project/wysiwyg_fields.git
+[submodule "modules/media_aloha"]
+	path = modules/media_aloha
+	url = daspeter@git.drupal.org:sandbox/jghyde/1770808.git
