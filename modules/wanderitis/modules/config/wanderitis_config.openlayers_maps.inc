@@ -47,6 +47,7 @@ function wanderitis_config_openlayers_maps() {
         'ascending' => 1,
         'roundedCorner' => 1,
         'roundedCornerColor' => '#222222',
+        'maximizeDefault' => 0,
       ),
       'openlayers_behavior_navigation' => array(
         'zoomWheelEnabled' => 0,
@@ -58,12 +59,10 @@ function wanderitis_config_openlayers_maps() {
         'panIcons' => 1,
       ),
     ),
-    'default_layer' => 'mapquest_osm',
+    'default_layer' => 'google_hybrid',
     'layers' => array(
       'google_satellite' => 'google_satellite',
       'google_hybrid' => 'google_hybrid',
-      'mapquest_osm' => 'mapquest_osm',
-      'mapquest_openaerial' => 'mapquest_openaerial',
     ),
     'layer_weight' => array(
       'openlayers_geojson_picture_this' => '0',

@@ -143,16 +143,6 @@ function wanderitis_config_user_default_permissions() {
     'module' => 'contact',
   );
 
-  // Exported permission: access toolbar
-  $permissions['access toolbar'] = array(
-    'name' => 'access toolbar',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'moderator',
-    ),
-    'module' => 'toolbar',
-  );
-
   // Exported permission: access user profiles
   $permissions['access user profiles'] = array(
     'name' => 'access user profiles',
