@@ -114,7 +114,7 @@
 	url = http://git.drupal.org/project/omega_tools.git
 [submodule "modules/media_browser_plus"]
 	path = modules/media_browser_plus
-	url = git+ssh://git@git.cando-image.com/drupal/modules/media_browser_plus.git
+	url = daspeter@git.drupal.org:project/media_browser_plus.git
 [submodule "modules/multiform"]
 	path = modules/multiform
 	url = http://git.drupal.org/project/multiform.git
