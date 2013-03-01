@@ -162,7 +162,7 @@
 	url = git+ssh://git@git.cando-image.com/drupal/libraries/jquery_timer.git
 [submodule "modules/colorbox"]
 	path = modules/colorbox
-	url = git+ssh://git@git.cando-image.com/drupal/modules/colorbox.git
+	url = http://git.drupal.org/project/colorbox.git
 [submodule "modules/file_entity"]
 	path = modules/file_entity
 	url = git+ssh://git@git.cando-image.com/drupal/modules/file_entity.git
