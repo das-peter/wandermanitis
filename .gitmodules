@@ -147,7 +147,7 @@
 	url = git://github.com/jackmoore/colorbox.git
 [submodule "modules/openlayers"]
 	path = modules/openlayers
-	url = git+ssh://git@git.cando-image.com/drupal/modules/openlayers.git
+	url = http://git.drupal.org/project/openlayers.git
 [submodule "libraries/jquery.jcarousel"]
 	path = libraries/jquery.jcarousel
 	url = https://github.com/jsor/jcarousel.git
@@ -183,7 +183,7 @@
 	url = git+ssh://git@git.cando-image.com/drupal/modules/rules.git
 [submodule "libraries/OpenLayers"]
 	path = libraries/OpenLayers
-	url = git+ssh://git@git.cando-image.com/drupal/libraries/OpenLayers.git
+	url = https://github.com/openlayers/openlayers.git
 [submodule "modules/search_api_location"]
 	path = modules/search_api_location
 	url = http://git.drupal.org/project/search_api_location.git
@@ -298,9 +298,6 @@
 [submodule "modules/every_field"]
 	path = modules/every_field
 	url = http://git.drupal.org/project/every_field.git
-[submodule "modules/admin"]
-	path = modules/admin
-	url = git+ssh://git@git.cando-image.com/drupal/modules/admin.git
 [submodule "modules/resp_img"]
 	path = modules/resp_img
 	url = http://git.drupal.org/project/resp_img.git
