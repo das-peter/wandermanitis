@@ -331,3 +331,6 @@
 [submodule "modules/admin_icons"]
 	path = modules/admin_icons
 	url = http://git.drupal.org/project/admin_icons.git
+[submodule "modules/ckeditor"]
+	path = modules/ckeditor
+	url = http://git.drupal.org/project/ckeditor.git
