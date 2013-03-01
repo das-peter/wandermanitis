@@ -72,7 +72,7 @@
 	url = http://git.drupal.org/project/advanced_help.git
 [submodule "libraries/ckeditor"]
 	path = libraries/ckeditor
-	url = git+ssh://git@git.cando-image.com/drupal/libraries/ckeditor.git
+	url = https://github.com/ckeditor/ckeditor-releases.git
 [submodule "modules/wysiwyg"]
 	path = modules/wysiwyg
 	url = http://git.drupal.org/project/wysiwyg.git
