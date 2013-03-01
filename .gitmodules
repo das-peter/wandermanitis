@@ -9,13 +9,13 @@
 	url = git+ssh://git@git.cando-image.com/drupal/modules/features.git
 [submodule "modules/media"]
 	path = modules/media
-	url = git+ssh://git@git.cando-image.com/drupal/modules/media.git
+	url = http://git.drupal.org/project/media.git
 [submodule "modules/date"]
 	path = modules/date
 	url = http://git.drupal.org/project/date.git
 [submodule "modules/entity_translation"]
 	path = modules/entity_translation
-	url = git+ssh://git@git.cando-image.com/drupal/modules/entity_translation.git
+	url = http://git.drupal.org/project/entity_translation.git
 [submodule "modules/email"]
 	path = modules/email
 	url = git://drupalcode.org/project/email.git
@@ -81,7 +81,7 @@
 	url = git+ssh://git@git.cando-image.com/drupal/modules/cando.git
 [submodule "modules/title"]
 	path = modules/title
-	url = git+ssh://git@git.cando-image.com/drupal/modules/title.git
+	url = http://git.drupal.org/project/title.git
 [submodule "libraries/SolrPhpClient"]
 	path = libraries/SolrPhpClient
 	url = git+ssh://git@git.cando-image.com/drupal/libraries/SolrPhpClient.git
