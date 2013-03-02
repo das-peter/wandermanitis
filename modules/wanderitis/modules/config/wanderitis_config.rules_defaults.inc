@@ -25,7 +25,8 @@ function wanderitis_config_default_rules_configuration() {
         "city" : { "label" : "city", "type" : "text" },
         "adults" : { "label" : "adults", "type" : "integer" },
         "children" : { "label" : "children", "type" : "integer" },
-        "holiday_location" : { "label" : "holiday location", "type" : "text" }
+        "holiday_location" : { "label" : "holiday location", "type" : "text" },
+        "date_of_hike" : { "label" : "date of hike", "type" : "text" }
       },
       "DO" : [
         { "mimemail" : {
@@ -56,7 +57,8 @@ function wanderitis_config_default_rules_configuration() {
         "adults" : { "label" : "adults", "type" : "integer" },
         "children" : { "label" : "children", "type" : "integer" },
         "holiday_location" : { "label" : "holiday location", "type" : "text" },
-        "remarks" : { "label" : "remarks", "type" : "text" }
+        "remarks" : { "label" : "remarks", "type" : "text" },
+        "date_of_hike" : { "label" : "date of hike", "type" : "text" }
       },
       "DO" : [
         { "mimemail" : {
@@ -89,7 +91,8 @@ function wanderitis_config_default_rules_configuration() {
             "city" : [ "city" ],
             "adults" : [ "adults" ],
             "children" : [ "children" ],
-            "holiday_location" : [ "holiday_location" ]
+            "holiday_location" : [ "holiday_location" ],
+            "date_of_hike" : [ "date_of_hike" ]
           }
         },
         { "component_rules_hike_subscription_notification" : {
@@ -104,7 +107,8 @@ function wanderitis_config_default_rules_configuration() {
             "adults" : [ "adults" ],
             "children" : [ "children" ],
             "holiday_location" : [ "holiday_location" ],
-            "remarks" : [ "remarks" ]
+            "remarks" : [ "remarks" ],
+            "date_of_hike" : [ "date_of_hike" ]
           }
         }
       ]

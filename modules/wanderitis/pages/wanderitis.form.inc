@@ -8,6 +8,35 @@
  * @param $node
  */
 function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
+  $form['hike_date'] = array(
+    '#title' => t('Date of hike'),
+    '#type' => (is_object($node)) ? 'value' : 'textfield',
+    '#value' => 'Next possibility',
+  );
+  if (count($node->field_hike_dates[LANGUAGE_NONE]) > 1) {
+    $options = array();
+    $date = new DateObject();
+    foreach ($node->field_hike_dates[LANGUAGE_NONE] as $data) {
+      $date->modify($data['value']);
+      $options[$data['value']] = date_format_date($date, 'short');
+    }
+    $form['hike_date'] = array(
+      '#type' => 'select',
+      '#title' => t('Date of hike'),
+      '#required' => TRUE,
+      '#options' => $options,
+    );
+  }
+  elseif (count($node->field_hike_dates[LANGUAGE_NONE])) {
+    $data = reset($node->field_hike_dates[LANGUAGE_NONE]);
+    $date = new DateObject($data['value']);
+
+    $form['hike_date'] = array(
+      '#type' => 'markup',
+      '#markup' => t('Date of hike: %date', array('%date' => date_format_date($date, 'short'))),
+    );
+  }
+
   $form['lastname'] = array(
     '#type' => 'textfield',
     '#title' => t('Name'),
@@ -155,7 +184,8 @@ function wanderitis_hike_subscription_form_submit($form, &$form_state) {
     $form_state['values']['adults'],
     $form_state['values']['children'],
     $form_state['values']['holiday_location'],
-    $form_state['values']['remarks']
+    $form_state['values']['remarks'],
+    $form_state['values']['hike_date']
   );
   // Redirect to the confirmation page.
   $form_state['redirect'] = 'hike-subscribe/' . $form_state['values']['node']->nid . '/submitted';

@@ -30,6 +30,7 @@ function wanderitis_rules_event_info() {
         'children' => array('type' => 'integer', 'label' => t('Children')),
         'holiday_location' => array('type' => 'integer', 'label' => t('Holiday Location')),
         'remarks' => array('type' => 'integer', 'label' => t('Remarks')),
+        'date_of_hike' => array('type' => 'text', 'label' => t('Date of hike')),
       ),
     ),
   );
