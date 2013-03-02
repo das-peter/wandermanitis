@@ -340,3 +340,9 @@
 [submodule "modules/form_save"]
 	path = modules/form_save
 	url = http://git.drupal.org/project/form_save.git
+[submodule "modules/devel_themer"]
+	path = modules/devel_themer
+	url = http://git.drupal.org/project/devel_themer.git
+[submodule "modules/simplehtmldom"]
+	path = modules/simplehtmldom
+	url = http://git.drupal.org/project/simplehtmldom.git
