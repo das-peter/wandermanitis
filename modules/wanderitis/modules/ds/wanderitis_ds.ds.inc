@@ -30,7 +30,7 @@ function wanderitis_ds_ds_field_settings_info() {
     'post_date' => array(
       'weight' => '1',
       'label' => 'hidden',
-      'format' => 'ds_post_date_medium',
+      'format' => 'ds_post_date_date_only',
     ),
     'wanderitis_read_more_button' => array(
       'weight' => '5',
