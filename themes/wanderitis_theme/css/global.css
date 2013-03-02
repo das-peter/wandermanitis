@@ -73,6 +73,7 @@ img {
 h1 {
   font-size: 22px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 
 h2,
@@ -88,7 +89,8 @@ h3 {
   margin-bottom: 5px;
 }
 
-.button {
+.button,
+a.button {
   -webkit-appearance: none;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
@@ -114,11 +116,14 @@ h3 {
   font-weight: 700 !important;
 }
 
-.button *{
+.button *,
+a.button * {
   display: inline;
 }
 
-input.form-submit, a.button {
+input.form-submit,
+a.button,
+.button {
   margin-bottom: 0px;
 }
 
@@ -239,7 +244,6 @@ div.header-float {
   margin-right: 0px;
 }
 
-
 .pane-system-main-menu ul.menu li.expanded {
   list-style: circle;
   list-style-image: url("../../../../../misc/menu-expanded.png");
@@ -289,7 +293,7 @@ div.header-float {
 
  /** HOME **/
 .page-home .pane-front-page-content-panel-pane-1 {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #A29583;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -321,6 +325,24 @@ div.header-float {
 /** HIKE SEARCH **/
 .page-hikes .views-exposed-form .views-exposed-widget {
   padding-top: 0px;
+}
+.page-hikes .views-exposed-form .views-exposed-widget .form-submit,
+.page-hikes .views-exposed-form .views-exposed-widget .form-reset{
+  margin-top: 0.5em;
+}
+
+.page-hikes .sticky {
+  background-color: #FFFFFF;
+}
+
+.page-hikes .views-exposed-form  {
+  border-bottom: 1px solid #A29583;
+  margin-bottom: 0.5em;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 .page-hikes .left div.item-list {
@@ -362,9 +384,6 @@ div.header-float {
   margin-bottom: 10px;
 }
 
-.page-hike-subscribe .pane-hike-subscription-form .panel-col-top{
-  display: none;
-}
 .page-hike-subscribe .pane-hike-subscription-form .inside{
   padding: 0;
   margin: 0;
@@ -401,4 +420,44 @@ div.header-float {
 }
 :first-child + html .float-field-items .field-items .field-item {
   min-height: 1%;
+}
+
+div.field-type-taxonomy-term-reference {
+  margin: 0px;
+}
+
+
+/**
+ * Node pages.
+ */
+.pane-node-comments {
+  border-top: 1px solid #A29583;
+  margin-top: 10px;
+}
+
+/**
+ * Hike pages.
+ */
+.node-type-hike .pane-node-field-hike-dates .date-display-single {
+  padding-left: 10px;
+}
+
+/**
+ * Next hikes col.
+ */
+.view-next-hikes .item-list ul {
+  padding-left: 0px;
+}
+
+.view-next-hikes .item-list ul li{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.view-next-hikes .views-row-even{
+  background-color: #F8F8F8;
 }

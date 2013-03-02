@@ -23,7 +23,6 @@ function wanderitis_jcarousel_skin_info() {
     'title' => t('wanderitis: Frontpage'),
     'file' => 'theme/jcarousel_frontpage/jcarousel-frontpage.css',
   );
-
   return $skins;
 }
 
@@ -88,4 +87,67 @@ function wanderitis_system_info_alter(&$info, $file, $type = NULL) {
         break;
     }
   }
+}
+
+/**
+ * Implements hook_date_format_types().
+ */
+function wanderitis_date_format_types() {
+  return array(
+    'date_only' => t('Date Only'),
+    'medium_date_only' => t('Medium Date Only')
+  );
+}
+
+/**
+ * Implements hook_date_formats()
+ */
+function wanderitis_date_formats() {
+  return array(
+    array(
+      'type' => 'date_only',
+      'format' => 'd/m/Y',
+      'locales' => array('en', 'en-gb'),
+    ),
+    array(
+      'type' => 'date_only',
+      'format' => 'd.m.Y',
+      'locales' => array('de', 'fr', 'it', 'es'),
+    ),
+    array(
+      'type' => 'medium_date_only',
+      'format' => 'D, d.m.Y',
+      'locales' => array('de', 'fr', 'es', 'en', 'en-gb')
+    ),
+    array(
+      'type' => 'medium_date_only',
+      'format' => 'D, d/m/Y',
+      'locales' => array('it')
+    ),
+    array(
+      'type' => 'long',
+      'format' => 'l, j. F Y - H:i',
+      'locales' => array('de'),
+    ),
+    array(
+      'type' => 'medium',
+      'format' => 'D, d.m.Y - H:i',
+      'locales' => array('de', 'fr', 'it', 'es'),
+    ),
+    array(
+      'type' => 'medium',
+      'format' => 'D, d/m/Y - H:i',
+      'locales' => array('en', 'en-gb'),
+    ),
+    array(
+      'type' => 'short',
+      'format' => 'd.m.Y - H:i',
+      'locales' => array('de', 'fr', 'it', 'es'),
+    ),
+    array(
+      'type' => 'short',
+      'format' => 'd/m/Y - H:i',
+      'locales' => array('en', 'en-gb'),
+    ),
+  );
 }
