@@ -29,12 +29,12 @@ function wanderitis_config_default_rules_configuration() {
       },
       "DO" : [
         { "mimemail" : {
-            "to" : "[rule:mail]",
+            "to" : "[mail:value]",
             "from_name" : "wanderitis.ch",
             "from_mail" : "info@wanderitis.ch",
             "subject" : "wanderitis subscription confirmation for [hike:title-field]",
-            "body" : "Thank you very much for subscribing for the hike \\u003Ca href=\\u0022[hike:url]\\u0022\\u003E[hike:title-field]\\u003C\\/a\\u003E\\r\\n\\r\\nThis are the data we received from you:\\r\\n\\r\\nLastname: [rule:lastname]\\r\\nFirstname: [rule:firstname]\\r\\nPhone: [rule:phone]\\r\\nMail: [rule:mail]\\r\\nStreet: [rule:street]\\r\\nCity:  [rule:postalcode] [rule:city]\\r\\n\\r\\nParticipants:\\r\\nAdults: [rule:adults]\\r\\nChildren: [rule:children]\\r\\n\\r\\n\\u003Cstrong\\u003EHoliday location: \\u003C\\/strong\\u003E\\r\\n[rule:holiday-location]\\r\\n\\r\\n\\u003Cstrong\\u003ERemarks:\\u003C\\/strong\\u003E\\r\\n[rule:remarks]\\r\\n\\r\\nWe\\u0027ll contact you as soon as possible.\\r\\n\\r\\nBest regards\\r\\nwanderitis.ch",
-            "plaintext" : "Thank you very much for subscribing for the hike [hike:title-field] ([hike:url])\\r\\n\\r\\nThis are the data we received from you:\\r\\n\\r\\nLastname: [rule:lastname]\\r\\nFirstname: [rule:firstname]\\r\\nPhone: [rule:phone]\\r\\nMail: [rule:mail]\\r\\nStreet: [rule:street]\\r\\nCity:  [rule:postalcode] [rule:city]\\r\\n\\r\\nParticipants:\\r\\nAdults: [rule:adults]\\r\\nChildren: [rule:children]\\r\\n\\r\\nHoliday location:\\r\\n[rule:holiday-location]\\r\\n\\r\\nRemarks:\\r\\n[rule:remarks]\\r\\n\\r\\nWe\\u0027ll contact you as soon as possible.\\r\\n\\r\\nBest regards\\r\\nwanderitis.ch"
+            "body" : "Thank you very much for subscribing for the hike \\u003Ca href=\\u0022[hike:url]\\u0022\\u003E[hike:title-field]\\u003C\\/a\\u003E\\r\\n\\r\\nThis are the data we received from you:\\r\\n\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nParticipants:\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\n\\u003Cstrong\\u003EHoliday location: \\u003C\\/strong\\u003E\\r\\n[holiday-location:value]\\r\\n\\r\\n\\u003Cstrong\\u003ERemarks:\\u003C\\/strong\\u003E\\r\\n[remarks:value]\\r\\n\\r\\nWe\\u0027ll contact you as soon as possible.\\r\\n\\r\\nBest regards\\r\\nwanderitis.ch",
+            "plaintext" : "Thank you very much for subscribing for the hike [hike:title-field] ([hike:url])\\r\\n\\r\\nThis are the data we received from you:\\r\\n\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nParticipants:\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\nHoliday location:\\r\\n[holiday-location:value]\\r\\n\\r\\nRemarks:\\r\\n[remarks:value]\\r\\n\\r\\nWe\\u0027ll contact you as soon as possible.\\r\\n\\r\\nBest regards\\r\\nwanderitis.ch"
           }
         }
       ]
@@ -61,12 +61,12 @@ function wanderitis_config_default_rules_configuration() {
       "DO" : [
         { "mimemail" : {
             "to" : "info@wanderitis.ch",
-            "from_name" : "[rule:lastname] [rule:firstname]",
+            "from_name" : "[lastname:value] [firstname:value]",
             "from_mail" : "info@wanderitis.ch",
-            "reply_to" : "[rule:mail]",
+            "reply_to" : "[mail:value]",
             "subject" : "[hike:nid] :New Subscription [hike:title-field]",
-            "body" : "You got a new subscription for the hike \\u003Ca href=\\u0022[hike:url]\\u0022\\u003E[hike:title-field]\\u003C\\/a\\u003E\\r\\n\\r\\n\\u003Cstrong\\u003EData:\\u003C\\/strong\\u003E\\r\\nLastname: [rule:lastname]\\r\\nFirstname: [rule:firstname]\\r\\nPhone: [rule:phone]\\r\\nMail: [rule:mail]\\r\\nStreet: [rule:street]\\r\\nCity:  [rule:postalcode] [rule:city]\\r\\n\\r\\nAdults: [rule:adults]\\r\\nChildren: [rule:children]\\r\\n\\r\\n\\u003Cstrong\\u003EHoliday location: \\u003C\\/strong\\u003E\\r\\n[rule:holiday-location]\\r\\n\\r\\n\\u003Cstrong\\u003ERemarks:\\u003C\\/strong\\u003E\\r\\n[rule:remarks]",
-            "plaintext" : "You got a new subscription for the hike [hike:title-field]\\r\\n[hike:url]\\r\\n\\r\\nData:\\r\\nLastname: [rule:lastname]\\r\\nFirstname: [rule:firstname]\\r\\nPhone: [rule:phone]\\r\\nMail: [rule:mail]\\r\\nStreet: [rule:street]\\r\\nCity:  [rule:postalcode] [rule:city]\\r\\n\\r\\nAdults: [rule:adults]\\r\\nChildren: [rule:children]\\r\\n\\r\\nHoliday location:\\r\\n[rule:holiday-location]\\r\\n\\r\\nRemarks:\\r\\n[rule:remarks]"
+            "body" : "You got a new subscription for the hike \\u003Ca href=\\u0022[hike:url]\\u0022\\u003E[hike:title-field]\\u003C\\/a\\u003E\\r\\n\\r\\n\\u003Cstrong\\u003EData:\\u003C\\/strong\\u003E\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\n\\u003Cstrong\\u003EHoliday location: \\u003C\\/strong\\u003E\\r\\n[holiday-location:value]\\r\\n\\r\\n\\u003Cstrong\\u003ERemarks:\\u003C\\/strong\\u003E\\r\\n[remarks:value]",
+            "plaintext" : "You got a new subscription for the hike [hike:title-field]\\r\\n[hike:url]\\r\\n\\r\\nData:\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\nHoliday location:\\r\\n[holiday-location:value]\\r\\n\\r\\nRemarks:\\r\\n[remarks:value]"
           }
         }
       ]
