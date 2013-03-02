@@ -180,7 +180,7 @@
 	url = git+ssh://git@git.cando-image.com/drupal/modules/cache_actions.git
 [submodule "modules/rules"]
 	path = modules/rules
-	url = git+ssh://git@git.cando-image.com/drupal/modules/rules.git
+	url = http://git.drupal.org/project/rules.git
 [submodule "libraries/OpenLayers"]
 	path = libraries/OpenLayers
 	url = https://github.com/openlayers/openlayers.git
