@@ -63,7 +63,6 @@ function wanderitis_config_default_rules_configuration() {
             "to" : "info@wanderitis.ch",
             "from_name" : "[lastname:value] [firstname:value]",
             "from_mail" : "info@wanderitis.ch",
-            "reply_to" : "[mail:value]",
             "subject" : "[hike:nid] :New Subscription [hike:title-field]",
             "body" : "You got a new subscription for the hike \\u003Ca href=\\u0022[hike:url]\\u0022\\u003E[hike:title-field]\\u003C\\/a\\u003E\\r\\n\\r\\n\\u003Cstrong\\u003EData:\\u003C\\/strong\\u003E\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\n\\u003Cstrong\\u003EHoliday location: \\u003C\\/strong\\u003E\\r\\n[holiday-location:value]\\r\\n\\r\\n\\u003Cstrong\\u003ERemarks:\\u003C\\/strong\\u003E\\r\\n[remarks:value]",
             "plaintext" : "You got a new subscription for the hike [hike:title-field]\\r\\n[hike:url]\\r\\n\\r\\nData:\\r\\nLastname: [lastname:value]\\r\\nFirstname: [firstname:value]\\r\\nPhone: [phone:value]\\r\\nMail: [mail:value]\\r\\nStreet: [street:value]\\r\\nCity:  [postalcode:value] [city:value]\\r\\n\\r\\nAdults: [adults:value]\\r\\nChildren: [children:value]\\r\\n\\r\\nHoliday location:\\r\\n[holiday-location:value]\\r\\n\\r\\nRemarks:\\r\\n[remarks:value]"
