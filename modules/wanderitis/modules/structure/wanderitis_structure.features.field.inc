@@ -10,7 +10,7 @@
 function wanderitis_structure_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'comment-comment_node_article-comment_body'
+  // Exported field: 'comment-comment_node_article-comment_body'.
   $fields['comment-comment_node_article-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -33,6 +33,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -51,8 +52,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -80,7 +80,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'comment-comment_node_hike-comment_body'
+  // Exported field: 'comment-comment_node_hike-comment_body'.
   $fields['comment-comment_node_hike-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -103,6 +103,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -121,8 +122,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -150,7 +150,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'comment-comment_node_page-comment_body'
+  // Exported field: 'comment-comment_node_page-comment_body'.
   $fields['comment-comment_node_page-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -173,6 +173,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -191,8 +192,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -219,7 +219,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'comment-comment_node_teaser-comment_body'
+  // Exported field: 'comment-comment_node_teaser-comment_body'.
   $fields['comment-comment_node_teaser-comment_body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -242,6 +242,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -260,8 +261,7 @@ function wanderitis_structure_field_default_fields() {
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -288,7 +288,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-body'
+  // Exported field: 'node-article-body'.
   $fields['node-article-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -311,6 +311,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -372,7 +373,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_image'
+  // Exported field: 'node-article-field_image'.
   $fields['node-article-field_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -393,6 +394,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'image',
       'settings' => array(
         'default_image' => 0,
@@ -454,6 +456,7 @@ function wanderitis_structure_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
+            0 => 0,
             'audio' => 0,
             'default' => 0,
             'image' => 'image',
@@ -473,7 +476,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_media'
+  // Exported field: 'node-article-field_media'.
   $fields['node-article-field_media'] = array(
     'field_config' => array(
       'active' => '1',
@@ -494,6 +497,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -569,7 +573,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-field_tags'
+  // Exported field: 'node-article-field_tags'.
   $fields['node-article-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -592,6 +596,7 @@ function wanderitis_structure_field_default_fields() {
         ),
       ),
       'label' => 'Tags',
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -648,7 +653,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-article-title_field'
+  // Exported field: 'node-article-title_field'.
   $fields['node-article-title_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -669,6 +674,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -721,7 +727,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-body'
+  // Exported field: 'node-hike-body'.
   $fields['node-hike-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -744,6 +750,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -832,7 +839,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-field_altitude_difference'
+  // Exported field: 'node-hike-field_altitude_difference'.
   $fields['node-hike-field_altitude_difference'] = array(
     'field_config' => array(
       'active' => '1',
@@ -842,6 +849,7 @@ function wanderitis_structure_field_default_fields() {
       'field_name' => 'field_altitude_difference',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -912,7 +920,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-field_audience'
+  // Exported field: 'node-hike-field_audience'.
   $fields['node-hike-field_audience'] = array(
     'field_config' => array(
       'active' => '1',
@@ -933,6 +941,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -1001,7 +1010,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-field_destination_point'
+  // Exported field: 'node-hike-field_destination_point'.
   $fields['node-hike-field_destination_point'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1011,6 +1020,7 @@ function wanderitis_structure_field_default_fields() {
       'field_name' => 'field_destination_point',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'geofield',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -1073,12 +1083,12 @@ function wanderitis_structure_field_default_fields() {
           'openlayers_map' => 'wanderitis_geofield_widget_map',
         ),
         'type' => 'geofield_openlayers',
-        'weight' => '52',
+        'weight' => '47',
       ),
     ),
   );
 
-  // Exported field: 'node-hike-field_destination_point_descr'
+  // Exported field: 'node-hike-field_destination_point_descr'.
   $fields['node-hike-field_destination_point_descr'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1099,6 +1109,7 @@ function wanderitis_structure_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -1164,7 +1175,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-field_distance'
+  // Exported field: 'node-hike-field_distance'.
   $fields['node-hike-field_distance'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1174,6 +1185,7 @@ function wanderitis_structure_field_default_fields() {
       'field_name' => 'field_distance',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'decimal_separator' => '.',
@@ -1245,7 +1257,7 @@ function wanderitis_structure_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-hike-field_duration'
+  // Exported field: 'node-hike-field_duration'.
   $fields['node-hike-field_duration'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1255,6 +1267,7 @@ function wanderitis_structure_field_default_fields() {
       'field_name' => 'field_duration',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'decimal_separator' => '.',
@@ -1327,7 +1340,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_equipment_mand'
+  // Exported field: 'node-hike-field_equipment_mand'.
   $fields['node-hike-field_equipment_mand'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1348,6 +1361,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -1416,7 +1430,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_equipment_rec'
+  // Exported field: 'node-hike-field_equipment_rec'.
   $fields['node-hike-field_equipment_rec'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1437,6 +1451,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -1505,7 +1520,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_guide_notes'
+  // Exported field: 'node-hike-field_guide_notes'.
   $fields['node-hike-field_guide_notes'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1526,6 +1541,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -1591,7 +1607,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_hike_dates'
+  // Exported field: 'node-hike-field_hike_dates'.
   $fields['node-hike-field_hike_dates'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1601,6 +1617,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_hike_dates',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'date',
       'settings' => array(
         'cache_count' => '4',
@@ -1706,7 +1723,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_hike_route'
+  // Exported field: 'node-hike-field_hike_route'.
   $fields['node-hike-field_hike_route'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1716,6 +1733,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_hike_route',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'geofield',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -1778,12 +1796,12 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'openlayers_map' => 'wanderitis_geofield_widget_map',
         ),
         'type' => 'geofield_openlayers',
-        'weight' => '47',
+        'weight' => '46',
       ),
     ),
   );
 
-  // Exported field: 'node-hike-field_level_of_difficulty'
+  // Exported field: 'node-hike-field_level_of_difficulty'.
   $fields['node-hike-field_level_of_difficulty'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1804,6 +1822,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -1872,7 +1891,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_mail'
+  // Exported field: 'node-hike-field_mail'.
   $fields['node-hike-field_mail'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1882,6 +1901,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_mail',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'email',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -1945,7 +1965,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_max_participants'
+  // Exported field: 'node-hike-field_max_participants'.
   $fields['node-hike-field_max_participants'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1955,6 +1975,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_max_participants',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -2025,7 +2046,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_media'
+  // Exported field: 'node-hike-field_media'.
   $fields['node-hike-field_media'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2046,6 +2067,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -2085,6 +2107,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
             'slideshow_carousel_follow' => 0,
             'slideshow_carousel_image_style' => '',
             'slideshow_carousel_scroll' => '1',
+            'slideshow_carousel_skin' => '',
             'slideshow_carousel_speed' => '500',
             'slideshow_carousel_vertical' => 0,
             'slideshow_carousel_visible' => '3',
@@ -2094,6 +2117,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
             'slideshow_colorbox_speed' => '350',
             'slideshow_colorbox_transition' => 'elastic',
             'slideshow_controls' => 0,
+            'slideshow_controls_pause' => 0,
             'slideshow_controls_position' => 'after',
             'slideshow_field_collection_image' => '',
             'slideshow_fx' => 'fade',
@@ -2105,6 +2129,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
             'slideshow_pager_position' => 'after',
             'slideshow_pause' => 0,
             'slideshow_speed' => '1000',
+            'slideshow_start_on_hover' => 0,
             'slideshow_timeout' => '4000',
           ),
           'type' => 'slideshow',
@@ -2162,7 +2187,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_meeting_point'
+  // Exported field: 'node-hike-field_meeting_point'.
   $fields['node-hike-field_meeting_point'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2172,6 +2197,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_meeting_point',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'geofield',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -2239,7 +2265,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_meeting_point_descr'
+  // Exported field: 'node-hike-field_meeting_point_descr'.
   $fields['node-hike-field_meeting_point_descr'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2260,6 +2286,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -2325,7 +2352,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_min_participants'
+  // Exported field: 'node-hike-field_min_participants'.
   $fields['node-hike-field_min_participants'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2335,6 +2362,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_min_participants',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -2405,7 +2433,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_price_adult'
+  // Exported field: 'node-hike-field_price_adult'.
   $fields['node-hike-field_price_adult'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2415,6 +2443,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_price_adult',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'decimal_separator' => '.',
@@ -2488,7 +2517,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_price_child'
+  // Exported field: 'node-hike-field_price_child'.
   $fields['node-hike-field_price_child'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2498,6 +2527,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'field_name' => 'field_price_child',
       'foreign keys' => array(),
       'indexes' => array(),
+      'locked' => '0',
       'module' => 'number',
       'settings' => array(
         'decimal_separator' => '.',
@@ -2571,7 +2601,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_shoe_type'
+  // Exported field: 'node-hike-field_shoe_type'.
   $fields['node-hike-field_shoe_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2592,6 +2622,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2660,7 +2691,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_tags'
+  // Exported field: 'node-hike-field_tags'.
   $fields['node-hike-field_tags'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2683,6 +2714,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         ),
       ),
       'label' => 'Tags',
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2757,7 +2789,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_time_of_day'
+  // Exported field: 'node-hike-field_time_of_day'.
   $fields['node-hike-field_time_of_day'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2778,6 +2810,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2845,7 +2878,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-field_weather_conditions'
+  // Exported field: 'node-hike-field_weather_conditions'.
   $fields['node-hike-field_weather_conditions'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2866,6 +2899,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -2934,7 +2968,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-hike-title_field'
+  // Exported field: 'node-hike-title_field'.
   $fields['node-hike-title_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -2955,6 +2989,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3020,7 +3055,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-page-body'
+  // Exported field: 'node-page-body'.
   $fields['node-page-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3043,6 +3078,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3116,7 +3152,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-page-title_field'
+  // Exported field: 'node-page-title_field'.
   $fields['node-page-title_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3137,6 +3173,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3190,7 +3227,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-teaser-body'
+  // Exported field: 'node-teaser-body'.
   $fields['node-teaser-body'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3213,6 +3250,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3231,8 +3269,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3242,10 +3279,6 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
-            'edit' => array(
-              'editability' => 'disabled',
-              'wysiwyg' => FALSE,
-            ),
             'trim_length' => 600,
           ),
           'type' => 'text_summary_or_trimmed',
@@ -3274,7 +3307,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-teaser-field_media'
+  // Exported field: 'node-teaser-field_media'.
   $fields['node-teaser-field_media'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3295,6 +3328,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'fid',
         ),
       ),
+      'locked' => '0',
       'module' => 'file',
       'settings' => array(
         'display_default' => 0,
@@ -3315,12 +3349,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'file',
-          'settings' => array(
-            'edit' => array(
-              'editability' => 'form',
-              'wysiwyg' => FALSE,
-            ),
-          ),
+          'settings' => array(),
           'type' => 'file_default',
           'weight' => 2,
         ),
@@ -3370,7 +3399,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-teaser-field_teaser_display_region'
+  // Exported field: 'node-teaser-field_teaser_display_region'.
   $fields['node-teaser-field_teaser_display_region'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3391,6 +3420,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -3413,12 +3443,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(
-            'edit' => array(
-              'editability' => 'form',
-              'wysiwyg' => FALSE,
-            ),
-          ),
+          'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
           'weight' => 3,
         ),
@@ -3447,7 +3472,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'node-teaser-title_field'
+  // Exported field: 'node-teaser-title_field'.
   $fields['node-teaser-title_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3468,6 +3493,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3487,8 +3513,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3521,7 +3546,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-audience-description_field'
+  // Exported field: 'taxonomy_term-audience-description_field'.
   $fields['taxonomy_term-audience-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3542,6 +3567,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3560,8 +3586,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3590,7 +3615,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-audience-name_field'
+  // Exported field: 'taxonomy_term-audience-name_field'.
   $fields['taxonomy_term-audience-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3611,6 +3636,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3630,8 +3656,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3658,7 +3683,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-equipment-description_field'
+  // Exported field: 'taxonomy_term-equipment-description_field'.
   $fields['taxonomy_term-equipment-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3679,6 +3704,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3697,8 +3723,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3727,7 +3752,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-equipment-name_field'
+  // Exported field: 'taxonomy_term-equipment-name_field'.
   $fields['taxonomy_term-equipment-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3748,6 +3773,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3767,8 +3793,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3795,7 +3820,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-level_of_difficulty-description_field'
+  // Exported field: 'taxonomy_term-level_of_difficulty-description_field'.
   $fields['taxonomy_term-level_of_difficulty-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3816,6 +3841,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3858,7 +3884,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-level_of_difficulty-name_field'
+  // Exported field: 'taxonomy_term-level_of_difficulty-name_field'.
   $fields['taxonomy_term-level_of_difficulty-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3879,6 +3905,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3898,8 +3925,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3926,7 +3952,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-shoe_types-description_field'
+  // Exported field: 'taxonomy_term-shoe_types-description_field'.
   $fields['taxonomy_term-shoe_types-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -3947,6 +3973,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -3965,8 +3992,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -3995,7 +4021,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-shoe_types-name_field'
+  // Exported field: 'taxonomy_term-shoe_types-name_field'.
   $fields['taxonomy_term-shoe_types-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4016,6 +4042,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4035,8 +4062,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4063,7 +4089,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-tags-description_field'
+  // Exported field: 'taxonomy_term-tags-description_field'.
   $fields['taxonomy_term-tags-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4084,6 +4110,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4102,8 +4129,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4132,7 +4158,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-tags-name_field'
+  // Exported field: 'taxonomy_term-tags-name_field'.
   $fields['taxonomy_term-tags-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4153,6 +4179,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4172,8 +4199,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4200,7 +4226,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-time_of_day-description_field'
+  // Exported field: 'taxonomy_term-time_of_day-description_field'.
   $fields['taxonomy_term-time_of_day-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4221,6 +4247,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4239,8 +4266,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4269,7 +4295,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-time_of_day-name_field'
+  // Exported field: 'taxonomy_term-time_of_day-name_field'.
   $fields['taxonomy_term-time_of_day-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4290,6 +4316,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4309,8 +4336,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4337,7 +4363,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-weather_condition-description_field'
+  // Exported field: 'taxonomy_term-weather_condition-description_field'.
   $fields['taxonomy_term-weather_condition-description_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4358,6 +4384,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4376,8 +4403,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
@@ -4406,7 +4432,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
     ),
   );
 
-  // Exported field: 'taxonomy_term-weather_condition-name_field'
+  // Exported field: 'taxonomy_term-weather_condition-name_field'.
   $fields['taxonomy_term-weather_condition-name_field'] = array(
     'field_config' => array(
       'active' => '1',
@@ -4427,6 +4453,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'entity_translation_sync' => FALSE,
@@ -4446,8 +4473,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
           'module' => 'text',
           'settings' => array(
             'edit' => array(
-              'editability' => 'direct',
-              'wysiwyg' => TRUE,
+              'editor' => 'direct',
             ),
           ),
           'type' => 'text_default',
