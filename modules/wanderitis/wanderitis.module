@@ -55,3 +55,37 @@ function wanderitis_default_layout_breakpoint_alter(&$breakpoints) {
     }
   }
 }
+
+/**
+ * Implements hook_boot().
+ *
+ * Just ensure this module is load very early.
+ */
+function wanderitis_boot() {
+}
+
+
+/**
+ * Implements hook_system_info_alter().
+ *
+ * Enforce compatibility between certain modules because we don't have the
+ * version information as we use git repositories.
+ *
+ * @param $info
+ *   The module/theme info array we're altering.
+ * @param $file
+ *   An object describing the filesystem location of the module/theme.
+ * @param $type
+ *   Can be module or theme.
+ */
+function wanderitis_system_info_alter(&$info, $file, $type = NULL) {
+  if ($type == 'module') {
+    switch ($file->name) {
+      // Services REST Server dependency.
+      case 'libraries':
+        // We use 2.x-dev, so set a 2.x version.
+        $info['version'] = '7.x-2.0';
+        break;
+    }
+  }
+}
