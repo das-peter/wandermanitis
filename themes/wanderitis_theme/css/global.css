@@ -1,5 +1,19 @@
 /* This file will hold the main styles for your website. */
 
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+* html .clearfix {
+  height: 1%;
+}
+:first-child + html .clearfix {
+  min-height: 1%;
+}
+
 html,
 body {
   height: 100%;
@@ -74,7 +88,7 @@ h3 {
   margin-bottom: 5px;
 }
 
-a.button {
+.button {
   -webkit-appearance: none;
   -moz-border-radius: 11px;
   -webkit-border-radius: 11px;
@@ -96,6 +110,12 @@ a.button {
   *padding-top: 2px; /* IE7 */
   *padding-bottom: 0px; /* IE7 */
   vertical-align: middle;
+  display: inline;
+  font-weight: 700 !important;
+}
+
+.button *{
+  display: inline;
 }
 
 input.form-submit, a.button {
@@ -362,4 +382,23 @@ div.header-float {
 .view-next-hikes ul,
 .view-next-hikes li {
   list-style: none;
+}
+
+
+.float-field-items .field-items .field-item {
+  float: left;
+  padding-right: 5px;
+}
+.float-field-items .field-items .field-item:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+* html .float-field-items .field-items .field-item {
+  height: 1%;
+}
+:first-child + html .float-field-items .field-items .field-item {
+  min-height: 1%;
 }

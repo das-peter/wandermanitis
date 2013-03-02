@@ -39,16 +39,16 @@ a:hover,
 a:visited {
   color: #2D292D;
 }
-a.button {
+.button {
   color: #333;
   border: 1px solid;
   border-color: #ddd #bbb #999;
 }
-a.button:link,
-a.button:visited,
-a.button:hover,
-a.button:focus,
-a.button:active {
+.button:link,
+.button:visited,
+.button:hover,
+.button:focus,
+.button:active {
   color: #333;
 }
 

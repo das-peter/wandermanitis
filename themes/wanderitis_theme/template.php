@@ -54,3 +54,11 @@ function wanderitis_theme_facetapi_link_active($variables) {
 
   return theme_link($variables) . theme_link($text_variables);
 }
+
+function wanderitis_theme_preprocess_colorbox_image_formatter(&$variables) {
+  // Fixing undefined index when using file fields.
+  $variables['item'] += array(
+    'alt' => '',
+    'title' => '',
+  );
+}
