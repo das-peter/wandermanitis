@@ -160,8 +160,46 @@ function wanderitis_update_7005() {
 }
 
 /**
- * Enable rules.
+ * Enable rules and mailing system.
  */
 function wanderitis_update_7006() {
   module_enable(array('entity_token', 'rules', 'rules_admin', 'mimemail'));
 }
+
+/**
+ * Enable admin icons.
+ */
+function wanderitis_update_7007() {
+  module_enable(array('admin_icons'));
+}
+
+/**
+ * Disabled toolbar.
+ */
+function wanderitis_update_7008() {
+  module_disable(array('toolbar'));
+}
+
+/**
+ * Enable googleanalytics and entityreference. Remove references.
+ */
+function wanderitis_update_7009() {
+  module_enable(array('googleanalytics', 'entityreference'));
+  module_disable(array('references'));
+}
+
+/**
+ * Update spark.
+ */
+function wanderitis_update_7010() {
+  module_enable(array('ckeditor'));
+  module_disable(array('wysiwyg', 'filter_true_wysiwyg', 'aloha', 'media_aloha'));
+}
+
+/**
+ * Enable form_save.
+ */
+function wanderitis_update_7011() {
+  module_enable(array('form_save'));
+}
+
