@@ -334,3 +334,6 @@
 [submodule "modules/ckeditor"]
 	path = modules/ckeditor
 	url = http://git.drupal.org/project/ckeditor.git
+[submodule "modules/media_youtube"]
+	path = modules/media_youtube
+	url = http://git.drupal.org/project/media_youtube.git
