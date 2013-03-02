@@ -666,7 +666,7 @@ function wanderitis_panels_default_page_manager_handlers() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'clearfix',
+      'css_class' => 'clearfix float-field-items',
     );
     $pane->extras = array();
     $pane->position = 4;

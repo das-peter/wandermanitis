@@ -58,3 +58,4 @@ features[views_view][] = hikes
 features[views_view][] = latest_articles
 features[views_view][] = next_hikes
 features[views_view][] = teaser
+features_exclude[dependencies][ctools] = ctools
