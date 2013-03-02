@@ -93,6 +93,56 @@ function wanderitis_panels_default_panels_mini() {
     $display->content['new-f9e08e98-1af3-d3c4-354b-346a7d8d7fc7'] = $pane;
     $display->panels['bottom'][0] = 'new-f9e08e98-1af3-d3c4-354b-346a7d8d7fc7';
     $pane = new stdClass();
+    $pane->pid = 'new-7c5776c3-a404-2b14-f9e6-db9896a29507';
+    $pane->panel = 'bottom';
+    $pane->type = 'generic_form_field';
+    $pane->subtype = 'generic_form_field';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'field' => 'remarks',
+      'custom_selector' => '',
+      'hide_field_title' => 0,
+      'context' => 'relationship_generic_form_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->uuid = '7c5776c3-a404-2b14-f9e6-db9896a29507';
+    $display->content['new-7c5776c3-a404-2b14-f9e6-db9896a29507'] = $pane;
+    $display->panels['bottom'][1] = 'new-7c5776c3-a404-2b14-f9e6-db9896a29507';
+    $pane = new stdClass();
+    $pane->pid = 'new-010cef89-5944-5684-3531-1d6ae9e06cb9';
+    $pane->panel = 'bottom';
+    $pane->type = 'generic_form_field';
+    $pane->subtype = 'generic_form_field';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'field' => 'holiday_location',
+      'custom_selector' => '',
+      'hide_field_title' => 0,
+      'context' => 'relationship_generic_form_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->uuid = '010cef89-5944-5684-3531-1d6ae9e06cb9';
+    $display->content['new-010cef89-5944-5684-3531-1d6ae9e06cb9'] = $pane;
+    $display->panels['bottom'][2] = 'new-010cef89-5944-5684-3531-1d6ae9e06cb9';
+    $pane = new stdClass();
     $pane->pid = 'new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
     $pane->panel = 'bottom';
     $pane->type = 'generic_form_field';
@@ -116,10 +166,10 @@ function wanderitis_panels_default_panels_mini() {
       'css_class' => 'pane-generic-form-field-actions',
     );
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 3;
     $pane->uuid = '3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
     $display->content['new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa'] = $pane;
-    $display->panels['bottom'][1] = 'new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
+    $display->panels['bottom'][3] = 'new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
     $pane = new stdClass();
     $pane->pid = 'new-1d2d0148-7bf6-18e4-89a2-db53c013ca6d';
     $pane->panel = 'left_above';
@@ -345,6 +395,31 @@ function wanderitis_panels_default_panels_mini() {
     $pane->uuid = 'cb57debd-85db-cf04-8114-0b841263f03b';
     $display->content['new-cb57debd-85db-cf04-8114-0b841263f03b'] = $pane;
     $display->panels['right_below'][1] = 'new-cb57debd-85db-cf04-8114-0b841263f03b';
+    $pane = new stdClass();
+    $pane->pid = 'new-ea61d2ae-cd75-1454-491b-c596bf9a2f23';
+    $pane->panel = 'top';
+    $pane->type = 'generic_form_field';
+    $pane->subtype = 'generic_form_field';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'field' => 'hike_date',
+      'custom_selector' => '',
+      'hide_field_title' => 0,
+      'context' => 'relationship_generic_form_1',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->uuid = 'ea61d2ae-cd75-1454-491b-c596bf9a2f23';
+    $display->content['new-ea61d2ae-cd75-1454-491b-c596bf9a2f23'] = $pane;
+    $display->panels['top'][0] = 'new-ea61d2ae-cd75-1454-491b-c596bf9a2f23';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-2d607448-0bdf-c504-996a-a1f5643519dd';
   $mini->display = $display;
