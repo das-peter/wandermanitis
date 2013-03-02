@@ -91,7 +91,10 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
     $price_adult = drupal_render_children($price_adult);
     $price_children = field_view_field('node', $node, 'field_price_child', array('type' => 'number_unformatted'));
     $price_children = drupal_render_children($price_children);
-    $price_markup = ($price_adult * $adults) + ($price_children * $children) . ' CHF';
+    $price = ($price_adult * $adults) + ($price_children * $children);
+    if ($price) {
+      $price_markup = $price . ' CHF';
+    }
   }
   $form['numbers']['price'] = array(
     '#type' => 'item',
