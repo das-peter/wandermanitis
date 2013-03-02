@@ -10,7 +10,7 @@
 function wanderitis_config_user_default_roles() {
   $roles = array();
 
-  // Exported role: moderator
+  // Exported role: moderator.
   $roles['moderator'] = array(
     'name' => 'moderator',
     'weight' => '3',

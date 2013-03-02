@@ -28,7 +28,7 @@ function wanderitis_config_ctools_plugin_api() {
 function wanderitis_config_image_default_styles() {
   $styles = array();
 
-  // Exported image style: header
+  // Exported image style: header.
   $styles['header'] = array(
     'name' => 'header',
     'effects' => array(

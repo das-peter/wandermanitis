@@ -10,7 +10,7 @@
 function wanderitis_config_filter_default_formats() {
   $formats = array();
 
-  // Exported format: Comments
+  // Exported format: Comments.
   $formats['comments'] = array(
     'format' => 'comments',
     'name' => 'Comments',
@@ -42,7 +42,7 @@ function wanderitis_config_filter_default_formats() {
     ),
   );
 
-  // Exported format: Filtered HTML
+  // Exported format: Filtered HTML.
   $formats['filtered_html'] = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
@@ -72,7 +72,7 @@ function wanderitis_config_filter_default_formats() {
     ),
   );
 
-  // Exported format: Full HTML
+  // Exported format: Full HTML.
   $formats['full_html'] = array(
     'format' => 'full_html',
     'name' => 'Full HTML',

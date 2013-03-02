@@ -105,7 +105,7 @@ function wanderitis_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'colorbox_compression_type';
-  $strongarm->value = 'min';
+  $strongarm->value = 'minified';
   $export['colorbox_compression_type'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -149,20 +149,6 @@ function wanderitis_config_strongarm() {
   $strongarm->name = 'colorbox_load';
   $strongarm->value = 1;
   $export['colorbox_load'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'colorbox_login';
-  $strongarm->value = 0;
-  $export['colorbox_login'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'colorbox_login_links';
-  $strongarm->value = '0';
-  $export['colorbox_login_links'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
