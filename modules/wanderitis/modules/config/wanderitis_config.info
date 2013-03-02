@@ -235,6 +235,7 @@ features[variable][] = colorbox_text_stop
 features[variable][] = colorbox_transition_speed
 features[variable][] = colorbox_transition_type
 features[variable][] = date_default_timezone
+features[variable][] = date_format_date_only
 features[variable][] = entity_translation_comment_filter_hike
 features[variable][] = entity_translation_comment_filter_page
 features[variable][] = entity_translation_entity_types
