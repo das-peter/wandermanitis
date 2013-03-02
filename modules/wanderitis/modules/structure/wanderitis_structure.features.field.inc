@@ -341,10 +341,6 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
-            'edit' => array(
-              'editability' => 'disabled',
-              'wysiwyg' => FALSE,
-            ),
             'trim_length' => '400',
           ),
           'type' => 'text_summary_or_trimmed',
@@ -421,10 +417,6 @@ function wanderitis_structure_field_default_fields() {
           'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
-            'edit' => array(
-              'editability' => 'form',
-              'wysiwyg' => FALSE,
-            ),
             'image_link' => 'content',
             'image_style' => 'medium',
           ),
