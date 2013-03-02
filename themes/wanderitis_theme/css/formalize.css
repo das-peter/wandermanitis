@@ -253,3 +253,10 @@ optgroup {
 .comment-form .form-select {
   overflow: visible;
 }
+
+
+#cboxContent button,
+#cboxContent button:hover,
+#cboxContent button:active {
+  border: none;
+}
