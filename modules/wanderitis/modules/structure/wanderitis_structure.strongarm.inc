@@ -239,13 +239,16 @@ function wanderitis_structure_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '30',
+          'weight' => '14',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '15',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '13',
+        ),
+        'language' => array(
+          'weight' => '2',
         ),
       ),
       'display' => array(),
@@ -313,13 +316,16 @@ function wanderitis_structure_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'path' => array(
-          'weight' => '30',
+          'weight' => '6',
         ),
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '5',
         ),
         'xmlsitemap' => array(
-          'weight' => '30',
+          'weight' => '7',
+        ),
+        'language' => array(
+          'weight' => '1',
         ),
       ),
       'display' => array(),
