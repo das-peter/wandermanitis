@@ -346,3 +346,9 @@
 [submodule "modules/simplehtmldom"]
 	path = modules/simplehtmldom
 	url = http://git.drupal.org/project/simplehtmldom.git
+[submodule "modules/cycle"]
+	path = modules/cycle
+	url = http://git.drupal.org/project/cycle.git
+[submodule "modules/jquery_plugin"]
+	path = modules/jquery_plugin
+	url = http://git.drupal.org/project/jquery_plugin.git
