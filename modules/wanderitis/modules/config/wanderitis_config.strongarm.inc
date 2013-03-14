@@ -729,7 +729,7 @@ user/*/*';
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'mimemail_mail';
-  $strongarm->value = 'info@das-peter.ch';
+  $strongarm->value = 'info@wanderitis.ch';
   $export['mimemail_mail'] = $strongarm;
 
   $strongarm = new stdClass();
