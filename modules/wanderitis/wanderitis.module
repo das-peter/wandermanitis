@@ -32,6 +32,7 @@ function wanderitis_jcarousel_skin_info() {
 function wanderitis_field_formatter_info_alter(&$info) {
   $info['colorbox']['field types'][] = 'file';
   $info['slideshow']['field types'][] = 'file';
+  $info['cycle']['field types'][] = 'file';
 }
 
 /**
