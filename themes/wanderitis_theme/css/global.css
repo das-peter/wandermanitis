@@ -18,14 +18,14 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
   color: #FFFFFF;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
 body {
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
+  font: 13px/1.5 Verdana, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 
 body * {
@@ -459,5 +459,5 @@ div.field-type-taxonomy-term-reference {
 }
 
 .view-next-hikes .views-row-even{
-  background-color: #F8F8F8;
+  background-color: #EAEAEA;
 }

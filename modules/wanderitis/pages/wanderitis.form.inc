@@ -13,7 +13,7 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
     '#type' => (is_object($node)) ? 'value' : 'textfield',
     '#value' => 'Next possibility',
   );
-  if (count($node->field_hike_dates[LANGUAGE_NONE]) > 1) {
+  if (isset($node->field_hike_dates[LANGUAGE_NONE]) && count($node->field_hike_dates[LANGUAGE_NONE]) > 1) {
     $options = array();
     $date = new DateObject();
     foreach ($node->field_hike_dates[LANGUAGE_NONE] as $data) {
@@ -27,7 +27,7 @@ function wanderitis_hike_subscription_form($form, &$form_state, $node = NULL) {
       '#options' => $options,
     );
   }
-  elseif (count($node->field_hike_dates[LANGUAGE_NONE])) {
+  elseif (!empty($node->field_hike_dates[LANGUAGE_NONE])) {
     $data = reset($node->field_hike_dates[LANGUAGE_NONE]);
     $date = new DateObject($data['value']);
 

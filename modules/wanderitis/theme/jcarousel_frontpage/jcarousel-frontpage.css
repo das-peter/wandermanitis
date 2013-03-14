@@ -154,7 +154,10 @@
   width: 100%;
   position: absolute;
   bottom: 0px;
-  margin-left: 5px;
+  padding-left: 5px;
   text-align: left;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.55);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
 }
 
