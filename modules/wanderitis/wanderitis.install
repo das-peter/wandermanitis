@@ -209,3 +209,10 @@ function wanderitis_update_7011() {
 function wanderitis_update_7012() {
   module_enable(array('cycle', 'cycle_views'));
 }
+
+/**
+ * Enable admin_views.
+ */
+function wanderitis_update_7013() {
+  module_enable(array('admin_views));
+}
