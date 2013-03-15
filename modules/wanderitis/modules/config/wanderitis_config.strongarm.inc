@@ -584,7 +584,6 @@ user/*/*';
         'language' => 'locale_language_from_browser',
       ),
       'file' => 'includes/locale.inc',
-      'cache' => 0,
     ),
     'language-default' => array(
       'callbacks' => array(
@@ -1085,6 +1084,8 @@ user/*/*';
   $strongarm->api_version = 1;
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
+    'contact' => TRUE,
+    'hikes' => TRUE,
     'node' => TRUE,
     'taxonomy' => TRUE,
     'user' => TRUE,
