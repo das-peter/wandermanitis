@@ -207,5 +207,5 @@ function wanderitis_update_7011() {
  * Enable cycle.
  */
 function wanderitis_update_7012() {
-  module_enable(array('cycle'));
+  module_enable(array('cycle', 'cycle_views'));
 }
