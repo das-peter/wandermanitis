@@ -1776,7 +1776,7 @@ function wanderitis_panels_default_page_manager_pages() {
     ),
   );
   $display->cache = array();
-  $display->title = 'wanderitis';
+  $display->title = 'Homepage';
   $display->uuid = 'b6abead3-8226-ea64-2d0c-4e6473e32300';
   $display->content = array();
   $display->panels = array();
