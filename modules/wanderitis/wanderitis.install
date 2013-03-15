@@ -214,5 +214,5 @@ function wanderitis_update_7012() {
  * Enable admin_views.
  */
 function wanderitis_update_7013() {
-  module_enable(array('admin_views));
+  module_enable(array('admin_views'));
 }
