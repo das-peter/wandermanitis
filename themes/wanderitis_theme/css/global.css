@@ -321,6 +321,26 @@ div.header-float {
   padding-bottom: 5px;
 }
 
+.cycle-wrapper .views-field-title {
+  width: 100%;
+  position: absolute;
+  bottom: 4px;
+  text-align: left;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.55);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+}
+
+.cycle-wrapper .views-field-title span {
+  padding-left: 5px;
+}
+.cycle-wrapper .cycle-prev,
+.cycle-wrapper .cycle-next {
+  font-size: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 
 /** HIKE SEARCH **/
 .page-hikes .views-exposed-form .views-exposed-widget {
@@ -442,6 +462,11 @@ div.field-type-taxonomy-term-reference {
   padding-left: 10px;
 }
 
+.layout-responsive-region-header_b .spacer {
+  height: 150px;
+}
+
+
 /**
  * Next hikes col.
  */
@@ -460,4 +485,9 @@ div.field-type-taxonomy-term-reference {
 
 .view-next-hikes .views-row-even{
   background-color: #EAEAEA;
+}
+
+.view-teaser .view-content {
+  max-height: 400px;
+  overflow: hidden;
 }
