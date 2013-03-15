@@ -483,7 +483,16 @@ function wanderitis_panels_default_page_manager_handlers() {
     'css_id' => 'hike',
     'css' => '',
     'contexts' => array(),
-    'relationships' => array(),
+    'relationships' => array(
+      0 => array(
+        'identifier' => 'header-image',
+        'keyword' => 'header-image',
+        'name' => 'entity_from_field:field_media-node-file',
+        'delta' => '0',
+        'context' => 'argument_entity_id:node_1',
+        'id' => 1,
+      ),
+    ),
     'access' => array(
       'plugins' => array(
         0 => array(
@@ -853,6 +862,41 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->uuid = '6f662dfd-d6ea-6844-7de7-62db20eb49c9';
     $display->content['new-6f662dfd-d6ea-6844-7de7-62db20eb49c9'] = $pane;
     $display->panels['header_b'][0] = 'new-6f662dfd-d6ea-6844-7de7-62db20eb49c9';
+    $pane = new stdClass();
+    $pane->pid = 'new-5a1a155c-6db6-c784-3151-2320424c9e5d';
+    $pane->panel = 'header_b';
+    $pane->type = 'custom';
+    $pane->subtype = 'custom';
+    $pane->shown = TRUE;
+    $pane->access = array(
+      'plugins' => array(
+        0 => array(
+          'name' => 'context_exists',
+          'settings' => array(
+            'exists' => '0',
+          ),
+          'context' => 'relationship_entity_from_field:field_media-node-file_1',
+          'not' => FALSE,
+        ),
+      ),
+    );
+    $pane->configuration = array(
+      'admin_title' => 'Spacer',
+      'title' => '',
+      'body' => '<div class="spacer"></div>',
+      'format' => 'full_html',
+      'substitute' => 0,
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->uuid = '5a1a155c-6db6-c784-3151-2320424c9e5d';
+    $display->content['new-5a1a155c-6db6-c784-3151-2320424c9e5d'] = $pane;
+    $display->panels['header_b'][1] = 'new-5a1a155c-6db6-c784-3151-2320424c9e5d';
     $pane = new stdClass();
     $pane->pid = 'new-15f9dd0c-fb42-2874-29b2-908ebd458528';
     $pane->panel = 'sidebar_a';
