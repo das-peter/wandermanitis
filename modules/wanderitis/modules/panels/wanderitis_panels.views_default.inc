@@ -471,7 +471,7 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['style_options']['cycle_settings'] = array(
     'fx' => 'fade',
     'timeout' => '4000',
-    'height' => '',
+    'height' => '400',
     'width' => '',
     'startingSlide' => '',
     'fit' => 0,
