@@ -27,11 +27,10 @@
 
     // Hike Search Form
     if ($('.page-hikes .layout-responsive-region-navigation').length) {
-      var searchFormTop = $('.page-hikes .layout-responsive-region-navigation').offset().top;
       $('.page-hikes .layout-responsive-region-navigation').wrapInner('<div class="sticky" style="width:' + $('.page-hikes .layout-responsive-region-navigation').width() + 'px;" />');
       $(window).on('scroll', function(){
-        var windowTop = $(window).scrollTop();
-        if (searchFormTop < windowTop) {
+        if ($('.page-hikes .layout-responsive-region-navigation').offset().top < $(window).scrollTop()) {
+          console.log('fly');
           $('.page-hikes .layout-responsive-region-navigation .sticky').css({
             position: 'fixed',
             top: 0
