@@ -152,3 +152,14 @@ function wanderitis_date_formats() {
     ),
   );
 }
+
+/**
+ * Implements hook_language_negotiation_info_alter().
+ */
+function wanderitis_language_negotiation_info_alter(&$language_providers) {
+  // Modify the browser detection to work with all cache modes.
+  unset($language_providers[LOCALE_LANGUAGE_NEGOTIATION_BROWSER]['cache']);
+
+  // DON'T ALLOW STUPID URL REWRITE
+  //unset($language_providers[LOCALE_LANGUAGE_NEGOTIATION_SESSION]['callbacks']['url_rewrite']);
+}
