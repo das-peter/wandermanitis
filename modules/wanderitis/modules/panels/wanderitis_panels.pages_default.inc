@@ -907,7 +907,8 @@ function wanderitis_panels_default_page_manager_handlers() {
     $pane->configuration = array(
       'admin_title' => 'Subscribe for next Hike',
       'title' => '',
-      'body' => '<a href="/hike-subscribe/%node:nid" class="button">Subscribe for next hike</a>',
+      'body' => '<p><a class="button" href="/hike-subscribe/%node:nid">Subscribe for next hike</a></p>
+',
       'format' => 'full_html',
       'substitute' => 1,
     );

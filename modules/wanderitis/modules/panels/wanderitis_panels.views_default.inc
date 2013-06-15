@@ -413,6 +413,12 @@ function wanderitis_panels_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'hike' => 'hike',
   );
+  /* Filter criterion: Content: Dates (field_hike_dates) */
+  $handler->display->display_options['filters']['field_hike_dates_value']['id'] = 'field_hike_dates_value';
+  $handler->display->display_options['filters']['field_hike_dates_value']['table'] = 'field_data_field_hike_dates';
+  $handler->display->display_options['filters']['field_hike_dates_value']['field'] = 'field_hike_dates_value';
+  $handler->display->display_options['filters']['field_hike_dates_value']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_hike_dates_value']['form_type'] = 'date_text';
 
   /* Display: Content pane */
   $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
