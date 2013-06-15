@@ -82,7 +82,7 @@ function wanderitis_structure_taxonomy_default_vocabularies() {
       'name' => 'Media Folders',
       'machine_name' => 'media_folders',
       'description' => 'Use media folders to organize your media',
-      'hierarchy' => '1',
+      'hierarchy' => '0',
       'module' => 'taxonomy',
       'weight' => '0',
       'rdf_mapping' => array(

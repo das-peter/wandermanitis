@@ -448,8 +448,8 @@ function wanderitis_structure_field_default_fields() {
             'public' => 'public',
           ),
           'allowed_types' => array(
-            0 => 0,
             'audio' => 0,
+            0 => 0,
             'default' => 0,
             'image' => 'image',
             'video' => 0,
@@ -1905,7 +1905,7 @@ E.g. 1.5h means 1 hour 30 minutes, ',
       'bundle' => 'hike',
       'default_value' => array(
         0 => array(
-          'email' => 'info@wanderitis.com',
+          'email' => 'info@wanderitis.ch',
         ),
       ),
       'deleted' => '0',
