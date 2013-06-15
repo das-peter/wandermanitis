@@ -92,17 +92,6 @@ function wanderitis_config_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: access media backend.
-  $permissions['access media backend'] = array(
-    'name' => 'access media backend',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'authenticated user' => 'authenticated user',
-      'moderator' => 'moderator',
-    ),
-    'module' => 'media_browser_plus',
-  );
-
   // Exported permission: access search_api_page.
   $permissions['access search_api_page'] = array(
     'name' => 'access search_api_page',
@@ -821,6 +810,7 @@ function wanderitis_config_user_default_permissions() {
     'name' => 'import media',
     'roles' => array(
       'administrator' => 'administrator',
+      'moderator' => 'moderator',
     ),
     'module' => 'media',
   );
