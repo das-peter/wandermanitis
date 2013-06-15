@@ -23,13 +23,13 @@ function git_deploy_system_info_alter(&$info, $file, $type = NULL) {
     $directory = dirname($file->uri);
     // Check whether this belongs to core. Speed optimization.
     if (substr($directory, 0, strlen($type)) != $type) {
-      while ($directory && !is_dir("$directory/.git")) {
+      while ($directory && !file_exists("$directory/.git")) {
         $directory = substr($directory, 0,  strrpos($directory, '/'));
       }
       $git_dir = "$directory/.git";
       // Theoretically /.git could exist.
-      if ($directory && is_dir($git_dir)) {
-        $git = "git --git-dir $git_dir";
+      if ($directory && file_exists($git_dir)) {
+        $git = "\"C:/Program Files (x86)/Git/bin/git.exe\" --git-dir $git_dir";
         // Find first the project name based on fetch URL.
         // Eat error messages. >& is valid on Windows, too. Also, $output does
         // not need initialization because it's taken by reference.
@@ -81,6 +81,9 @@ function git_deploy_system_info_alter(&$info, $file, $type = NULL) {
         if ($datestamp && is_numeric($datestamp[0])) {
           $info['datestamp'] = $datestamp[0];
         }
+
+        // Execute a remote update
+        //exec("$git remote update 2>&1", $output);
       }
     }
   }

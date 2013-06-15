@@ -352,3 +352,6 @@
 [submodule "modules/jquery_plugin"]
 	path = modules/jquery_plugin
 	url = http://git.drupal.org/project/jquery_plugin.git
+[submodule "modules/views_tree"]
+	path = modules/views_tree
+	url = http://git.drupal.org/project/views_tree.git
