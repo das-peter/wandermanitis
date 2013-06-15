@@ -1085,6 +1085,7 @@ user/*/*';
   $strongarm->name = 'path_alias_whitelist';
   $strongarm->value = array(
     'contact' => TRUE,
+    'file' => TRUE,
     'hikes' => TRUE,
     'node' => TRUE,
     'taxonomy' => TRUE,
