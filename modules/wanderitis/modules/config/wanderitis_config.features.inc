@@ -31,6 +31,7 @@ function wanderitis_config_image_default_styles() {
   // Exported image style: header.
   $styles['header'] = array(
     'name' => 'header',
+    'label' => 'header',
     'effects' => array(
       1 => array(
         'label' => 'Smart scale and crop',
@@ -74,6 +75,7 @@ function wanderitis_config_image_default_styles() {
         'weight' => '1',
       ),
     ),
+    'label' => 'square_thumbnail',
   );
 
   return $styles;

@@ -77,7 +77,7 @@ function wanderitis_config_default_rules_configuration() {
       "LABEL" : "New hike subscription",
       "PLUGIN" : "reaction rule",
       "REQUIRES" : [ "rules", "wanderitis" ],
-      "ON" : [ "wanderitis_hike_subscription" ],
+      "ON" : { "wanderitis_hike_subscription" : [] },
       "DO" : [
         { "component_rules_hike_subscription_confirmation" : {
             "remarks" : [ "remarks" ],
