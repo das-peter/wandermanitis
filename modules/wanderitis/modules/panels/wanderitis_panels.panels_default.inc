@@ -89,6 +89,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = 'f9e08e98-1af3-d3c4-354b-346a7d8d7fc7';
     $display->content['new-f9e08e98-1af3-d3c4-354b-346a7d8d7fc7'] = $pane;
     $display->panels['bottom'][0] = 'new-f9e08e98-1af3-d3c4-354b-346a7d8d7fc7';
@@ -114,6 +115,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $pane->uuid = '7c5776c3-a404-2b14-f9e6-db9896a29507';
     $display->content['new-7c5776c3-a404-2b14-f9e6-db9896a29507'] = $pane;
     $display->panels['bottom'][1] = 'new-7c5776c3-a404-2b14-f9e6-db9896a29507';
@@ -139,6 +141,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
+    $pane->locks = '';
     $pane->uuid = '010cef89-5944-5684-3531-1d6ae9e06cb9';
     $display->content['new-010cef89-5944-5684-3531-1d6ae9e06cb9'] = $pane;
     $display->panels['bottom'][2] = 'new-010cef89-5944-5684-3531-1d6ae9e06cb9';
@@ -167,6 +170,7 @@ function wanderitis_panels_default_panels_mini() {
     );
     $pane->extras = array();
     $pane->position = 3;
+    $pane->locks = '';
     $pane->uuid = '3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
     $display->content['new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa'] = $pane;
     $display->panels['bottom'][3] = 'new-3a1c02a2-3da5-5554-2926-8dbbe1c848aa';
@@ -192,6 +196,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = '1d2d0148-7bf6-18e4-89a2-db53c013ca6d';
     $display->content['new-1d2d0148-7bf6-18e4-89a2-db53c013ca6d'] = $pane;
     $display->panels['left_above'][0] = 'new-1d2d0148-7bf6-18e4-89a2-db53c013ca6d';
@@ -217,6 +222,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $pane->uuid = '4acbcfa6-073f-3e04-edf7-d04af905b10c';
     $display->content['new-4acbcfa6-073f-3e04-edf7-d04af905b10c'] = $pane;
     $display->panels['left_above'][1] = 'new-4acbcfa6-073f-3e04-edf7-d04af905b10c';
@@ -242,6 +248,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = 'd053dafb-5db7-58b4-adc1-3184ee145d0f';
     $display->content['new-d053dafb-5db7-58b4-adc1-3184ee145d0f'] = $pane;
     $display->panels['left_below'][0] = 'new-d053dafb-5db7-58b4-adc1-3184ee145d0f';
@@ -267,6 +274,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $pane->uuid = '643c8b20-6700-1f14-99c7-adb53baf63ce';
     $display->content['new-643c8b20-6700-1f14-99c7-adb53baf63ce'] = $pane;
     $display->panels['left_below'][1] = 'new-643c8b20-6700-1f14-99c7-adb53baf63ce';
@@ -292,6 +300,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = '826425dc-45d3-7a24-fd08-26c22556fde1';
     $display->content['new-826425dc-45d3-7a24-fd08-26c22556fde1'] = $pane;
     $display->panels['middle'][0] = 'new-826425dc-45d3-7a24-fd08-26c22556fde1';
@@ -317,6 +326,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = '2d607448-0bdf-c504-996a-a1f5643519dd';
     $display->content['new-2d607448-0bdf-c504-996a-a1f5643519dd'] = $pane;
     $display->panels['right_above'][0] = 'new-2d607448-0bdf-c504-996a-a1f5643519dd';
@@ -342,6 +352,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $pane->uuid = '9b3c7003-dd88-10c4-49ba-4786ffb9b7ea';
     $display->content['new-9b3c7003-dd88-10c4-49ba-4786ffb9b7ea'] = $pane;
     $display->panels['right_above'][1] = 'new-9b3c7003-dd88-10c4-49ba-4786ffb9b7ea';
@@ -367,6 +378,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = '502defbc-c6c6-5424-0183-56eb0d3a4308';
     $display->content['new-502defbc-c6c6-5424-0183-56eb0d3a4308'] = $pane;
     $display->panels['right_below'][0] = 'new-502defbc-c6c6-5424-0183-56eb0d3a4308';
@@ -392,6 +404,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $pane->uuid = 'cb57debd-85db-cf04-8114-0b841263f03b';
     $display->content['new-cb57debd-85db-cf04-8114-0b841263f03b'] = $pane;
     $display->panels['right_below'][1] = 'new-cb57debd-85db-cf04-8114-0b841263f03b';
@@ -417,6 +430,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = 'ea61d2ae-cd75-1454-491b-c596bf9a2f23';
     $display->content['new-ea61d2ae-cd75-1454-491b-c596bf9a2f23'] = $pane;
     $display->panels['top'][0] = 'new-ea61d2ae-cd75-1454-491b-c596bf9a2f23';
@@ -467,6 +481,7 @@ function wanderitis_panels_default_panels_mini() {
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $pane->uuid = '6d797ce9-2b89-ae74-85ce-03d2d3502bed';
     $display->content['new-6d797ce9-2b89-ae74-85ce-03d2d3502bed'] = $pane;
     $display->panels['middle'][0] = 'new-6d797ce9-2b89-ae74-85ce-03d2d3502bed';
