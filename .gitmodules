@@ -355,3 +355,26 @@
 [submodule "modules/views_tree"]
 	path = modules/views_tree
 	url = http://git.drupal.org/project/views_tree.git
+[submodule "modules/breakpoints"]
+	path = modules/breakpoints
+	url = http://git.drupal.org/project/breakpoints.git
+	branch = 7.x-1.x
+[submodule "libraries/underscore"]
+	path = libraries/underscore
+	url = https://github.com/jashkenas/underscore.git
+[submodule "libraries/backbone"]
+	path = libraries/backbone
+	url = https://github.com/jashkenas/backbone.git
+[submodule "jquery.imagesloaded"]
+	path = jquery.imagesloaded
+	url = https://github.com/desandro/imagesloaded.git
+[submodule "libraries/jquery.imagesloaded"]
+	path = libraries/jquery.imagesloaded
+	url = https://github.com/desandro/imagesloaded.git
+[submodule "modules/admin_tools"]
+	path = modules/admin_tools
+	url = http://git.drupal.org/project/admin_tools.git
+[submodule "modules/admin"]
+	path = modules/admin
+	url = http://git.drupal.org/project/admin.git
+	branch = 7.x-2.x

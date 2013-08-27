@@ -79,6 +79,7 @@ features[filter][] = full_html
 features[filter][] = html_mail
 features[filter][] = plain_text
 features[image][] = header
+features[image][] = square_thumbnail
 features[openlayers_maps][] = wanderitis_geofield_widget_map
 features[rules_config][] = rules_hike_subscription_confirmation
 features[rules_config][] = rules_hike_subscription_notification

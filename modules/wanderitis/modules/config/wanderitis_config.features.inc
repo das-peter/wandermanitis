@@ -52,5 +52,29 @@ function wanderitis_config_image_default_styles() {
     ),
   );
 
+  // Exported image style: square_thumbnail.
+  $styles['square_thumbnail'] = array(
+    'name' => 'square_thumbnail',
+    'effects' => array(
+      1 => array(
+        'label' => 'Smart scale and crop',
+        'help' => 'Scale and crop will maintain the aspect-ratio of the original image and ensure it fits into the given dimensions.',
+        'effect callback' => 'cando_smart_scale_and_crop_effect',
+        'dimensions callback' => 'cando_smart_scale_crop_dimensions',
+        'form callback' => 'cando_smart_scale_crop_form',
+        'summary theme' => 'cando_smart_scale_crop_summary',
+        'module' => 'cando',
+        'name' => 'image_smart_scale_and_crop',
+        'data' => array(
+          'width' => '180',
+          'height' => '180',
+          'upscale' => 0,
+          'anchor' => 'center-center',
+        ),
+        'weight' => '1',
+      ),
+    ),
+  );
+
   return $styles;
 }
