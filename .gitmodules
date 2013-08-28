@@ -339,7 +339,7 @@
 	url = http://git.drupal.org/project/media_youtube.git
 [submodule "modules/form_save"]
 	path = modules/form_save
-	url = http://git.drupal.org/project/form_save.git
+	url = git+ssh://git@git.cando-image.com/drupal/modules/form_save.git
 [submodule "modules/devel_themer"]
 	path = modules/devel_themer
 	url = http://git.drupal.org/project/devel_themer.git

@@ -216,3 +216,10 @@ function wanderitis_update_7012() {
 function wanderitis_update_7013() {
   module_enable(array('admin_views'));
 }
+
+/**
+ * Enable breakpoints.
+ */
+function wanderitis_update_7014() {
+  module_enable(array('breakpoints'));
+}
